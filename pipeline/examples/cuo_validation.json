@@ -1,0 +1,18 @@
+{
+  "errors": [],
+  "review_flags": [
+    "cuo_back_10nm_max: selected maximum, not a mean",
+    "cuo_back_mott: check photoemission-through-layer scope",
+    "/samples/0/substrate: add/check short evidence or figure/table locator",
+    "/samples/0/substrate/film_thickness: add/check short evidence or figure/table locator",
+    "/samples/0/assembly/layer_thickness: add/check short evidence or figure/table locator",
+    "/setups/0/observable_definition/spin_component: add/check short evidence or figure/table locator",
+    "/setups/0/observable_definition/sign_convention: add/check short evidence or figure/table locator",
+    "/setups/0/excitation/wavelength: add/check short evidence or figure/table locator",
+    "/setups/0/excitation/photon_energy: add/check short evidence or figure/table locator",
+    "/setups/0/excitation/repetition_rate: add/check short evidence or figure/table locator",
+    "/setups/0/excitation/pulse_duration: add/check short evidence or figure/table locator",
+    "/measurements/0/result: add/check short evidence or figure/table locator",
+    "Human check required: all main results, signs, units, uncertainty types, sample assignments, omissions and derived arithmetic."
+  ]
+}

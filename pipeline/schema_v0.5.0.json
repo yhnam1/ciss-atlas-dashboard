@@ -1,0 +1,1833 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/ciss/schema/0.5.0-compat",
+  "title": "CISS v0.5.0 compatibility schema",
+  "description": "Project compatibility extension for the supplied partial v0.5 records; not a claim of an externally supplied canonical schema.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "paper",
+    "samples",
+    "setups",
+    "measurements",
+    "extraction_meta"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.5.0"
+    },
+    "paper": {
+      "type": "object",
+      "required": [
+        "paper_id",
+        "title",
+        "authors",
+        "year",
+        "doi"
+      ],
+      "properties": {
+        "paper_id": {
+          "type": "string",
+          "description": "first-author_year_keyword"
+        },
+        "title": {
+          "type": "string"
+        },
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "journal": {
+          "type": "string"
+        },
+        "year": {
+          "type": "integer"
+        },
+        "doi": {
+          "type": "string"
+        },
+        "documents_used": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "main",
+              "SI"
+            ]
+          }
+        },
+        "related_papers": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "doi",
+              "relation"
+            ],
+            "properties": {
+              "doi": {
+                "type": "string"
+              },
+              "relation": {
+                "enum": [
+                  "same_apparatus",
+                  "method_reference",
+                  "same_samples",
+                  "reanalysis",
+                  "other"
+                ]
+              },
+              "note": {
+                "type": "string"
+              }
+            }
+          },
+          "description": "Link papers whose methods are 'as described in ref. X'. Never copy their values; link instead."
+        },
+        "documents": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "document_id",
+              "role",
+              "filename"
+            ],
+            "properties": {
+              "document_id": {
+                "type": "string"
+              },
+              "role": {
+                "enum": [
+                  "main",
+                  "SI"
+                ]
+              },
+              "filename": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string",
+                "pattern": "^[a-fA-F0-9]{64}$"
+              }
+            }
+          }
+        }
+      }
+    },
+    "samples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "sample_id",
+          "role",
+          "molecule",
+          "substrate"
+        ],
+        "properties": {
+          "sample_id": {
+            "type": "string"
+          },
+          "role": {
+            "enum": [
+              "test",
+              "control_bare_substrate",
+              "control_reference",
+              "control_achiral_or_disordered",
+              "control_damaged",
+              "control_racemic"
+            ]
+          },
+          "molecule": {
+            "type": "object",
+            "properties": {
+              "class": {
+                "enum": [
+                  "dsDNA",
+                  "ssDNA",
+                  "helicene",
+                  "oligopeptide",
+                  "protein",
+                  "polymer",
+                  "small_molecule_other",
+                  "none",
+                  "other",
+                  "chiral_inorganic"
+                ]
+              },
+              "name": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "e.g. [7]helicene (heptahelicene); null for DNA (use sequence)"
+              },
+              "formula": {
+                "type": "string"
+              },
+              "length": {
+                "$ref": "#/$defs/quantity",
+                "description": "DEPRECATED (v0.4.0): use molecule.geometry.n_units. bp for dsDNA, nt for ssDNA, residues for peptides; rings for helicenes"
+              },
+              "sequence_5to3_strand1": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "DEPRECATED (v0.4.0): use molecule.strands[]. "
+              },
+              "sequence_5to3_strand2": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "DEPRECATED (v0.4.0): use molecule.strands[]. "
+              },
+              "helix_handedness": {
+                "$ref": "#/$defs/handedness_quantity",
+                "description": "right/left/mixed. One value per sample_id; an enantiomer pair = two samples linked by chirality_counterpart_of."
+              },
+              "stereo_descriptor": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "label as written in the paper: M/P (helicenes), D/L (amino acids, DNA), R/S. Keep alongside helix_handedness so the mapping is auditable (e.g. M = left-handed). Structured locations/counts go in chiral_elements."
+              },
+              "chirality_counterpart_of": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "sample_id of the opposite-handedness counterpart measured in this paper; null if only one handedness was studied"
+              },
+              "enantiomeric_purity": {
+                "$ref": "#/$defs/quantity",
+                "description": "ee in % or the paper's wording, e.g. 'enantiopure (chiral HPLC)'"
+              },
+              "helix_form": {
+                "$ref": "#/$defs/quantity",
+                "description": "DEPRECATED (v0.4.0): use molecule.geometry.helix_form. A/B/Z for DNA; alpha/3_10 for peptides"
+              },
+              "helical_turns": {
+                "$ref": "#/$defs/quantity",
+                "description": "DEPRECATED (v0.4.0): use molecule.geometry.helical_turns. "
+              },
+              "helix_axis_orientation": {
+                "$ref": "#/$defs/axis_orientation_quantity",
+                "description": "helix axis relative to the substrate. Needed to relate spin_component (defined vs electron momentum / surface normal) to the helix axis."
+              },
+              "anchor": {
+                "type": "object",
+                "properties": {
+                  "group": {
+                    "type": "string",
+                    "description": "e.g. thiol; 'physisorbed/none' for vapor-deposited molecules"
+                  },
+                  "linker": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "e.g. (CH2)3"
+                  },
+                  "attached_end": {
+                    "enum": [
+                      "3prime",
+                      "5prime",
+                      "N_terminus",
+                      "C_terminus",
+                      "not_applicable",
+                      "unknown"
+                    ]
+                  },
+                  "status": {
+                    "$ref": "#/$defs/status"
+                  },
+                  "source": {
+                    "$ref": "#/$defs/source"
+                  },
+                  "note": {
+                    "type": "string"
+                  }
+                }
+              },
+              "treatment": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "n_helices": {
+                "$ref": "#/$defs/quantity",
+                "description": "DEPRECATED (v0.4.0): use molecule.geometry.n_helices. number of helical segments, e.g. 7 transmembrane alpha-helices in bacteriorhodopsin"
+              },
+              "secondary_structure": {
+                "enum": [
+                  "alpha_helix",
+                  "3_10_helix",
+                  "beta_sheet",
+                  "mixed",
+                  "double_helix",
+                  "not_applicable",
+                  "unknown"
+                ],
+                "description": "DEPRECATED (v0.4.0): use molecule.geometry.secondary_structure. "
+              },
+              "host_matrix": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "environment the chiral molecule sits in, e.g. native purple membrane (lipids); null if none"
+              },
+              "chiral_volume_fraction": {
+                "$ref": "#/$defs/quantity",
+                "description": "fraction of the layer volume that is the chiral molecule (bR ~10% of purple membrane)"
+              },
+              "cofactor": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_organism": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "structure_db_id": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "PDB / UniProt id if given"
+              },
+              "geometry": {
+                "type": "object",
+                "description": "Shape of the chiral unit as used in this sample. Store what the paper gives; do not convert diameter<->radius or compute pitch/radius here (use derived_quantities).",
+                "properties": {
+                  "n_units": {
+                    "$ref": "#/$defs/geometry_quantity",
+                    "description": "size in repeat units: bp (dsDNA/dsPNA), nt (ssDNA), residues (peptides), rings (helicenes)"
+                  },
+                  "axial_length": {
+                    "$ref": "#/$defs/geometry_quantity",
+                    "description": "physical length along the helix axis, nm"
+                  },
+                  "pitch": {
+                    "$ref": "#/$defs/geometry_quantity",
+                    "description": "rise per full helical turn, nm/turn"
+                  },
+                  "units_per_turn": {
+                    "$ref": "#/$defs/geometry_quantity",
+                    "description": "repeat units per turn, e.g. bp/turn, residues/turn"
+                  },
+                  "rise_per_unit": {
+                    "$ref": "#/$defs/geometry_quantity",
+                    "description": "axial rise per repeat unit, nm/unit"
+                  },
+                  "diameter": {
+                    "$ref": "#/$defs/geometry_quantity",
+                    "description": "helix diameter, nm; say which diameter in diameter_definition"
+                  },
+                  "diameter_definition": {
+                    "enum": [
+                      "overall_duplex",
+                      "backbone_helix",
+                      "atom_specific",
+                      "unspecified"
+                    ],
+                    "description": "atom_specific = e.g. P-P distance; give the atom in diameter.note"
+                  },
+                  "helical_turns": {
+                    "$ref": "#/$defs/geometry_quantity",
+                    "description": "number of turns in the molecule (= n_units / units_per_turn if derived)"
+                  },
+                  "helix_form": {
+                    "$ref": "#/$defs/geometry_quantity",
+                    "description": "A/B/Z for DNA; P-type for PNA; alpha/3_10 for peptides"
+                  },
+                  "n_helices": {
+                    "$ref": "#/$defs/geometry_quantity",
+                    "description": "number of helical segments, e.g. 7 TM helices in bacteriorhodopsin"
+                  },
+                  "secondary_structure": {
+                    "enum": [
+                      "alpha_helix",
+                      "3_10_helix",
+                      "beta_sheet",
+                      "mixed",
+                      "double_helix",
+                      "not_applicable",
+                      "unknown"
+                    ]
+                  }
+                }
+              },
+              "strands": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/strand"
+                },
+                "description": "one entry per physical strand; a nicked strand = several entries sharing segment_of"
+              },
+              "chirality_origin": {
+                "enum": [
+                  "inherent_monomers",
+                  "induced_by_seeds",
+                  "inherent_and_seeds",
+                  "inherent_skeleton",
+                  "none",
+                  "unknown"
+                ],
+                "description": "inherent_monomers = every monomer chiral (DNA sugars, L-amino acids); induced_by_seeds = achiral backbone with chiral end groups; inherent_and_seeds = some chiral monomers plus seeds (\u03b3PNA-PNA); inherent_skeleton = helicenes"
+              },
+              "chiral_elements": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/chiral_element"
+                }
+              }
+            }
+          },
+          "substrate": {
+            "type": "object",
+            "properties": {
+              "material": {
+                "type": "string"
+              },
+              "crystallinity": {
+                "enum": [
+                  "single_crystal",
+                  "polycrystalline",
+                  "thin_film",
+                  "unknown"
+                ]
+              },
+              "facet": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "e.g. 111, 110, 332 (vicinal)"
+              },
+              "support": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "e.g. Au evaporated on poly-Cu"
+              },
+              "cleaning": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "work_function": {
+                "$ref": "#/$defs/quantity",
+                "description": "of the molecule-covered sample if reported"
+              },
+              "status": {
+                "$ref": "#/$defs/status"
+              },
+              "source": {
+                "$ref": "#/$defs/source"
+              },
+              "note": {
+                "type": "string"
+              },
+              "film_thickness": {
+                "$ref": "#/$defs/quantity"
+              },
+              "adhesion_layer": {
+                "type": "string"
+              },
+              "surface_oxide": {
+                "type": "object",
+                "description": "native or thermal oxide on the metal (changes injection/tunneling)",
+                "properties": {
+                  "composition": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "thickness": {
+                    "$ref": "#/$defs/quantity"
+                  },
+                  "status": {
+                    "$ref": "#/$defs/status"
+                  },
+                  "source": {
+                    "$ref": "#/$defs/source"
+                  },
+                  "note": {
+                    "type": "string"
+                  }
+                }
+              },
+              "deposition": {
+                "type": "object",
+                "properties": {
+                  "method": {
+                    "type": "string"
+                  },
+                  "rate": {
+                    "$ref": "#/$defs/quantity"
+                  },
+                  "base_pressure": {
+                    "$ref": "#/$defs/quantity"
+                  }
+                }
+              },
+              "soc_strength": {
+                "$ref": "#/$defs/quantity",
+                "description": "spin-orbit coupling value of the substrate metal AS QUOTED in the paper (eV); prefer a shared constants table for values not in the paper"
+              }
+            }
+          },
+          "assembly": {
+            "type": "object",
+            "description": "monolayer preparation and characterization",
+            "properties": {
+              "method": {
+                "type": "string",
+                "description": "e.g. solution self-assembly, UHV sublimation"
+              },
+              "concentration": {
+                "$ref": "#/$defs/quantity"
+              },
+              "volume": {
+                "$ref": "#/$defs/quantity"
+              },
+              "buffer": {
+                "type": "string"
+              },
+              "pH": {
+                "$ref": "#/$defs/quantity"
+              },
+              "incubation_time": {
+                "$ref": "#/$defs/quantity"
+              },
+              "source_temperature": {
+                "$ref": "#/$defs/quantity"
+              },
+              "substrate_temperature": {
+                "$ref": "#/$defs/quantity"
+              },
+              "deposition_time": {
+                "$ref": "#/$defs/quantity"
+              },
+              "post_treatment": {
+                "type": "string"
+              },
+              "surface_coverage": {
+                "$ref": "#/$defs/quantity"
+              },
+              "layer_thickness": {
+                "$ref": "#/$defs/quantity"
+              },
+              "tilt_angle": {
+                "$ref": "#/$defs/quantity"
+              },
+              "molecular_orientation": {
+                "type": "string",
+                "description": "free text, e.g. 'three proximal rings parallel to surface'"
+              },
+              "characterization_methods": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "coverage_regime": {
+                "enum": [
+                  "submonolayer",
+                  "monolayer",
+                  "full_coverage",
+                  "multilayer",
+                  "unknown"
+                ],
+                "description": "full_coverage = surface completely covered, number of layers not specified"
+              },
+              "preparation_variant": {
+                "type": "string"
+              }
+            }
+          },
+          "structure_verification": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "method",
+                "outcome"
+              ],
+              "properties": {
+                "method": {
+                  "type": "string",
+                  "description": "CD, VCD, absorbance, AFM, LEED, XPS, ..."
+                },
+                "conditions": {
+                  "type": "string"
+                },
+                "outcome": {
+                  "type": "string"
+                },
+                "source": {
+                  "$ref": "#/$defs/source"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "setups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "setup_id",
+          "technique",
+          "observable_definition"
+        ],
+        "properties": {
+          "setup_id": {
+            "type": "string"
+          },
+          "technique": {
+            "enum": [
+              "photoemission_mott",
+              "photoemission_tof",
+              "UPS",
+              "mc_AFM",
+              "spin_valve_MR",
+              "hall_device",
+              "electrochemistry_magnetic_electrode",
+              "EPR_TR",
+              "spin_exchange_or_other"
+            ]
+          },
+          "observable_definition": {
+            "type": "object",
+            "description": "What exactly the reported number is. Required so that values from different techniques are never merged blindly.",
+            "required": [
+              "symbol",
+              "formula",
+              "spin_component"
+            ],
+            "properties": {
+              "symbol": {
+                "type": "string"
+              },
+              "formula": {
+                "type": "string"
+              },
+              "spin_component": {
+                "$ref": "#/$defs/spin_component_quantity"
+              },
+              "spin_reference_axis": {
+                "type": "string",
+                "description": "physical axis the component is defined against, e.g. 'electron momentum = surface normal (normal emission)'"
+              },
+              "spin_quantization_axis": {
+                "type": "string",
+                "description": "free-text detail kept from v0.1"
+              },
+              "sign_convention": {
+                "$ref": "#/$defs/quantity",
+                "description": "meaning of a positive value"
+              },
+              "energy_reference": {
+                "enum": [
+                  "vacuum_level",
+                  "fermi_level",
+                  "bias_voltage",
+                  "not_applicable",
+                  "unknown"
+                ]
+              },
+              "observable_type": {
+                "type": "string"
+              },
+              "interpretation_model": {
+                "type": "string"
+              }
+            }
+          },
+          "transport_regime": {
+            "enum": [
+              "photoemission_through_layer",
+              "tunneling",
+              "hopping",
+              "electrochemical_ET",
+              "intramolecular_ET",
+              "not_applicable",
+              "unknown"
+            ]
+          },
+          "excitation": {
+            "type": "object",
+            "properties": {
+              "source": {
+                "type": "string"
+              },
+              "photon_energy": {
+                "$ref": "#/$defs/quantity"
+              },
+              "wavelength": {
+                "$ref": "#/$defs/quantity"
+              },
+              "pulse_duration": {
+                "$ref": "#/$defs/quantity"
+              },
+              "repetition_rate": {
+                "$ref": "#/$defs/quantity"
+              },
+              "fluence": {
+                "$ref": "#/$defs/quantity"
+              },
+              "pulse_energy_on_sample": {
+                "$ref": "#/$defs/quantity"
+              },
+              "incidence_angle": {
+                "$ref": "#/$defs/quantity"
+              },
+              "polarizations_used": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/light_pol"
+                }
+              },
+              "polarization_optics": {
+                "type": "string",
+                "description": "e.g. quarter-wave plate"
+              },
+              "helicity_convention": {
+                "$ref": "#/$defs/quantity",
+                "description": "viewpoint defining cw/ccw; often not reported"
+              },
+              "ellipticity": {
+                "$ref": "#/$defs/quantity"
+              }
+            }
+          },
+          "electrical": {
+            "type": "object",
+            "description": "for mc-AFM / device / EC techniques",
+            "properties": {
+              "bias_range": {
+                "$ref": "#/$defs/quantity"
+              },
+              "magnet_field": {
+                "$ref": "#/$defs/quantity"
+              },
+              "magnetization_direction": {
+                "$ref": "#/$defs/axis_orientation_quantity"
+              },
+              "tip_or_electrode": {
+                "type": "string"
+              },
+              "tip_force": {
+                "$ref": "#/$defs/quantity"
+              }
+            }
+          },
+          "detection": {
+            "type": "object",
+            "properties": {
+              "detector": {
+                "type": "string"
+              },
+              "scattering_energy": {
+                "$ref": "#/$defs/quantity"
+              },
+              "target": {
+                "type": "string"
+              },
+              "sherman_function": {
+                "$ref": "#/$defs/quantity",
+                "description": "S_eff WITH sign as given; if the paper gives only a magnitude (e.g. '18%') store the magnitude and say so in note"
+              },
+              "calibration": {
+                "type": "string"
+              },
+              "component_measured": {
+                "enum": [
+                  "longitudinal",
+                  "transverse",
+                  "out_of_plane",
+                  "in_plane",
+                  "unknown"
+                ],
+                "description": "component analysed AT THE DETECTOR. May differ from observable_definition.spin_component, e.g. longitudinal P_z rotated into transverse by a 90 deg electrostatic bender before the Mott target."
+              },
+              "spin_rotation_optics": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "e.g. 90 deg electrostatic bender (longitudinal -> transverse)"
+              },
+              "reference_sample": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "switching_protocol": {
+                "type": "string"
+              },
+              "counts_per_point": {
+                "$ref": "#/$defs/quantity"
+              },
+              "electron_kinetic_energy_range": {
+                "$ref": "#/$defs/quantity"
+              },
+              "emission_angle": {
+                "$ref": "#/$defs/quantity"
+              },
+              "energy_resolved_spin": {
+                "type": "boolean"
+              },
+              "scattering_angle": {
+                "$ref": "#/$defs/quantity"
+              }
+            }
+          },
+          "environment": {
+            "type": "object",
+            "properties": {
+              "temperature": {
+                "$ref": "#/$defs/quantity"
+              },
+              "pressure": {
+                "$ref": "#/$defs/quantity"
+              },
+              "medium": {
+                "enum": [
+                  "UHV",
+                  "ambient",
+                  "N2",
+                  "electrolyte",
+                  "other"
+                ]
+              },
+              "residual_magnetic_field": {
+                "$ref": "#/$defs/quantity"
+              },
+              "measurement_duration": {
+                "$ref": "#/$defs/quantity"
+              }
+            }
+          },
+          "apparatus_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "shared id for the same instrument across papers, e.g. muenster_mott"
+          },
+          "apparatus_changes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "experiment_family": {
+            "enum": [
+              "photoelectron_transmission",
+              "photoemission",
+              "other"
+            ]
+          }
+        }
+      },
+      "description": "v0.3.0 scope: photoemission spin-polarization setups. Electrochemistry / transport setups are out of scope (see gap_schema.json G01-G03, G05)."
+    },
+    "measurements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "measurement_id",
+          "sample_id",
+          "setup_id",
+          "result",
+          "record_kind",
+          "selection_rule"
+        ],
+        "properties": {
+          "measurement_id": {
+            "type": "string"
+          },
+          "sample_id": {
+            "type": "string"
+          },
+          "setup_id": {
+            "type": "string"
+          },
+          "light_polarization": {
+            "$ref": "#/$defs/light_pol"
+          },
+          "result": {
+            "type": "object",
+            "required": [
+              "status",
+              "qualifier"
+            ],
+            "properties": {
+              "value": {
+                "type": [
+                  "number",
+                  "string",
+                  "boolean",
+                  "null"
+                ]
+              },
+              "value_max": {
+                "type": [
+                  "number",
+                  "null"
+                ],
+                "description": "upper bound when value is a range"
+              },
+              "unit": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "uncertainty": {
+                "type": [
+                  "number",
+                  "null"
+                ]
+              },
+              "uncertainty_type": {
+                "enum": [
+                  "SD_between_preparations",
+                  "SD_of_runs",
+                  "SE",
+                  "fit_width",
+                  "range",
+                  "unspecified",
+                  "not_reported"
+                ]
+              },
+              "status": {
+                "$ref": "#/$defs/status"
+              },
+              "source": {
+                "$ref": "#/$defs/source"
+              },
+              "note": {
+                "type": "string"
+              },
+              "sign": {
+                "enum": [
+                  "positive",
+                  "negative",
+                  "zero",
+                  "none"
+                ],
+                "description": "for results stated only by sign or as 'essentially zero'; value may stay null"
+              },
+              "qualifier": {
+                "enum": [
+                  "exact",
+                  "approximate",
+                  "range",
+                  "upper_bound",
+                  "lower_bound",
+                  "unspecified"
+                ]
+              },
+              "original_text": {
+                "type": "string"
+              }
+            },
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "status": {
+                      "enum": [
+                        "not_reported",
+                        "to_digitize"
+                      ]
+                    }
+                  }
+                },
+                "then": {
+                  "properties": {
+                    "value": {
+                      "type": "null"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          "n_runs_or_samples": {
+            "$ref": "#/$defs/quantity",
+            "description": "DEPRECATED (v0.3.0): use n_runs / n_samples"
+          },
+          "dataset_scope": {
+            "enum": [
+              "single_preparation",
+              "average_over_preparations",
+              "unknown"
+            ]
+          },
+          "duplicate_of": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "same data reported elsewhere (e.g. rounded in main text)"
+          },
+          "n_runs": {
+            "$ref": "#/$defs/quantity",
+            "description": "repeated measurements on one preparation"
+          },
+          "n_samples": {
+            "$ref": "#/$defs/quantity",
+            "description": "independent preparations"
+          },
+          "record_kind": {
+            "enum": [
+              "observed_result",
+              "calibration_acceptance_criterion",
+              "summary",
+              "unextracted_series"
+            ]
+          },
+          "selection_rule": {
+            "type": "string"
+          },
+          "measurement_group_id": {
+            "type": "string"
+          },
+          "spot_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "conditions": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/$defs/quantity"
+            }
+          },
+          "review": {
+            "$ref": "#/$defs/review"
+          }
+        }
+      }
+    },
+    "derived_quantities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "from",
+          "formula",
+          "value"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "from": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "formula": {
+            "type": "string"
+          },
+          "check": {
+            "enum": [
+              "difference",
+              "mean",
+              "ratio_from_P",
+              "none"
+            ],
+            "description": "how validate_ciss.py recomputes value from the result values of `from` (difference = from[0] - from[1]; mean = average of all; ratio_from_P = (1+|P|)/(1-|P|) of from[0])"
+          },
+          "value": {
+            "$ref": "#/$defs/quantity"
+          }
+        }
+      }
+    },
+    "theory_results": {
+      "type": "array",
+      "description": "calculations reported in the same paper (DFT, model Hamiltonians); kept separate from measurements",
+      "items": {
+        "type": "object",
+        "required": [
+          "method",
+          "quantity",
+          "value"
+        ],
+        "properties": {
+          "method": {
+            "type": "string",
+            "description": "e.g. DFT (SIESTA, PBE, SOC); tight-binding model Hamiltonian"
+          },
+          "system": {
+            "type": "string"
+          },
+          "quantity": {
+            "type": "string"
+          },
+          "value": {
+            "$ref": "#/$defs/quantity"
+          },
+          "parameters": {
+            "type": "object",
+            "description": "model inputs as {name: quantity}"
+          }
+        }
+      }
+    },
+    "qualitative_findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "claim",
+          "variable",
+          "trend"
+        ],
+        "properties": {
+          "claim": {
+            "type": "string"
+          },
+          "variable": {
+            "type": "string"
+          },
+          "trend": {
+            "enum": [
+              "increases",
+              "decreases",
+              "independent",
+              "vanishes",
+              "sign_flip",
+              "additive",
+              "other"
+            ]
+          },
+          "related_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source": {
+            "$ref": "#/$defs/source"
+          }
+        }
+      }
+    },
+    "discrepancies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "field",
+          "description",
+          "severity"
+        ],
+        "properties": {
+          "field": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "severity": {
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/source"
+            }
+          }
+        }
+      }
+    },
+    "theory_mapping": {
+      "type": "object",
+      "description": "model-ready view: which extracted fields map to which model parameter",
+      "additionalProperties": {
+        "type": "object"
+      }
+    },
+    "extraction_meta": {
+      "type": "object",
+      "required": [
+        "extractor",
+        "verified_by"
+      ],
+      "properties": {
+        "extractor": {
+          "type": "string"
+        },
+        "extraction_date": {
+          "type": "string"
+        },
+        "verified_by": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "verification_date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        },
+        "review_status": {
+          "type": "string"
+        },
+        "scope_status": {
+          "enum": [
+            "in_scope",
+            "mixed_scope",
+            "out_of_scope",
+            "uncertain"
+          ]
+        },
+        "model_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "prompt_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  },
+  "$defs": {
+    "status": {
+      "enum": [
+        "reported",
+        "derived",
+        "inferred",
+        "digitized",
+        "to_digitize",
+        "not_reported"
+      ]
+    },
+    "light_pol": {
+      "enum": [
+        "linear",
+        "cw_circular",
+        "ccw_circular",
+        "unpolarized",
+        "none",
+        "pooled_all_polarizations",
+        "not_specified"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "doc",
+        "loc"
+      ],
+      "properties": {
+        "doc": {
+          "enum": [
+            "main",
+            "SI"
+          ]
+        },
+        "loc": {
+          "type": "string",
+          "description": "page / figure / table / paragraph"
+        },
+        "evidence": {
+          "type": "string",
+          "description": "short verbatim snippet (<15 words)"
+        },
+        "document_id": {
+          "type": "string"
+        },
+        "filename": {
+          "type": "string"
+        },
+        "printed_page": {
+          "type": "string"
+        },
+        "figure_or_table": {
+          "type": "string"
+        },
+        "pdf_page": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "spin_component_quantity": {
+      "description": "Direction of the reported spin polarization. longitudinal = parallel/antiparallel to the electron momentum (P_z for normal emission); transverse = perpendicular to the momentum (state which axis in spin_reference_axis); out_of_plane_magnetization / in_plane_magnetization = transport techniques (mc-AFM, Hall, spin valve, magnetic electrode) where the spin axis is set by a ferromagnet magnetized normal to / within the substrate plane; not_spin_resolved = the observable carries no spin direction (e.g. total yield ratio).",
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "value": {
+          "enum": [
+            "longitudinal",
+            "transverse",
+            "out_of_plane_magnetization",
+            "in_plane_magnetization",
+            "not_spin_resolved",
+            "unknown",
+            null
+          ]
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "not_reported",
+                  "to_digitize"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "const": null
+              }
+            }
+          }
+        }
+      ]
+    },
+    "axis_orientation_quantity": {
+      "description": "Orientation of an axis (helix axis or magnetization) relative to the substrate plane.",
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "value": {
+          "enum": [
+            "normal_to_surface",
+            "tilted",
+            "parallel_to_surface",
+            "random",
+            "unknown",
+            null
+          ]
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "not_reported",
+                  "to_digitize"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "const": null
+              }
+            }
+          }
+        }
+      ]
+    },
+    "handedness_quantity": {
+      "description": "Helical handedness as a controlled category, not free text. 'mixed' = racemic / both-handed mixture; 'unknown' = paper does not say and cannot be inferred.",
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "value": {
+          "enum": [
+            "right",
+            "left",
+            "mixed",
+            "unknown",
+            null
+          ]
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "not_reported",
+                  "to_digitize"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "const": null
+              }
+            }
+          }
+        }
+      ]
+    },
+    "quantity": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "number",
+            "string",
+            "boolean",
+            "null"
+          ]
+        },
+        "value_max": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "upper bound when value is a range"
+        },
+        "unit": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "uncertainty": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "uncertainty_type": {
+          "enum": [
+            "SD_between_preparations",
+            "SD_of_runs",
+            "SE",
+            "fit_width",
+            "range",
+            "unspecified",
+            "not_reported"
+          ]
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "note": {
+          "type": "string"
+        },
+        "sign": {
+          "enum": [
+            "positive",
+            "negative",
+            "zero",
+            "none"
+          ],
+          "description": "for results stated only by sign or as 'essentially zero'; value may stay null"
+        },
+        "qualifier": {
+          "enum": [
+            "exact",
+            "approximate",
+            "range",
+            "upper_bound",
+            "lower_bound",
+            "unspecified"
+          ]
+        },
+        "original_text": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "not_reported",
+                  "to_digitize"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "value": {
+                "type": "null"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "value_basis": {
+      "description": "Where a structural number physically comes from (orthogonal to status, which says how it was extracted).",
+      "enum": [
+        "measured_this_work_on_sample",
+        "measured_this_work_other_state",
+        "literature_same_molecule",
+        "literature_proxy_molecule",
+        "model_estimate_this_work",
+        "unknown"
+      ]
+    },
+    "geometry_quantity": {
+      "description": "quantity + basis. basis_reference names the proxy/literature system (e.g. 'ds\u03b3PNA homoduplex, NMR (ref 36)').",
+      "allOf": [
+        {
+          "$ref": "#/$defs/quantity"
+        }
+      ],
+      "properties": {
+        "basis": {
+          "$ref": "#/$defs/value_basis"
+        },
+        "basis_reference": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "strand": {
+      "type": "object",
+      "required": [
+        "strand_id",
+        "polymer_type",
+        "direction",
+        "sequence"
+      ],
+      "properties": {
+        "strand_id": {
+          "type": "string",
+          "description": "name as in the paper, e.g. PNA1"
+        },
+        "polymer_type": {
+          "enum": [
+            "DNA",
+            "RNA",
+            "PNA",
+            "peptide",
+            "other"
+          ],
+          "description": "backbone family; backbone modifications go in chiral_elements / modifications"
+        },
+        "direction": {
+          "enum": [
+            "5to3",
+            "N_to_C"
+          ],
+          "description": "reading direction of `sequence`. DNA/RNA -> 5to3; PNA/peptide -> N_to_C"
+        },
+        "sequence": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[A-Za-z]*$",
+          "description": "monomer one-letter codes only, no spaces/terminal groups; null if not given (e.g. protein -> structure_db_id)"
+        },
+        "n_units": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "terminus_start": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "group at 5'/N end as written, e.g. 'H-Lys-', 'Ac-'"
+        },
+        "terminus_end": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "group at 3'/C end as written, e.g. '-Lys3-NH2', '-(CH2)3SH'"
+        },
+        "strand_role": {
+          "enum": [
+            "template",
+            "complement",
+            "complement_segment",
+            "single_strand",
+            "chain",
+            "other"
+          ]
+        },
+        "segment_of": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "logical strand this piece belongs to when a strand is nicked (e.g. 'complement')"
+        },
+        "segment_order": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "description": "1-based order along segment_of in this strand's direction"
+        },
+        "pairs_with": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "carries_anchor": {
+          "type": "boolean",
+          "description": "true if molecule.anchor is on this strand"
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "polymer_type": {
+                "enum": [
+                  "DNA",
+                  "RNA"
+                ]
+              }
+            },
+            "required": [
+              "polymer_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "direction": {
+                "const": "5to3"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "polymer_type": {
+                "enum": [
+                  "PNA",
+                  "peptide"
+                ]
+              }
+            },
+            "required": [
+              "polymer_type"
+            ]
+          },
+          "then": {
+            "properties": {
+              "direction": {
+                "const": "N_to_C"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "chiral_element": {
+      "type": "object",
+      "required": [
+        "element_type",
+        "configuration"
+      ],
+      "properties": {
+        "element_id": {
+          "type": "string"
+        },
+        "element_type": {
+          "enum": [
+            "backbone_stereocenter",
+            "side_chain_stereocenter",
+            "terminal_residue",
+            "sugar",
+            "helical_skeleton",
+            "metal_center",
+            "other"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "description": "e.g. '\u03b3-hydroxymethyl (L-serine-derived) aeg monomer'"
+        },
+        "configuration": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "as written: D/L, R/S, M/P"
+        },
+        "strand_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "strands[].strand_id carrying it"
+        },
+        "positions": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "description": "1-based monomer positions in that strand's direction; empty for terminal groups"
+        },
+        "terminus": {
+          "enum": [
+            "start",
+            "end",
+            "not_applicable"
+          ],
+          "description": "for terminal residues: 5'/N = start"
+        },
+        "count": {
+          "$ref": "#/$defs/quantity"
+        },
+        "function": {
+          "enum": [
+            "determines_handedness",
+            "chiral_seed",
+            "solubility_or_other",
+            "inherent"
+          ]
+        },
+        "induced_handedness": {
+          "$ref": "#/$defs/handedness_quantity",
+          "description": "handedness this element favours on its own"
+        },
+        "dominant": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "true if the paper says this element wins when elements conflict"
+        },
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "unreviewed",
+            "reviewed",
+            "approved",
+            "needs_review"
+          ]
+        },
+        "reviewer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "review_date": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  }
+}
