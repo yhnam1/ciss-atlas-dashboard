@@ -1,0 +1,2773 @@
+{
+  "schema_version": "0.4.0",
+  "paper": {
+    "paper_id": "kettner_2018_helicene",
+    "title": "Chirality-Dependent Electron Spin Filtering by Molecular Monolayers of Helicenes",
+    "authors": [
+      "Matthias Kettner",
+      "Volodymyr V. Maslyuk",
+      "Daniel Nürenberg",
+      "Johannes Seibel",
+      "Rafael Gutierrez",
+      "Gianaurelio Cuniberti",
+      "Karl-Heinz Ernst",
+      "Helmut Zacharias"
+    ],
+    "journal": "J. Phys. Chem. Lett.",
+    "year": 2018,
+    "doi": "10.1021/acs.jpclett.8b00208",
+    "documents_used": [
+      "main",
+      "SI"
+    ],
+    "related_papers": [
+      {
+        "doi": "10.1126/science.1199339",
+        "relation": "same_apparatus",
+        "note": "ref 7 (Göhler 2011) cited for the Mott polarimeter; DOI taken from that paper's own PDF (paper_1)"
+      }
+    ]
+  },
+  "samples": [
+    {
+      "sample_id": "S_M7H_Cu332",
+      "role": "test",
+      "molecule": {
+        "class": "helicene",
+        "name": "[7]helicene (heptahelicene)",
+        "formula": "C30H18",
+        "helix_handedness": {
+          "value": "left",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2026 Fig. 1a caption",
+            "evidence": "(M)-[7]H marks the left-handed helical sense"
+          }
+        },
+        "stereo_descriptor": "M",
+        "chirality_counterpart_of": "S_P7H_Cu332",
+        "enantiomeric_purity": {
+          "value": "enantiopure (chiral HPLC, Daicel Chiracel OD); absolute handedness by VCD + simulation",
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S2"
+          }
+        },
+        "helix_axis_orientation": {
+          "value": null,
+          "status": "not_reported",
+          "note": "adsorption geometry given as 'three proximal C6 rings parallel to the surface' (assembly.molecular_orientation); axis angle not stated"
+        },
+        "anchor": {
+          "group": "physisorbed/none",
+          "linker": null,
+          "attached_end": "not_applicable",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2027",
+            "evidence": "binds to the surfaces such that the three proximal C6 rings"
+          }
+        },
+        "treatment": null,
+        "host_matrix": null,
+        "cofactor": null,
+        "source_organism": null,
+        "structure_db_id": null,
+        "geometry": {
+          "n_units": {
+            "value": 7,
+            "unit": "rings",
+            "status": "reported",
+            "basis": "measured_this_work_on_sample",
+            "source": {
+              "doc": "main",
+              "loc": "p.2025",
+              "evidence": "comprises seven [a,c]-annulated benzo groups"
+            },
+            "note": "molecular constitution"
+          },
+          "helical_turns": {
+            "value": 1,
+            "unit": "turns",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "molecular structure",
+            "source": {
+              "doc": "main",
+              "loc": "p.2025",
+              "evidence": "leading to a single helical turn"
+            }
+          },
+          "pitch": {
+            "value": 0.35,
+            "unit": "nm/turn",
+            "status": "reported",
+            "basis": "model_estimate_this_work",
+            "basis_reference": "coarse-grained model Hamiltonian input (b = 3.5 Å)",
+            "source": {
+              "doc": "main",
+              "loc": "p.2028",
+              "evidence": "a pitch of b = 3.5 Å was considered"
+            },
+            "note": "model parameter, not a measured structure of the adsorbed molecule; model radius R0 = 3 Å has no v0.4 geometry field (see theory_results)"
+          },
+          "secondary_structure": "not_applicable"
+        },
+        "chirality_origin": "inherent_skeleton",
+        "chiral_elements": [
+          {
+            "element_id": "helicene_skeleton",
+            "element_type": "helical_skeleton",
+            "description": "helical carbon skeleton; no stereocentres",
+            "configuration": "M",
+            "strand_id": null,
+            "positions": [],
+            "terminus": "not_applicable",
+            "count": {
+              "value": 1,
+              "unit": null,
+              "status": "reported",
+              "source": {
+                "doc": "main",
+                "loc": "p.2028",
+                "evidence": "without any chiral centers"
+              }
+            },
+            "function": "inherent",
+            "induced_handedness": {
+              "value": "left",
+              "status": "reported"
+            },
+            "dominant": null,
+            "source": {
+              "doc": "main",
+              "loc": "p.2025-2026 Fig. 1a"
+            }
+          }
+        ]
+      },
+      "substrate": {
+        "material": "Cu",
+        "crystallinity": "single_crystal",
+        "facet": "332",
+        "support": null,
+        "cleaning": "Ar+ bombardment at glancing incidence, 5e-5 mbar Ar, kinetic energy lowered 1.0 -> 0.6 keV and 1.4 -> 0.8 keV, then annealing at 400 °C and 600 °C 'for Ag and Cu and Au, respectively' (mapping as written)",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.S2",
+          "evidence": "crystals (MaTeCK) were cleaned"
+        },
+        "work_function": {
+          "value": 4.65,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S5 Fig. S3",
+            "evidence": "work function amounts to Φ ≈ 4.65 eV"
+          },
+          "note": "[7]H monolayer on Cu(332), UPS hν = 10.5 eV; enantiomer not stated"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "SOC of substrates discussed qualitatively; no value quoted"
+        },
+        "note": "cleanliness/crystallinity monitored by UPS, LEED and AES"
+      },
+      "assembly": {
+        "method": "UHV sublimation",
+        "source_temperature": {
+          "value": 160,
+          "unit": "°C",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029 Exp. Methods",
+            "evidence": "sublimated at 160 °C for up to 35 min"
+          }
+        },
+        "deposition_time": {
+          "value": 35,
+          "unit": "min",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029"
+          },
+          "note": "'up to 35 min'; UPS series on Cu(332): spin-study coverage reached after 25 min (SI p.S4)"
+        },
+        "substrate_temperature": {
+          "value": 200,
+          "unit": "°C",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029",
+            "evidence": "kept at a temperature of 200 °C"
+          },
+          "note": "above multilayer desorption (125 °C); UPS series deposited at 475 K (SI p.S4)"
+        },
+        "post_treatment": "none; substrate held above multilayer desorption temperature during deposition",
+        "molecular_orientation": "three proximal C6 rings parallel to the surface, rest spiralling upward (DFT; XPD for Cu(111), Cu(332), ref 23)",
+        "characterization_methods": [
+          "UPS (Cu(332) only)"
+        ],
+        "coverage_regime": "monolayer",
+        "preparation_variant": null
+      },
+      "structure_verification": [
+        {
+          "method": "VCD (on bulk enantiomers)",
+          "outcome": "absolute handedness assigned",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S2"
+          }
+        },
+        {
+          "method": "UPS hν = 10.5 eV",
+          "conditions": "deposition series, 475 K",
+          "outcome": "Cu Shockley state quenched after ~15 min; [7]H features only below -2.0 eV; no [7]H occupied states reachable at 5.83 eV",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S4-S5 Fig. S3"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_P7H_Cu332",
+      "role": "test",
+      "molecule": {
+        "class": "helicene",
+        "name": "[7]helicene (heptahelicene)",
+        "formula": "C30H18",
+        "helix_handedness": {
+          "value": "right",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2026 Fig. 1a caption",
+            "evidence": "(M)-[7]H marks the left-handed helical sense"
+          }
+        },
+        "stereo_descriptor": "P",
+        "chirality_counterpart_of": "S_M7H_Cu332",
+        "enantiomeric_purity": {
+          "value": "enantiopure (chiral HPLC, Daicel Chiracel OD); absolute handedness by VCD + simulation",
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S2"
+          }
+        },
+        "helix_axis_orientation": {
+          "value": null,
+          "status": "not_reported",
+          "note": "adsorption geometry given as 'three proximal C6 rings parallel to the surface' (assembly.molecular_orientation); axis angle not stated"
+        },
+        "anchor": {
+          "group": "physisorbed/none",
+          "linker": null,
+          "attached_end": "not_applicable",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2027",
+            "evidence": "binds to the surfaces such that the three proximal C6 rings"
+          }
+        },
+        "treatment": null,
+        "host_matrix": null,
+        "cofactor": null,
+        "source_organism": null,
+        "structure_db_id": null,
+        "geometry": {
+          "n_units": {
+            "value": 7,
+            "unit": "rings",
+            "status": "reported",
+            "basis": "measured_this_work_on_sample",
+            "source": {
+              "doc": "main",
+              "loc": "p.2025",
+              "evidence": "comprises seven [a,c]-annulated benzo groups"
+            },
+            "note": "molecular constitution"
+          },
+          "helical_turns": {
+            "value": 1,
+            "unit": "turns",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "molecular structure",
+            "source": {
+              "doc": "main",
+              "loc": "p.2025",
+              "evidence": "leading to a single helical turn"
+            }
+          },
+          "pitch": {
+            "value": 0.35,
+            "unit": "nm/turn",
+            "status": "reported",
+            "basis": "model_estimate_this_work",
+            "basis_reference": "coarse-grained model Hamiltonian input (b = 3.5 Å)",
+            "source": {
+              "doc": "main",
+              "loc": "p.2028",
+              "evidence": "a pitch of b = 3.5 Å was considered"
+            },
+            "note": "model parameter, not a measured structure of the adsorbed molecule; model radius R0 = 3 Å has no v0.4 geometry field (see theory_results)"
+          },
+          "secondary_structure": "not_applicable"
+        },
+        "chirality_origin": "inherent_skeleton",
+        "chiral_elements": [
+          {
+            "element_id": "helicene_skeleton",
+            "element_type": "helical_skeleton",
+            "description": "helical carbon skeleton; no stereocentres",
+            "configuration": "P",
+            "strand_id": null,
+            "positions": [],
+            "terminus": "not_applicable",
+            "count": {
+              "value": 1,
+              "unit": null,
+              "status": "reported",
+              "source": {
+                "doc": "main",
+                "loc": "p.2028",
+                "evidence": "without any chiral centers"
+              }
+            },
+            "function": "inherent",
+            "induced_handedness": {
+              "value": "right",
+              "status": "reported"
+            },
+            "dominant": null,
+            "source": {
+              "doc": "main",
+              "loc": "p.2025-2026 Fig. 1a"
+            }
+          }
+        ]
+      },
+      "substrate": {
+        "material": "Cu",
+        "crystallinity": "single_crystal",
+        "facet": "332",
+        "support": null,
+        "cleaning": "Ar+ bombardment at glancing incidence, 5e-5 mbar Ar, kinetic energy lowered 1.0 -> 0.6 keV and 1.4 -> 0.8 keV, then annealing at 400 °C and 600 °C 'for Ag and Cu and Au, respectively' (mapping as written)",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.S2",
+          "evidence": "crystals (MaTeCK) were cleaned"
+        },
+        "work_function": {
+          "value": 4.65,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S5 Fig. S3",
+            "evidence": "work function amounts to Φ ≈ 4.65 eV"
+          },
+          "note": "[7]H monolayer on Cu(332), UPS hν = 10.5 eV; enantiomer not stated"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "SOC of substrates discussed qualitatively; no value quoted"
+        },
+        "note": "cleanliness/crystallinity monitored by UPS, LEED and AES"
+      },
+      "assembly": {
+        "method": "UHV sublimation",
+        "source_temperature": {
+          "value": 160,
+          "unit": "°C",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029 Exp. Methods",
+            "evidence": "sublimated at 160 °C for up to 35 min"
+          }
+        },
+        "deposition_time": {
+          "value": 35,
+          "unit": "min",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029"
+          },
+          "note": "'up to 35 min'; UPS series on Cu(332): spin-study coverage reached after 25 min (SI p.S4)"
+        },
+        "substrate_temperature": {
+          "value": 200,
+          "unit": "°C",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029",
+            "evidence": "kept at a temperature of 200 °C"
+          },
+          "note": "above multilayer desorption (125 °C); UPS series deposited at 475 K (SI p.S4)"
+        },
+        "post_treatment": "none; substrate held above multilayer desorption temperature during deposition",
+        "molecular_orientation": "three proximal C6 rings parallel to the surface, rest spiralling upward (DFT; XPD for Cu(111), Cu(332), ref 23)",
+        "characterization_methods": [
+          "UPS (Cu(332) only)"
+        ],
+        "coverage_regime": "monolayer",
+        "preparation_variant": null
+      },
+      "structure_verification": [
+        {
+          "method": "VCD (on bulk enantiomers)",
+          "outcome": "absolute handedness assigned",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S2"
+          }
+        },
+        {
+          "method": "UPS hν = 10.5 eV",
+          "conditions": "deposition series, 475 K",
+          "outcome": "Cu Shockley state quenched after ~15 min; [7]H features only below -2.0 eV; no [7]H occupied states reachable at 5.83 eV",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S4-S5 Fig. S3"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_clean_Cu332",
+      "role": "control_bare_substrate",
+      "molecule": {
+        "class": "none",
+        "name": null,
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "no molecule"
+        },
+        "chirality_counterpart_of": null,
+        "geometry": {
+          "secondary_structure": "not_applicable"
+        }
+      },
+      "substrate": {
+        "material": "Cu",
+        "crystallinity": "single_crystal",
+        "facet": "332",
+        "support": null,
+        "cleaning": "Ar+ bombardment at glancing incidence, 5e-5 mbar Ar, kinetic energy lowered 1.0 -> 0.6 keV and 1.4 -> 0.8 keV, then annealing at 400 °C and 600 °C 'for Ag and Cu and Au, respectively' (mapping as written)",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.S2",
+          "evidence": "crystals (MaTeCK) were cleaned"
+        },
+        "work_function": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "SOC of substrates discussed qualitatively; no value quoted"
+        },
+        "note": "cleanliness/crystallinity monitored by UPS, LEED and AES"
+      }
+    },
+    {
+      "sample_id": "S_M7H_Ag110",
+      "role": "test",
+      "molecule": {
+        "class": "helicene",
+        "name": "[7]helicene (heptahelicene)",
+        "formula": "C30H18",
+        "helix_handedness": {
+          "value": "left",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2026 Fig. 1a caption",
+            "evidence": "(M)-[7]H marks the left-handed helical sense"
+          }
+        },
+        "stereo_descriptor": "M",
+        "chirality_counterpart_of": "S_P7H_Ag110",
+        "enantiomeric_purity": {
+          "value": "enantiopure (chiral HPLC, Daicel Chiracel OD); absolute handedness by VCD + simulation",
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S2"
+          }
+        },
+        "helix_axis_orientation": {
+          "value": null,
+          "status": "not_reported",
+          "note": "adsorption geometry given as 'three proximal C6 rings parallel to the surface' (assembly.molecular_orientation); axis angle not stated"
+        },
+        "anchor": {
+          "group": "physisorbed/none",
+          "linker": null,
+          "attached_end": "not_applicable",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2027",
+            "evidence": "binds to the surfaces such that the three proximal C6 rings"
+          }
+        },
+        "treatment": null,
+        "host_matrix": null,
+        "cofactor": null,
+        "source_organism": null,
+        "structure_db_id": null,
+        "geometry": {
+          "n_units": {
+            "value": 7,
+            "unit": "rings",
+            "status": "reported",
+            "basis": "measured_this_work_on_sample",
+            "source": {
+              "doc": "main",
+              "loc": "p.2025",
+              "evidence": "comprises seven [a,c]-annulated benzo groups"
+            },
+            "note": "molecular constitution"
+          },
+          "helical_turns": {
+            "value": 1,
+            "unit": "turns",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "molecular structure",
+            "source": {
+              "doc": "main",
+              "loc": "p.2025",
+              "evidence": "leading to a single helical turn"
+            }
+          },
+          "pitch": {
+            "value": 0.35,
+            "unit": "nm/turn",
+            "status": "reported",
+            "basis": "model_estimate_this_work",
+            "basis_reference": "coarse-grained model Hamiltonian input (b = 3.5 Å)",
+            "source": {
+              "doc": "main",
+              "loc": "p.2028",
+              "evidence": "a pitch of b = 3.5 Å was considered"
+            },
+            "note": "model parameter, not a measured structure of the adsorbed molecule; model radius R0 = 3 Å has no v0.4 geometry field (see theory_results)"
+          },
+          "secondary_structure": "not_applicable"
+        },
+        "chirality_origin": "inherent_skeleton",
+        "chiral_elements": [
+          {
+            "element_id": "helicene_skeleton",
+            "element_type": "helical_skeleton",
+            "description": "helical carbon skeleton; no stereocentres",
+            "configuration": "M",
+            "strand_id": null,
+            "positions": [],
+            "terminus": "not_applicable",
+            "count": {
+              "value": 1,
+              "unit": null,
+              "status": "reported",
+              "source": {
+                "doc": "main",
+                "loc": "p.2028",
+                "evidence": "without any chiral centers"
+              }
+            },
+            "function": "inherent",
+            "induced_handedness": {
+              "value": "left",
+              "status": "reported"
+            },
+            "dominant": null,
+            "source": {
+              "doc": "main",
+              "loc": "p.2025-2026 Fig. 1a"
+            }
+          }
+        ]
+      },
+      "substrate": {
+        "material": "Ag",
+        "crystallinity": "single_crystal",
+        "facet": "110",
+        "support": null,
+        "cleaning": "Ar+ bombardment at glancing incidence, 5e-5 mbar Ar, kinetic energy lowered 1.0 -> 0.6 keV and 1.4 -> 0.8 keV, then annealing at 400 °C and 600 °C 'for Ag and Cu and Au, respectively' (mapping as written)",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.S2",
+          "evidence": "crystals (MaTeCK) were cleaned"
+        },
+        "work_function": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "SOC of substrates discussed qualitatively; no value quoted"
+        },
+        "note": "cleanliness/crystallinity monitored by UPS, LEED and AES"
+      },
+      "assembly": {
+        "method": "UHV sublimation",
+        "source_temperature": {
+          "value": 160,
+          "unit": "°C",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029 Exp. Methods",
+            "evidence": "sublimated at 160 °C for up to 35 min"
+          }
+        },
+        "deposition_time": {
+          "value": 35,
+          "unit": "min",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029"
+          },
+          "note": "'up to 35 min'; UPS series on Cu(332): spin-study coverage reached after 25 min (SI p.S4)"
+        },
+        "substrate_temperature": {
+          "value": 200,
+          "unit": "°C",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029",
+            "evidence": "kept at a temperature of 200 °C"
+          },
+          "note": "above multilayer desorption (125 °C); UPS series deposited at 475 K (SI p.S4)"
+        },
+        "post_treatment": "none; substrate held above multilayer desorption temperature during deposition",
+        "molecular_orientation": "three proximal C6 rings parallel to the surface, rest spiralling upward (DFT; XPD for Cu(111), Cu(332), ref 23)",
+        "characterization_methods": [
+          "UPS (Cu(332) only)"
+        ],
+        "coverage_regime": "monolayer",
+        "preparation_variant": null
+      },
+      "structure_verification": [
+        {
+          "method": "VCD (on bulk enantiomers)",
+          "outcome": "absolute handedness assigned",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S2"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_P7H_Ag110",
+      "role": "test",
+      "molecule": {
+        "class": "helicene",
+        "name": "[7]helicene (heptahelicene)",
+        "formula": "C30H18",
+        "helix_handedness": {
+          "value": "right",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2026 Fig. 1a caption",
+            "evidence": "(M)-[7]H marks the left-handed helical sense"
+          }
+        },
+        "stereo_descriptor": "P",
+        "chirality_counterpart_of": "S_M7H_Ag110",
+        "enantiomeric_purity": {
+          "value": "enantiopure (chiral HPLC, Daicel Chiracel OD); absolute handedness by VCD + simulation",
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S2"
+          }
+        },
+        "helix_axis_orientation": {
+          "value": null,
+          "status": "not_reported",
+          "note": "adsorption geometry given as 'three proximal C6 rings parallel to the surface' (assembly.molecular_orientation); axis angle not stated"
+        },
+        "anchor": {
+          "group": "physisorbed/none",
+          "linker": null,
+          "attached_end": "not_applicable",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2027",
+            "evidence": "binds to the surfaces such that the three proximal C6 rings"
+          }
+        },
+        "treatment": null,
+        "host_matrix": null,
+        "cofactor": null,
+        "source_organism": null,
+        "structure_db_id": null,
+        "geometry": {
+          "n_units": {
+            "value": 7,
+            "unit": "rings",
+            "status": "reported",
+            "basis": "measured_this_work_on_sample",
+            "source": {
+              "doc": "main",
+              "loc": "p.2025",
+              "evidence": "comprises seven [a,c]-annulated benzo groups"
+            },
+            "note": "molecular constitution"
+          },
+          "helical_turns": {
+            "value": 1,
+            "unit": "turns",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "molecular structure",
+            "source": {
+              "doc": "main",
+              "loc": "p.2025",
+              "evidence": "leading to a single helical turn"
+            }
+          },
+          "pitch": {
+            "value": 0.35,
+            "unit": "nm/turn",
+            "status": "reported",
+            "basis": "model_estimate_this_work",
+            "basis_reference": "coarse-grained model Hamiltonian input (b = 3.5 Å)",
+            "source": {
+              "doc": "main",
+              "loc": "p.2028",
+              "evidence": "a pitch of b = 3.5 Å was considered"
+            },
+            "note": "model parameter, not a measured structure of the adsorbed molecule; model radius R0 = 3 Å has no v0.4 geometry field (see theory_results)"
+          },
+          "secondary_structure": "not_applicable"
+        },
+        "chirality_origin": "inherent_skeleton",
+        "chiral_elements": [
+          {
+            "element_id": "helicene_skeleton",
+            "element_type": "helical_skeleton",
+            "description": "helical carbon skeleton; no stereocentres",
+            "configuration": "P",
+            "strand_id": null,
+            "positions": [],
+            "terminus": "not_applicable",
+            "count": {
+              "value": 1,
+              "unit": null,
+              "status": "reported",
+              "source": {
+                "doc": "main",
+                "loc": "p.2028",
+                "evidence": "without any chiral centers"
+              }
+            },
+            "function": "inherent",
+            "induced_handedness": {
+              "value": "right",
+              "status": "reported"
+            },
+            "dominant": null,
+            "source": {
+              "doc": "main",
+              "loc": "p.2025-2026 Fig. 1a"
+            }
+          }
+        ]
+      },
+      "substrate": {
+        "material": "Ag",
+        "crystallinity": "single_crystal",
+        "facet": "110",
+        "support": null,
+        "cleaning": "Ar+ bombardment at glancing incidence, 5e-5 mbar Ar, kinetic energy lowered 1.0 -> 0.6 keV and 1.4 -> 0.8 keV, then annealing at 400 °C and 600 °C 'for Ag and Cu and Au, respectively' (mapping as written)",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.S2",
+          "evidence": "crystals (MaTeCK) were cleaned"
+        },
+        "work_function": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "SOC of substrates discussed qualitatively; no value quoted"
+        },
+        "note": "cleanliness/crystallinity monitored by UPS, LEED and AES"
+      },
+      "assembly": {
+        "method": "UHV sublimation",
+        "source_temperature": {
+          "value": 160,
+          "unit": "°C",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029 Exp. Methods",
+            "evidence": "sublimated at 160 °C for up to 35 min"
+          }
+        },
+        "deposition_time": {
+          "value": 35,
+          "unit": "min",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029"
+          },
+          "note": "'up to 35 min'; UPS series on Cu(332): spin-study coverage reached after 25 min (SI p.S4)"
+        },
+        "substrate_temperature": {
+          "value": 200,
+          "unit": "°C",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029",
+            "evidence": "kept at a temperature of 200 °C"
+          },
+          "note": "above multilayer desorption (125 °C); UPS series deposited at 475 K (SI p.S4)"
+        },
+        "post_treatment": "none; substrate held above multilayer desorption temperature during deposition",
+        "molecular_orientation": "three proximal C6 rings parallel to the surface, rest spiralling upward (DFT; XPD for Cu(111), Cu(332), ref 23)",
+        "characterization_methods": [
+          "UPS (Cu(332) only)"
+        ],
+        "coverage_regime": "monolayer",
+        "preparation_variant": null
+      },
+      "structure_verification": [
+        {
+          "method": "VCD (on bulk enantiomers)",
+          "outcome": "absolute handedness assigned",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S2"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_clean_Ag110",
+      "role": "control_bare_substrate",
+      "molecule": {
+        "class": "none",
+        "name": null,
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "no molecule"
+        },
+        "chirality_counterpart_of": null,
+        "geometry": {
+          "secondary_structure": "not_applicable"
+        }
+      },
+      "substrate": {
+        "material": "Ag",
+        "crystallinity": "single_crystal",
+        "facet": "110",
+        "support": null,
+        "cleaning": "Ar+ bombardment at glancing incidence, 5e-5 mbar Ar, kinetic energy lowered 1.0 -> 0.6 keV and 1.4 -> 0.8 keV, then annealing at 400 °C and 600 °C 'for Ag and Cu and Au, respectively' (mapping as written)",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.S2",
+          "evidence": "crystals (MaTeCK) were cleaned"
+        },
+        "work_function": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "SOC of substrates discussed qualitatively; no value quoted"
+        },
+        "note": "cleanliness/crystallinity monitored by UPS, LEED and AES"
+      }
+    },
+    {
+      "sample_id": "S_M7H_Au111",
+      "role": "test",
+      "molecule": {
+        "class": "helicene",
+        "name": "[7]helicene (heptahelicene)",
+        "formula": "C30H18",
+        "helix_handedness": {
+          "value": "left",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2026 Fig. 1a caption",
+            "evidence": "(M)-[7]H marks the left-handed helical sense"
+          }
+        },
+        "stereo_descriptor": "M",
+        "chirality_counterpart_of": "S_P7H_Au111",
+        "enantiomeric_purity": {
+          "value": "enantiopure (chiral HPLC, Daicel Chiracel OD); absolute handedness by VCD + simulation",
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S2"
+          }
+        },
+        "helix_axis_orientation": {
+          "value": null,
+          "status": "not_reported",
+          "note": "adsorption geometry given as 'three proximal C6 rings parallel to the surface' (assembly.molecular_orientation); axis angle not stated"
+        },
+        "anchor": {
+          "group": "physisorbed/none",
+          "linker": null,
+          "attached_end": "not_applicable",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2027",
+            "evidence": "binds to the surfaces such that the three proximal C6 rings"
+          }
+        },
+        "treatment": null,
+        "host_matrix": null,
+        "cofactor": null,
+        "source_organism": null,
+        "structure_db_id": null,
+        "geometry": {
+          "n_units": {
+            "value": 7,
+            "unit": "rings",
+            "status": "reported",
+            "basis": "measured_this_work_on_sample",
+            "source": {
+              "doc": "main",
+              "loc": "p.2025",
+              "evidence": "comprises seven [a,c]-annulated benzo groups"
+            },
+            "note": "molecular constitution"
+          },
+          "helical_turns": {
+            "value": 1,
+            "unit": "turns",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "molecular structure",
+            "source": {
+              "doc": "main",
+              "loc": "p.2025",
+              "evidence": "leading to a single helical turn"
+            }
+          },
+          "pitch": {
+            "value": 0.35,
+            "unit": "nm/turn",
+            "status": "reported",
+            "basis": "model_estimate_this_work",
+            "basis_reference": "coarse-grained model Hamiltonian input (b = 3.5 Å)",
+            "source": {
+              "doc": "main",
+              "loc": "p.2028",
+              "evidence": "a pitch of b = 3.5 Å was considered"
+            },
+            "note": "model parameter, not a measured structure of the adsorbed molecule; model radius R0 = 3 Å has no v0.4 geometry field (see theory_results)"
+          },
+          "secondary_structure": "not_applicable"
+        },
+        "chirality_origin": "inherent_skeleton",
+        "chiral_elements": [
+          {
+            "element_id": "helicene_skeleton",
+            "element_type": "helical_skeleton",
+            "description": "helical carbon skeleton; no stereocentres",
+            "configuration": "M",
+            "strand_id": null,
+            "positions": [],
+            "terminus": "not_applicable",
+            "count": {
+              "value": 1,
+              "unit": null,
+              "status": "reported",
+              "source": {
+                "doc": "main",
+                "loc": "p.2028",
+                "evidence": "without any chiral centers"
+              }
+            },
+            "function": "inherent",
+            "induced_handedness": {
+              "value": "left",
+              "status": "reported"
+            },
+            "dominant": null,
+            "source": {
+              "doc": "main",
+              "loc": "p.2025-2026 Fig. 1a"
+            }
+          }
+        ]
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "single_crystal",
+        "facet": "111",
+        "support": null,
+        "cleaning": "Ar+ bombardment at glancing incidence, 5e-5 mbar Ar, kinetic energy lowered 1.0 -> 0.6 keV and 1.4 -> 0.8 keV, then annealing at 400 °C and 600 °C 'for Ag and Cu and Au, respectively' (mapping as written)",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.S2",
+          "evidence": "crystals (MaTeCK) were cleaned"
+        },
+        "work_function": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "SOC of substrates discussed qualitatively; no value quoted"
+        },
+        "note": "cleanliness/crystallinity monitored by UPS, LEED and AES"
+      },
+      "assembly": {
+        "method": "UHV sublimation",
+        "source_temperature": {
+          "value": 160,
+          "unit": "°C",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029 Exp. Methods",
+            "evidence": "sublimated at 160 °C for up to 35 min"
+          }
+        },
+        "deposition_time": {
+          "value": 35,
+          "unit": "min",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029"
+          },
+          "note": "'up to 35 min'; UPS series on Cu(332): spin-study coverage reached after 25 min (SI p.S4)"
+        },
+        "substrate_temperature": {
+          "value": 200,
+          "unit": "°C",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029",
+            "evidence": "kept at a temperature of 200 °C"
+          },
+          "note": "above multilayer desorption (125 °C); UPS series deposited at 475 K (SI p.S4)"
+        },
+        "post_treatment": "none; substrate held above multilayer desorption temperature during deposition",
+        "molecular_orientation": "three proximal C6 rings parallel to the surface, rest spiralling upward (DFT; XPD for Cu(111), Cu(332), ref 23)",
+        "characterization_methods": [
+          "UPS (Cu(332) only)"
+        ],
+        "coverage_regime": "monolayer",
+        "preparation_variant": null
+      },
+      "structure_verification": [
+        {
+          "method": "VCD (on bulk enantiomers)",
+          "outcome": "absolute handedness assigned",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S2"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_P7H_Au111",
+      "role": "test",
+      "molecule": {
+        "class": "helicene",
+        "name": "[7]helicene (heptahelicene)",
+        "formula": "C30H18",
+        "helix_handedness": {
+          "value": "right",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2026 Fig. 1a caption",
+            "evidence": "(M)-[7]H marks the left-handed helical sense"
+          }
+        },
+        "stereo_descriptor": "P",
+        "chirality_counterpart_of": "S_M7H_Au111",
+        "enantiomeric_purity": {
+          "value": "enantiopure (chiral HPLC, Daicel Chiracel OD); absolute handedness by VCD + simulation",
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S2"
+          }
+        },
+        "helix_axis_orientation": {
+          "value": null,
+          "status": "not_reported",
+          "note": "adsorption geometry given as 'three proximal C6 rings parallel to the surface' (assembly.molecular_orientation); axis angle not stated"
+        },
+        "anchor": {
+          "group": "physisorbed/none",
+          "linker": null,
+          "attached_end": "not_applicable",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2027",
+            "evidence": "binds to the surfaces such that the three proximal C6 rings"
+          }
+        },
+        "treatment": null,
+        "host_matrix": null,
+        "cofactor": null,
+        "source_organism": null,
+        "structure_db_id": null,
+        "geometry": {
+          "n_units": {
+            "value": 7,
+            "unit": "rings",
+            "status": "reported",
+            "basis": "measured_this_work_on_sample",
+            "source": {
+              "doc": "main",
+              "loc": "p.2025",
+              "evidence": "comprises seven [a,c]-annulated benzo groups"
+            },
+            "note": "molecular constitution"
+          },
+          "helical_turns": {
+            "value": 1,
+            "unit": "turns",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "molecular structure",
+            "source": {
+              "doc": "main",
+              "loc": "p.2025",
+              "evidence": "leading to a single helical turn"
+            }
+          },
+          "pitch": {
+            "value": 0.35,
+            "unit": "nm/turn",
+            "status": "reported",
+            "basis": "model_estimate_this_work",
+            "basis_reference": "coarse-grained model Hamiltonian input (b = 3.5 Å)",
+            "source": {
+              "doc": "main",
+              "loc": "p.2028",
+              "evidence": "a pitch of b = 3.5 Å was considered"
+            },
+            "note": "model parameter, not a measured structure of the adsorbed molecule; model radius R0 = 3 Å has no v0.4 geometry field (see theory_results)"
+          },
+          "secondary_structure": "not_applicable"
+        },
+        "chirality_origin": "inherent_skeleton",
+        "chiral_elements": [
+          {
+            "element_id": "helicene_skeleton",
+            "element_type": "helical_skeleton",
+            "description": "helical carbon skeleton; no stereocentres",
+            "configuration": "P",
+            "strand_id": null,
+            "positions": [],
+            "terminus": "not_applicable",
+            "count": {
+              "value": 1,
+              "unit": null,
+              "status": "reported",
+              "source": {
+                "doc": "main",
+                "loc": "p.2028",
+                "evidence": "without any chiral centers"
+              }
+            },
+            "function": "inherent",
+            "induced_handedness": {
+              "value": "right",
+              "status": "reported"
+            },
+            "dominant": null,
+            "source": {
+              "doc": "main",
+              "loc": "p.2025-2026 Fig. 1a"
+            }
+          }
+        ]
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "single_crystal",
+        "facet": "111",
+        "support": null,
+        "cleaning": "Ar+ bombardment at glancing incidence, 5e-5 mbar Ar, kinetic energy lowered 1.0 -> 0.6 keV and 1.4 -> 0.8 keV, then annealing at 400 °C and 600 °C 'for Ag and Cu and Au, respectively' (mapping as written)",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.S2",
+          "evidence": "crystals (MaTeCK) were cleaned"
+        },
+        "work_function": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "SOC of substrates discussed qualitatively; no value quoted"
+        },
+        "note": "cleanliness/crystallinity monitored by UPS, LEED and AES"
+      },
+      "assembly": {
+        "method": "UHV sublimation",
+        "source_temperature": {
+          "value": 160,
+          "unit": "°C",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029 Exp. Methods",
+            "evidence": "sublimated at 160 °C for up to 35 min"
+          }
+        },
+        "deposition_time": {
+          "value": 35,
+          "unit": "min",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029"
+          },
+          "note": "'up to 35 min'; UPS series on Cu(332): spin-study coverage reached after 25 min (SI p.S4)"
+        },
+        "substrate_temperature": {
+          "value": 200,
+          "unit": "°C",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029",
+            "evidence": "kept at a temperature of 200 °C"
+          },
+          "note": "above multilayer desorption (125 °C); UPS series deposited at 475 K (SI p.S4)"
+        },
+        "post_treatment": "none; substrate held above multilayer desorption temperature during deposition",
+        "molecular_orientation": "three proximal C6 rings parallel to the surface, rest spiralling upward (DFT; XPD for Cu(111), Cu(332), ref 23)",
+        "characterization_methods": [
+          "UPS (Cu(332) only)"
+        ],
+        "coverage_regime": "monolayer",
+        "preparation_variant": null
+      },
+      "structure_verification": [
+        {
+          "method": "VCD (on bulk enantiomers)",
+          "outcome": "absolute handedness assigned",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S2"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_clean_Au111",
+      "role": "control_bare_substrate",
+      "molecule": {
+        "class": "none",
+        "name": null,
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "no molecule"
+        },
+        "chirality_counterpart_of": null,
+        "geometry": {
+          "secondary_structure": "not_applicable"
+        }
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "single_crystal",
+        "facet": "111",
+        "support": null,
+        "cleaning": "Ar+ bombardment at glancing incidence, 5e-5 mbar Ar, kinetic energy lowered 1.0 -> 0.6 keV and 1.4 -> 0.8 keV, then annealing at 400 °C and 600 °C 'for Ag and Cu and Au, respectively' (mapping as written)",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.S2",
+          "evidence": "crystals (MaTeCK) were cleaned"
+        },
+        "work_function": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "SOC of substrates discussed qualitatively; no value quoted"
+        },
+        "note": "cleanliness/crystallinity monitored by UPS, LEED and AES"
+      }
+    },
+    {
+      "sample_id": "S_Mo_ref",
+      "role": "control_reference",
+      "molecule": {
+        "class": "none",
+        "name": null,
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "no molecule"
+        },
+        "chirality_counterpart_of": null,
+        "geometry": {
+          "secondary_structure": "not_applicable"
+        }
+      },
+      "substrate": {
+        "material": "Mo",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": null,
+        "cleaning": null,
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.S1",
+          "evidence": "polycrystalline molybdenum sample mounted below"
+        },
+        "note": "zero-polarization reference measured after every eight runs; shielded from [7]H by an aperture"
+      }
+    }
+  ],
+  "setups": [
+    {
+      "setup_id": "SU_mott_213nm",
+      "technique": "photoemission_mott",
+      "observable_definition": {
+        "symbol": "P_Z",
+        "formula": "P_Z = (I_up - I_down)/(I_up + I_down) * S_eff^-1",
+        "spin_component": {
+          "value": "longitudinal",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2026",
+            "evidence": "longitudinal spin polarization PZ"
+          }
+        },
+        "spin_reference_axis": "electron momentum = surface normal (normal emission)",
+        "spin_quantization_axis": "surface normal",
+        "sign_convention": {
+          "value": "negative = spin antiparallel to momentum",
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2026",
+            "evidence": "negative spin polarization, that is, those with their spin orientation antiparallel"
+          }
+        },
+        "energy_reference": "not_applicable"
+      },
+      "transport_regime": "photoemission_through_layer",
+      "excitation": {
+        "source": "5th harmonic of Nd:YVO4 laser",
+        "photon_energy": {
+          "value": 5.83,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2025"
+          }
+        },
+        "wavelength": {
+          "value": 213,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2025"
+          }
+        },
+        "repetition_rate": {
+          "value": 20,
+          "unit": "kHz",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S1"
+          }
+        },
+        "pulse_duration": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "pulse_energy_on_sample": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "fluence": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "incidence_angle": {
+          "value": 0,
+          "unit": "deg",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S1",
+            "evidence": "light pulses are incident normal to the surface"
+          }
+        },
+        "polarizations_used": [
+          "cw_circular",
+          "linear",
+          "ccw_circular"
+        ],
+        "polarization_optics": "quarter-wave plate; sequence cw -> linear -> ccw -> linear ...",
+        "helicity_convention": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "ellipticity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        }
+      },
+      "detection": {
+        "detector": "Mott polarimeter (two detectors)",
+        "scattering_energy": {
+          "value": 50,
+          "unit": "keV",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029"
+          }
+        },
+        "target": "not stated",
+        "sherman_function": {
+          "value": -0.18,
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2026",
+            "evidence": "calibrated to Seff = −0.18"
+          },
+          "note": "calibration cited to ref 8"
+        },
+        "calibration": "zero reference: polycrystalline Mo below the crystals, measured after every eight sample runs",
+        "component_measured": "transverse",
+        "spin_rotation_optics": "90 deg bender (longitudinal -> transverse)",
+        "reference_sample": "polycrystalline Mo",
+        "switching_protocol": "13 s per light-polarization setting (260,000 pulses, ~15,000 electron counts); cw/lin/ccw/lin cycle; Mo reference after every 8 runs",
+        "counts_per_point": {
+          "value": 15000,
+          "unit": "electrons per polarization setting",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S1"
+          },
+          "note": "approximate; 260,000 laser pulses, 13 s"
+        },
+        "electron_kinetic_energy_range": {
+          "value": 0,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S1",
+            "evidence": "energies up to 1.15 eV"
+          },
+          "value_max": 1.15
+        },
+        "emission_angle": {
+          "value": 0,
+          "unit": "deg",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S1",
+            "evidence": "extracted normal from the sample"
+          }
+        },
+        "energy_resolved_spin": false
+      },
+      "environment": {
+        "medium": "UHV",
+        "pressure": {
+          "value": 1e-09,
+          "unit": "mbar",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2029",
+            "evidence": "residual pressure of 10−9 mbar"
+          }
+        },
+        "temperature": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        }
+      },
+      "apparatus_id": "muenster_mott",
+      "apparatus_changes": null
+    }
+  ],
+  "measurements": [
+    {
+      "measurement_id": "M_M7H_Cu332_cw",
+      "sample_id": "S_M7H_Cu332",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -6.0,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1; text p.2026"
+        },
+        "note": "Uncertainty = standard deviation of the mean (Exp. Methods).",
+        "uncertainty": 0.6,
+        "uncertainty_type": "SE",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular",
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "total 120 runs over all light polarizations (p.2029); per-polarization split only in Fig. 2"
+      }
+    },
+    {
+      "measurement_id": "M_M7H_Cu332_lin",
+      "sample_id": "S_M7H_Cu332",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -6.7,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1; text p.2026"
+        },
+        "note": "Uncertainty = standard deviation of the mean (Exp. Methods).",
+        "uncertainty": 0.6,
+        "uncertainty_type": "SE",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear",
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "total 120 runs over all light polarizations (p.2029); per-polarization split only in Fig. 2"
+      }
+    },
+    {
+      "measurement_id": "M_M7H_Cu332_ccw",
+      "sample_id": "S_M7H_Cu332",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -6.3,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1; text p.2026"
+        },
+        "note": "Uncertainty = standard deviation of the mean (Exp. Methods).",
+        "uncertainty": 0.6,
+        "uncertainty_type": "SE",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular",
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "total 120 runs over all light polarizations (p.2029); per-polarization split only in Fig. 2"
+      }
+    },
+    {
+      "measurement_id": "M_P7H_Cu332_cw",
+      "sample_id": "S_P7H_Cu332",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 6.1,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1; text p.2026"
+        },
+        "note": "Uncertainty = standard deviation of the mean (Exp. Methods).",
+        "uncertainty": 0.6,
+        "uncertainty_type": "SE",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular",
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "total 76 runs over all light polarizations (p.2029); per-polarization split only in Fig. 2"
+      }
+    },
+    {
+      "measurement_id": "M_P7H_Cu332_lin",
+      "sample_id": "S_P7H_Cu332",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 5.5,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1; text p.2026"
+        },
+        "note": "Uncertainty = standard deviation of the mean (Exp. Methods).",
+        "uncertainty": 0.6,
+        "uncertainty_type": "SE",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear",
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "total 76 runs over all light polarizations (p.2029); per-polarization split only in Fig. 2"
+      }
+    },
+    {
+      "measurement_id": "M_P7H_Cu332_ccw",
+      "sample_id": "S_P7H_Cu332",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 4.4,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1; text p.2026"
+        },
+        "note": "Uncertainty = standard deviation of the mean (Exp. Methods).",
+        "uncertainty": 0.6,
+        "uncertainty_type": "SE",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular",
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "total 76 runs over all light polarizations (p.2029); per-polarization split only in Fig. 2"
+      }
+    },
+    {
+      "measurement_id": "M_M7H_Ag110_cw",
+      "sample_id": "S_M7H_Ag110",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -11.9,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1"
+        },
+        "note": "No uncertainty reported for this entry.",
+        "uncertainty": null,
+        "uncertainty_type": "not_reported",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_M7H_Ag110_lin",
+      "sample_id": "S_M7H_Ag110",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -9.0,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1"
+        },
+        "note": "No uncertainty reported for this entry.",
+        "uncertainty": null,
+        "uncertainty_type": "not_reported",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_M7H_Ag110_ccw",
+      "sample_id": "S_M7H_Ag110",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -7.1,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1"
+        },
+        "note": "No uncertainty reported for this entry.",
+        "uncertainty": null,
+        "uncertainty_type": "not_reported",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_P7H_Ag110_cw",
+      "sample_id": "S_P7H_Ag110",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 6.3,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1"
+        },
+        "note": "No uncertainty reported for this entry.",
+        "uncertainty": null,
+        "uncertainty_type": "not_reported",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_P7H_Ag110_lin",
+      "sample_id": "S_P7H_Ag110",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 7.1,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1"
+        },
+        "note": "No uncertainty reported for this entry.",
+        "uncertainty": null,
+        "uncertainty_type": "not_reported",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_P7H_Ag110_ccw",
+      "sample_id": "S_P7H_Ag110",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 6.2,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1"
+        },
+        "note": "No uncertainty reported for this entry.",
+        "uncertainty": null,
+        "uncertainty_type": "not_reported",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_M7H_Au111_cw",
+      "sample_id": "S_M7H_Au111",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -34.8,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1"
+        },
+        "note": "No uncertainty reported for this entry.",
+        "uncertainty": null,
+        "uncertainty_type": "not_reported",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_M7H_Au111_lin",
+      "sample_id": "S_M7H_Au111",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -8.0,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1"
+        },
+        "note": "No uncertainty reported for this entry.",
+        "uncertainty": null,
+        "uncertainty_type": "not_reported",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_M7H_Au111_ccw",
+      "sample_id": "S_M7H_Au111",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 21.8,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1"
+        },
+        "note": "No uncertainty reported for this entry.",
+        "uncertainty": null,
+        "uncertainty_type": "not_reported",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_P7H_Au111_cw",
+      "sample_id": "S_P7H_Au111",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -16.0,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1; SI p.S3"
+        },
+        "note": "Uncertainty = standard deviation of the mean (Exp. Methods).",
+        "uncertainty": 0.5,
+        "uncertainty_type": "SE",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_P7H_Au111_lin",
+      "sample_id": "S_P7H_Au111",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 7.9,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1; SI p.S2"
+        },
+        "note": "Uncertainty = standard deviation of the mean (Exp. Methods).",
+        "uncertainty": 0.5,
+        "uncertainty_type": "SE",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_P7H_Au111_ccw",
+      "sample_id": "S_P7H_Au111",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 34.1,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1; SI p.S3"
+        },
+        "note": "Uncertainty = standard deviation of the mean (Exp. Methods).",
+        "uncertainty": 0.4,
+        "uncertainty_type": "SE",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_clean_Cu332_cw",
+      "sample_id": "S_clean_Cu332",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.2026 Fig. 2b"
+        },
+        "note": "'essentially zero within the error bars for all light polarizations' (p.2026)",
+        "uncertainty": null,
+        "uncertainty_type": "not_reported",
+        "sign": "zero"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_clean_Cu332_lin",
+      "sample_id": "S_clean_Cu332",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.2026 Fig. 2b"
+        },
+        "note": "'essentially zero within the error bars for all light polarizations' (p.2026)",
+        "uncertainty": null,
+        "uncertainty_type": "not_reported",
+        "sign": "zero"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_clean_Cu332_ccw",
+      "sample_id": "S_clean_Cu332",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.2026 Fig. 2b"
+        },
+        "note": "'essentially zero within the error bars for all light polarizations' (p.2026)",
+        "uncertainty": null,
+        "uncertainty_type": "not_reported",
+        "sign": "zero"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_clean_Ag110_cw",
+      "sample_id": "S_clean_Ag110",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -2.5,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2026 text"
+        },
+        "note": "intrinsic substrate SOC polarization",
+        "uncertainty": null,
+        "uncertainty_type": "not_reported",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_clean_Ag110_lin",
+      "sample_id": "S_clean_Ag110",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.S3 Fig. S1 middle"
+        },
+        "note": "value only in histogram",
+        "uncertainty": null,
+        "uncertainty_type": "not_reported"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_clean_Ag110_ccw",
+      "sample_id": "S_clean_Ag110",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 2.5,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2026 text"
+        },
+        "note": "intrinsic substrate SOC polarization",
+        "uncertainty": null,
+        "uncertainty_type": "not_reported",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_clean_Au111_cw",
+      "sample_id": "S_clean_Au111",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -24.2,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2026 text; SI p.S2 + Fig. S2"
+        },
+        "note": "intrinsic substrate SOC polarization",
+        "uncertainty": null,
+        "uncertainty_type": "not_reported",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_clean_Au111_lin",
+      "sample_id": "S_clean_Au111",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.S4 Fig. S2 middle"
+        },
+        "note": "value only in histogram",
+        "uncertainty": null,
+        "uncertainty_type": "not_reported"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_clean_Au111_ccw",
+      "sample_id": "S_clean_Au111",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 26.7,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2026 text; SI p.S2 + Fig. S2"
+        },
+        "note": "intrinsic substrate SOC polarization",
+        "uncertainty": null,
+        "uncertainty_type": "not_reported",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    }
+  ],
+  "derived_quantities": [
+    {
+      "name": "dPZ_Cu332_cw",
+      "from": [
+        "M_P7H_Cu332_cw",
+        "M_M7H_Cu332_cw"
+      ],
+      "formula": "ΔPZ = PZ(P) - PZ(M)",
+      "check": "difference",
+      "value": {
+        "value": 12.1,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1"
+        }
+      }
+    },
+    {
+      "name": "dPZ_Cu332_lin",
+      "from": [
+        "M_P7H_Cu332_lin",
+        "M_M7H_Cu332_lin"
+      ],
+      "formula": "ΔPZ = PZ(P) - PZ(M)",
+      "check": "difference",
+      "value": {
+        "value": 12.2,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1"
+        }
+      }
+    },
+    {
+      "name": "dPZ_Cu332_ccw",
+      "from": [
+        "M_P7H_Cu332_ccw",
+        "M_M7H_Cu332_ccw"
+      ],
+      "formula": "ΔPZ = PZ(P) - PZ(M)",
+      "check": "difference",
+      "value": {
+        "value": 10.7,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1"
+        }
+      }
+    },
+    {
+      "name": "dPZ_Ag110_cw",
+      "from": [
+        "M_P7H_Ag110_cw",
+        "M_M7H_Ag110_cw"
+      ],
+      "formula": "ΔPZ = PZ(P) - PZ(M)",
+      "check": "difference",
+      "value": {
+        "value": 18.2,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1"
+        }
+      }
+    },
+    {
+      "name": "dPZ_Ag110_lin",
+      "from": [
+        "M_P7H_Ag110_lin",
+        "M_M7H_Ag110_lin"
+      ],
+      "formula": "ΔPZ = PZ(P) - PZ(M)",
+      "check": "difference",
+      "value": {
+        "value": 16.1,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1"
+        }
+      }
+    },
+    {
+      "name": "dPZ_Ag110_ccw",
+      "from": [
+        "M_P7H_Ag110_ccw",
+        "M_M7H_Ag110_ccw"
+      ],
+      "formula": "ΔPZ = PZ(P) - PZ(M)",
+      "check": "difference",
+      "value": {
+        "value": 13.3,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1"
+        }
+      }
+    },
+    {
+      "name": "dPZ_Au111_cw",
+      "from": [
+        "M_P7H_Au111_cw",
+        "M_M7H_Au111_cw"
+      ],
+      "formula": "ΔPZ = PZ(P) - PZ(M)",
+      "check": "difference",
+      "value": {
+        "value": 18.8,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1"
+        }
+      }
+    },
+    {
+      "name": "dPZ_Au111_lin",
+      "from": [
+        "M_P7H_Au111_lin",
+        "M_M7H_Au111_lin"
+      ],
+      "formula": "ΔPZ = PZ(P) - PZ(M)",
+      "check": "difference",
+      "value": {
+        "value": 15.9,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1"
+        }
+      }
+    },
+    {
+      "name": "dPZ_Au111_ccw",
+      "from": [
+        "M_P7H_Au111_ccw",
+        "M_M7H_Au111_ccw"
+      ],
+      "formula": "ΔPZ = PZ(P) - PZ(M)",
+      "check": "difference",
+      "value": {
+        "value": 12.3,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1"
+        }
+      }
+    },
+    {
+      "name": "dPZ_Cu332_average",
+      "from": [
+        "dPZ_Cu332_cw",
+        "dPZ_Cu332_lin",
+        "dPZ_Cu332_ccw"
+      ],
+      "formula": "mean of the three ΔPZ",
+      "check": "none",
+      "value": {
+        "value": 11.7,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1; p.2027 text"
+        },
+        "note": "mean over derived quantities; schema 'mean' check only recomputes from measurement results"
+      }
+    },
+    {
+      "name": "dPZ_Ag110_average",
+      "from": [
+        "dPZ_Ag110_cw",
+        "dPZ_Ag110_lin",
+        "dPZ_Ag110_ccw"
+      ],
+      "formula": "mean of the three ΔPZ",
+      "check": "none",
+      "value": {
+        "value": 15.9,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1; p.2027 text"
+        },
+        "note": "mean over derived quantities; schema 'mean' check only recomputes from measurement results"
+      }
+    },
+    {
+      "name": "dPZ_Au111_average",
+      "from": [
+        "dPZ_Au111_cw",
+        "dPZ_Au111_lin",
+        "dPZ_Au111_ccw"
+      ],
+      "formula": "mean of the three ΔPZ",
+      "check": "none",
+      "value": {
+        "value": 15.7,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027 Table 1; p.2027 text"
+        },
+        "note": "mean over derived quantities; schema 'mean' check only recomputes from measurement results"
+      }
+    },
+    {
+      "name": "P7H_Au111_shift_cw_vs_clean",
+      "from": [
+        "M_P7H_Au111_cw",
+        "M_clean_Au111_cw"
+      ],
+      "formula": "PZ(P/Au, cw) - PZ(clean Au, cw)",
+      "check": "difference",
+      "value": {
+        "value": 7.8,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.S3",
+          "evidence": "i.e., by +7.8%"
+        },
+        "note": "paper value; arithmetic -16.0 - (-24.2) = 8.2 (see discrepancies)"
+      }
+    },
+    {
+      "name": "enantiomer_added_PZ_Ag_Au",
+      "from": [],
+      "formula": "average shift by (M)/(P) monolayer vs clean substrate",
+      "check": "none",
+      "value": {
+        "value": "±7.9 (Ag), ±7.8 (Au)",
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.S3",
+          "evidence": "add an electron spin polarization of PZ = ±7.9% and ±7.8%"
+        }
+      }
+    }
+  ],
+  "theory_results": [
+    {
+      "method": "DFT (SIESTA, PBE, SOC incl. valence term)",
+      "system": "[7]H on Cu(332)",
+      "quantity": "binding energy E_BE",
+      "value": {
+        "value": -2.22,
+        "unit": "eV",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027"
+        }
+      }
+    },
+    {
+      "method": "DFT (SIESTA, PBE, SOC incl. valence term)",
+      "system": "[7]H on Ag(110)",
+      "quantity": "binding energy E_BE",
+      "value": {
+        "value": -1.43,
+        "unit": "eV",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027"
+        }
+      }
+    },
+    {
+      "method": "DFT (SIESTA, PBE, SOC incl. valence term)",
+      "system": "[7]H on Au(111)",
+      "quantity": "binding energy E_BE",
+      "value": {
+        "value": -1.46,
+        "unit": "eV",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2027"
+        }
+      }
+    },
+    {
+      "method": "DFT (SIESTA, PBE, SOC incl. valence term)",
+      "system": "idealized infinite 1D helicene helix",
+      "quantity": "spin-orbit splitting, top valence band",
+      "value": {
+        "value": 0.75,
+        "unit": "meV",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2028"
+        },
+        "note": "'up to'"
+      }
+    },
+    {
+      "method": "DFT (SIESTA, PBE, SOC incl. valence term)",
+      "system": "idealized infinite 1D helicene helix",
+      "quantity": "spin-orbit splitting, bottom conduction band",
+      "value": {
+        "value": 0.3,
+        "unit": "meV",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2028"
+        }
+      }
+    },
+    {
+      "method": "tight-binding model Hamiltonian in helical electric field (Landauer, wide-band limit)",
+      "system": "single left-handed helical turn (L = 1), pure helical path",
+      "quantity": "P_Z at E = +0.3 eV above E_F",
+      "value": {
+        "value": -3,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2028",
+          "evidence": "PZ ≈ −3%"
+        },
+        "note": "approximate"
+      },
+      "parameters": {
+        "R0": {
+          "value": 0.3,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2028"
+          }
+        },
+        "b_pitch": {
+          "value": 0.35,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.2028"
+          }
+        },
+        "p_sites_per_turn": {
+          "value": 7,
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S8"
+          }
+        },
+        "V_AA": {
+          "value": 150,
+          "unit": "meV",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S9"
+          }
+        },
+        "V_BB": {
+          "value": 100,
+          "unit": "meV",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S9"
+          }
+        },
+        "V_AB": {
+          "value": 50,
+          "unit": "meV",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S9"
+          }
+        },
+        "alpha_eff": {
+          "value": 1,
+          "unit": "meV",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.S9"
+          }
+        }
+      }
+    },
+    {
+      "method": "tight-binding model Hamiltonian in helical electric field",
+      "system": "L = 1, combined helical + axial path",
+      "quantity": "P_Z at E = +0.3 eV above E_F",
+      "value": {
+        "value": 0.1,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2028",
+          "evidence": "PZ ≈ +0.1% (not shown)"
+        }
+      }
+    },
+    {
+      "method": "tight-binding model Hamiltonian in helical electric field",
+      "system": "L = 1-3 helical turns",
+      "quantity": "max |P_Z| with increasing number of turns",
+      "value": {
+        "value": 10,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.2028",
+          "evidence": "up to |PZ| ≈ 10%"
+        }
+      }
+    }
+  ],
+  "qualitative_findings": [
+    {
+      "claim": "Sign of P_Z follows the enantiomer: (M) negative, (P) positive, on all three substrates.",
+      "variable": "helix handedness",
+      "trend": "sign_flip",
+      "related_ids": [
+        "S_M7H_Cu332",
+        "S_P7H_Cu332",
+        "S_M7H_Ag110",
+        "S_P7H_Ag110",
+        "S_M7H_Au111",
+        "S_P7H_Au111"
+      ],
+      "source": {
+        "doc": "main",
+        "loc": "p.2026-2027"
+      }
+    },
+    {
+      "claim": "On Cu(332) P_Z is independent of the light polarization.",
+      "variable": "light polarization",
+      "trend": "independent",
+      "related_ids": [
+        "S_M7H_Cu332",
+        "S_P7H_Cu332"
+      ],
+      "source": {
+        "doc": "main",
+        "loc": "p.2026"
+      }
+    },
+    {
+      "claim": "On Ag and Au the intrinsic substrate polarization from circular light adds to the CISS contribution (~±8%).",
+      "variable": "substrate SOC (circular light)",
+      "trend": "additive",
+      "related_ids": [
+        "S_M7H_Ag110",
+        "S_P7H_Ag110",
+        "S_M7H_Au111",
+        "S_P7H_Au111"
+      ],
+      "source": {
+        "doc": "main",
+        "loc": "p.2026-2027"
+      }
+    },
+    {
+      "claim": "ΔP_Z is similar on substrates with very different SOC (11.7, 15.9, 15.7%), so substrate SOC is not the dominant factor.",
+      "variable": "substrate spin-orbit coupling",
+      "trend": "independent",
+      "source": {
+        "doc": "main",
+        "loc": "p.2027; p.2029 conclusion"
+      }
+    },
+    {
+      "claim": "Model: |P_Z| increases with the number of helical turns; sign flips with helicity and varies with energy.",
+      "variable": "number of helical turns (model)",
+      "trend": "increases",
+      "source": {
+        "doc": "main",
+        "loc": "p.2028 Fig. 4"
+      }
+    }
+  ],
+  "discrepancies": [
+    {
+      "field": "derived_quantities[P7H_Au111_shift_cw_vs_clean]",
+      "description": "SI says (P)-[7]H shifts cw polarization on Au from -24.2% to -16.0%, 'i.e., by +7.8%'; arithmetic gives +8.2%. (ccw: +7.4%; their mean is 7.8%.)",
+      "severity": "low",
+      "sources": [
+        {
+          "doc": "SI",
+          "loc": "SI p.S3"
+        }
+      ]
+    },
+    {
+      "field": "measurements[*Ag110*, M7H_Au111*].result.uncertainty",
+      "description": "Table 1 gives no uncertainties; text gives ±0.6% (Cu) and ±0.4-0.5% for (P)/Au only.",
+      "severity": "low",
+      "sources": [
+        {
+          "doc": "main",
+          "loc": "p.2027 Table 1"
+        }
+      ]
+    },
+    {
+      "field": "samples[*].substrate.cleaning",
+      "description": "Annealing '400 °C and 600 °C, for Ag and Cu and Au, respectively' - three metals, two temperatures; mapping ambiguous.",
+      "severity": "low",
+      "sources": [
+        {
+          "doc": "SI",
+          "loc": "SI p.S2"
+        }
+      ]
+    },
+    {
+      "field": "measurements[*].n_runs",
+      "description": "120 / 76 recorded spin polarizations for (M)/(P) on Cu(332) are totals; per-polarization counts only in Fig. 2.",
+      "severity": "low",
+      "sources": [
+        {
+          "doc": "main",
+          "loc": "p.2029"
+        }
+      ]
+    },
+    {
+      "field": "SI Fig. S2 x-axis",
+      "description": "Fig. S2 x-axis labels lack minus signs (50 ... 0 ... 50); negative side inferred from text values.",
+      "severity": "low",
+      "sources": [
+        {
+          "doc": "SI",
+          "loc": "SI p.S4 Fig. S2"
+        }
+      ]
+    }
+  ],
+  "extraction_meta": {
+    "extractor": "Claude (claude-opus-5-5)",
+    "extraction_date": "2026-10-21",
+    "verified_by": null,
+    "verification_date": null,
+    "notes": "Main pages 2025-2030; SI pages S1-S10. Clean-substrate linear-light and clean Cu values are histogram-only (to_digitize). v0.4 gap: model helix radius R0 = 3 Å has no geometry field (only diameter), kept in theory_results.parameters."
+  }
+}

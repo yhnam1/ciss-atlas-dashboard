@@ -1,0 +1,260 @@
+{
+  "schema_version": "0.5.0",
+  "paper": {
+    "paper_id": "Moellers_2022_CuO",
+    "title": "Spin-Polarized Photoemission from Chiral CuO Catalyst Thin Films",
+    "authors": [
+      "Paul V. Möllers",
+      "Jimeng Wei",
+      "Soma Salamon",
+      "Manfred Bartsch",
+      "Heiko Wende",
+      "David H. Waldeck",
+      "Helmut Zacharias"
+    ],
+    "year": 2022,
+    "doi": "10.1021/acsnano.2c02709",
+    "documents_used": [
+      "main",
+      "SI"
+    ],
+    "documents": [
+      {
+        "document_id": "cuo_main",
+        "role": "main",
+        "filename": "Spin-Polarized Photoemission from Chiral CuO Catalyst Thin Films.pdf",
+        "sha256": "2652f8e7714712a14d8fd03bc51bd4e8dcd6f68209c1e9f92e0a40a0da43da37"
+      },
+      {
+        "document_id": "cuo_si",
+        "role": "SI",
+        "filename": "SI_1.pdf",
+        "sha256": "5ede061072dad9fc95a74745851cd0b2b242d0301a89aef6c408a85b882ff224"
+      }
+    ]
+  },
+  "samples": [
+    {
+      "sample_id": "L_CuO_10nm",
+      "role": "test",
+      "molecule": {
+        "class": "chiral_inorganic",
+        "name": "L-CuO",
+        "formula": "CuO",
+        "stereo_descriptor": "L-CuO (paper label); no molecular helix handedness assigned"
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "polycrystalline",
+        "support": "Fused silica",
+        "film_thickness": {
+          "status": "reported",
+          "value": 20,
+          "unit": "nm",
+          "source": {
+            "doc": "main",
+            "document_id": "cuo_main",
+            "filename": "Spin-Polarized Photoemission from Chiral CuO Catalyst Thin Films.pdf",
+            "pdf_page": 2,
+            "loc": "CuO sample preparation and substrate construction",
+            "printed_page": "12146"
+          },
+          "qualifier": "exact"
+        },
+        "adhesion_layer": "3 nm Ti",
+        "source": {
+          "doc": "main",
+          "document_id": "cuo_main",
+          "filename": "Spin-Polarized Photoemission from Chiral CuO Catalyst Thin Films.pdf",
+          "pdf_page": 2,
+          "loc": "CuO sample preparation and substrate construction",
+          "printed_page": "12146"
+        },
+        "status": "reported"
+      },
+      "assembly": {
+        "method": "Electrodeposition using tartaric acid-containing solution",
+        "layer_thickness": {
+          "status": "reported",
+          "value": 10,
+          "unit": "nm",
+          "source": {
+            "doc": "main",
+            "document_id": "cuo_main",
+            "filename": "Spin-Polarized Photoemission from Chiral CuO Catalyst Thin Films.pdf",
+            "pdf_page": 5,
+            "loc": "Backside illumination paragraph associated with Figure 4(c)",
+            "figure_or_table": "4(c)",
+            "printed_page": "12149"
+          },
+          "qualifier": "exact"
+        }
+      }
+    }
+  ],
+  "setups": [
+    {
+      "setup_id": "cuo_back_mott",
+      "technique": "photoemission_mott",
+      "experiment_family": "photoelectron_transmission",
+      "observable_definition": {
+        "symbol": "P",
+        "formula": "P = A/S; A = (I_u-I_l)/(I_u+I_l). Results are reported in percent.",
+        "spin_component": {
+          "status": "reported",
+          "value": "longitudinal",
+          "source": {
+            "doc": "main",
+            "document_id": "cuo_main",
+            "filename": "Spin-Polarized Photoemission from Chiral CuO Catalyst Thin Films.pdf",
+            "pdf_page": 9,
+            "loc": "Spin polarization measurement methods",
+            "printed_page": "12153"
+          }
+        },
+        "spin_reference_axis": "Electron momentum immediately after emission, along the outward sample surface normal",
+        "spin_quantization_axis": "Sample surface normal",
+        "observable_type": "electron_spin_polarization",
+        "sign_convention": {
+          "status": "reported",
+          "value": "Positive: spin parallel to emitted electron momentum; negative: antiparallel.",
+          "unit": null,
+          "source": {
+            "doc": "main",
+            "document_id": "cuo_main",
+            "filename": "Spin-Polarized Photoemission from Chiral CuO Catalyst Thin Films.pdf",
+            "pdf_page": 9,
+            "loc": "Spin polarization measurement methods",
+            "printed_page": "12153"
+          },
+          "qualifier": "exact"
+        },
+        "interpretation_model": "BACK illumination through fused silica / Ti / Au toward CuO. Detected electrons leave the CuO surface. Average polarization can contain contributions from Au-derived and CuO-derived electrons. Do not label it a pure molecular spin-filter efficiency."
+      },
+      "excitation": {
+        "source": "Deep-UV pulsed laser",
+        "wavelength": {
+          "status": "reported",
+          "value": 213,
+          "unit": "nm",
+          "source": {
+            "doc": "main",
+            "document_id": "cuo_main",
+            "filename": "Spin-Polarized Photoemission from Chiral CuO Catalyst Thin Films.pdf",
+            "pdf_page": 9,
+            "loc": "Spin polarization measurement methods",
+            "printed_page": "12153"
+          },
+          "qualifier": "exact"
+        },
+        "photon_energy": {
+          "status": "reported",
+          "value": 5.83,
+          "unit": "eV",
+          "source": {
+            "doc": "main",
+            "document_id": "cuo_main",
+            "filename": "Spin-Polarized Photoemission from Chiral CuO Catalyst Thin Films.pdf",
+            "pdf_page": 9,
+            "loc": "Spin polarization measurement methods",
+            "printed_page": "12153"
+          },
+          "qualifier": "exact"
+        },
+        "repetition_rate": {
+          "status": "reported",
+          "value": 20,
+          "unit": "kHz",
+          "source": {
+            "doc": "main",
+            "document_id": "cuo_main",
+            "filename": "Spin-Polarized Photoemission from Chiral CuO Catalyst Thin Films.pdf",
+            "pdf_page": 9,
+            "loc": "Spin polarization measurement methods",
+            "printed_page": "12153"
+          },
+          "qualifier": "exact"
+        },
+        "polarizations_used": [
+          "linear",
+          "cw_circular",
+          "ccw_circular"
+        ],
+        "pulse_duration": {
+          "status": "reported",
+          "value": 200,
+          "unit": "ps",
+          "source": {
+            "doc": "main",
+            "document_id": "cuo_main",
+            "filename": "Spin-Polarized Photoemission from Chiral CuO Catalyst Thin Films.pdf",
+            "pdf_page": 9,
+            "loc": "Methods, Spin Polarization Measurements",
+            "printed_page": "12153"
+          },
+          "qualifier": "exact"
+        }
+      },
+      "detection": {
+        "detector": "Mott polarimeter",
+        "component_measured": "transverse",
+        "spin_rotation_optics": "Electrostatic 90 degree bend before acceleration converts the initially longitudinal component to transverse at the detector.",
+        "energy_resolved_spin": false,
+        "reference_sample": "Polycrystalline Au without an oxide layer",
+        "sherman_function": {
+          "status": "not_reported",
+          "value": null,
+          "note": "Methods state P=A/S but do not give a numeric S. Do not import 0.18 from the tetrapyrrole paper."
+        },
+        "calibration": "Alternate sample and bare polycrystalline Au after a complete quarter-wave-plate rotation, as described in main PDF pp.4 and 9."
+      },
+      "environment": {
+        "medium": "UHV"
+      }
+    }
+  ],
+  "measurements": [
+    {
+      "measurement_id": "cuo_back_10nm_max",
+      "sample_id": "L_CuO_10nm",
+      "setup_id": "cuo_back_mott",
+      "light_polarization": "linear",
+      "record_kind": "observed_result",
+      "selection_rule": "selected_maximum",
+      "dataset_scope": "unknown",
+      "result": {
+        "status": "reported",
+        "value": 10,
+        "unit": "%",
+        "source": {
+          "doc": "main",
+          "document_id": "cuo_main",
+          "filename": "Spin-Polarized Photoemission from Chiral CuO Catalyst Thin Films.pdf",
+          "pdf_page": 5,
+          "loc": "First paragraph: highest polarization for 10 nm films under back illumination; Figure 4(c)",
+          "figure_or_table": "4(c)",
+          "printed_page": "12149"
+        },
+        "qualifier": "approximate",
+        "original_text": "P ≈ +10%",
+        "note": "Text-reported highest value, not the average across sample positions. No point-specific uncertainty is assigned. Corresponding plot point must not be counted again after digitization."
+      },
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "review_date": null
+      },
+      "measurement_group_id": "fig4c_back_10nm"
+    }
+  ],
+  "extraction_meta": {
+    "extractor": "ChatGPT source-reading pilot, not an API run",
+    "extraction_date": "2026-10-22",
+    "verified_by": null,
+    "review_status": "unreviewed",
+    "scope_status": "mixed_scope",
+    "model_id": null,
+    "prompt_version": null,
+    "notes": "PARTIAL SCHEMA PILOT. Selected text/caption-reported results only, not a complete extraction. Source pages were visually checked by the assistant, not human verified. Missing graph points and related controls are listed in extraction_queue.json. Sample IDs distinguish source conditions; they do not establish independent physical preparations. No paid API request was made. Non-photoemission magnetometry and other characterization results are outside this pilot. The existing extraction prompt restricts scope to molecular layers and must be broadened explicitly for this inorganic material before an automated run."
+  }
+}

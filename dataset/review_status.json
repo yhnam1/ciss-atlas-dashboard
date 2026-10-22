@@ -1,0 +1,47 @@
+{
+  "note": "Review completion is based on project owner confirmation for the exact SHA-256 hashes below. Reviewer identities and review dates were not supplied. Historical extraction metadata is preserved and is separate from this review status. Validation is not scientific approval.",
+  "files": {
+    "cuo_pilot.json": {
+      "status": "pending_review",
+      "basis": "No completed expert review recorded",
+      "reviewer": null,
+      "review_date": null,
+      "sha256": "99bcf8ddc309ce83dc3819d398561989d6d660fc1fa6717ccf29baf2706b1ea3"
+    },
+    "paper_1_v0.4.json": {
+      "status": "expert_review_complete",
+      "basis": "Project owner confirmation",
+      "reviewer": null,
+      "review_date": null,
+      "sha256": "4931d1af5ffbe741f860a628798cf451700f734806cfdb1583182326b231cbe6"
+    },
+    "paper_2_v0.4.json": {
+      "status": "expert_review_complete",
+      "basis": "Project owner confirmation",
+      "reviewer": null,
+      "review_date": null,
+      "sha256": "509802b7946002421ba81cedf025737ae35958eea3ec0b6c4603a3ad0863e6bb"
+    },
+    "paper_3_v0.4.json": {
+      "status": "expert_review_complete",
+      "basis": "Project owner confirmation",
+      "reviewer": null,
+      "review_date": null,
+      "sha256": "173ef2b4d1bd009889676c089964e075dead6aa0f6e802fb43064f5a66e343e8"
+    },
+    "paper_4_v0.4.json": {
+      "status": "pending_review",
+      "basis": "No completed expert review recorded",
+      "reviewer": null,
+      "review_date": null,
+      "sha256": "f6b0abe4d17d55ac402c805598e94f39422cc79c311278481d041d75aa4c20e1"
+    },
+    "tetrapyrrole_pilot.json": {
+      "status": "pending_review",
+      "basis": "No completed expert review recorded",
+      "reviewer": null,
+      "review_date": null,
+      "sha256": "e34b452305440cbbaf75c86c0271f9ca3b5fd54f94eb1f43dc7055c04de607ac"
+    }
+  }
+}

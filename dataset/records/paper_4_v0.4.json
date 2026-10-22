@@ -1,0 +1,3516 @@
+{
+  "schema_version": "0.4.0",
+  "paper": {
+    "paper_id": "moellers_2021_dsPNA",
+    "title": "Spin-selective electron transmission through self-assembled monolayers of double-stranded peptide nucleic acid",
+    "authors": [
+      "Paul Valerian Möllers",
+      "Selma Ulku",
+      "Dilhara Jayarathna",
+      "Francesco Tassinari",
+      "Daniel Nürenberg",
+      "Ron Naaman",
+      "Catalina Achim",
+      "Helmut Zacharias"
+    ],
+    "journal": "Chirality",
+    "year": 2021,
+    "doi": "10.1002/chir.23290",
+    "documents_used": [
+      "main",
+      "SI"
+    ],
+    "related_papers": [
+      {
+        "doi": "10.1126/science.1199339",
+        "relation": "same_apparatus",
+        "note": "ref 1 (Göhler 2011): 'previously described experimental setup (1,24)'. DOI from paper_1's own PDF."
+      },
+      {
+        "doi": "10.1021/acs.jpclett.8b00208",
+        "relation": "same_apparatus",
+        "note": "ref 24 (Kettner 2018). DOI from paper_2's own PDF."
+      },
+      {
+        "doi": "10.1073/pnas.1311493110",
+        "relation": "other",
+        "note": "ref 21 (Mishra 2013, bR) cited for handedness-spin comparison. DOI from paper_3's own PDF."
+      }
+    ]
+  },
+  "samples": [
+    {
+      "sample_id": "S_M_dsPNA",
+      "role": "test",
+      "molecule": {
+        "class": "other",
+        "name": "dsPNA duplex (20 bp, unmodified aeg backbone)",
+        "formula": null,
+        "helix_handedness": {
+          "value": "left",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.95, §2.1; Fig. 2"
+          },
+          "note": "Handedness induced by chiral seeds (PNA backbone itself achiral); confirmed by solution CD."
+        },
+        "stereo_descriptor": "M",
+        "chirality_counterpart_of": "S_P_dsPNA",
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "not quantified; CD asymmetries attributed to 'minor differences in the purity of the L and D amino acids'"
+        },
+        "helix_axis_orientation": {
+          "value": "unknown",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "pp.96-97, §2.2",
+            "evidence": "these two possibilities are hard to distinguish"
+          },
+          "note": "Either uniformly tilted helices or two phases (standing + lying-down); not resolved."
+        },
+        "anchor": {
+          "group": "thiol",
+          "linker": "(CH2)3",
+          "attached_end": "C_terminus",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "S1 sequence scheme, Table S1",
+            "evidence": "A GTT TGT ACG - (CH2)3SH"
+          },
+          "note": "Thiol at C end of decamer PNA3 (not of the 20-mer template); 3-amino-1-propanethiol-loaded resin."
+        },
+        "treatment": null,
+        "host_matrix": null,
+        "cofactor": null,
+        "source_organism": null,
+        "structure_db_id": null,
+        "geometry": {
+          "n_units": {
+            "value": 20,
+            "unit": "bp",
+            "status": "reported",
+            "basis": "measured_this_work_on_sample",
+            "source": {
+              "doc": "main",
+              "loc": "p.95 §2.1",
+              "evidence": "The investigated 20 base pair PNA duplexes"
+            },
+            "note": "design length (synthesized sequence)"
+          },
+          "secondary_structure": "double_helix",
+          "diameter_definition": "unspecified",
+          "pitch": {
+            "value": 7.8,
+            "unit": "nm/turn",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "dsPNA, NMR/MD (Table 1)",
+            "source": {
+              "doc": "main",
+              "loc": "p.95 Table 1"
+            }
+          },
+          "units_per_turn": {
+            "value": 21,
+            "unit": "bp/turn",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "ref 34",
+            "source": {
+              "doc": "main",
+              "loc": "p.95 Table 1"
+            }
+          },
+          "rise_per_unit": {
+            "value": 0.37,
+            "unit": "nm/bp",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "ref 34",
+            "source": {
+              "doc": "main",
+              "loc": "p.95 Table 1"
+            }
+          },
+          "diameter": {
+            "value": 2.8,
+            "unit": "nm",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "refs 34, 35",
+            "source": {
+              "doc": "main",
+              "loc": "p.95 Table 1"
+            }
+          },
+          "axial_length": {
+            "value": 7.4,
+            "unit": "nm",
+            "status": "reported",
+            "basis": "model_estimate_this_work",
+            "source": {
+              "doc": "main",
+              "loc": "p.96 §2.2",
+              "evidence": "theoretical lengths of 7.4 and 5.8 nm"
+            },
+            "note": "estimated from Table 1 helical parameters; measured SAM thickness 4.8/5.2 nm is in assembly.layer_thickness"
+          },
+          "helical_turns": {
+            "value": 0.95,
+            "unit": "turns",
+            "status": "derived",
+            "basis": "model_estimate_this_work",
+            "source": {
+              "doc": "main",
+              "loc": "p.100 §4",
+              "evidence": "a bit less than one helical turn"
+            },
+            "note": "20 bp / 21 bp per turn"
+          },
+          "helix_form": {
+            "value": "P-type",
+            "unit": null,
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "refs 34-36",
+            "source": {
+              "doc": "main",
+              "loc": "p.94 §1",
+              "evidence": "dsPNA adopts a P-type helix"
+            }
+          }
+        },
+        "strands": [
+          {
+            "strand_id": "PNA1",
+            "polymer_type": "PNA",
+            "direction": "N_to_C",
+            "sequence": "CGTACAAACTTAGACACCAG",
+            "n_units": 20,
+            "terminus_start": "H-",
+            "terminus_end": "-Lys3-NH2",
+            "strand_role": "template",
+            "segment_of": null,
+            "segment_order": null,
+            "pairs_with": [
+              "PNA2",
+              "PNA3"
+            ],
+            "carries_anchor": false,
+            "source": {
+              "doc": "SI",
+              "loc": "S1 scheme + Table S1"
+            }
+          },
+          {
+            "strand_id": "PNA2",
+            "polymer_type": "PNA",
+            "direction": "N_to_C",
+            "sequence": "CTGGTGTCTA",
+            "n_units": 10,
+            "terminus_start": "H-Lys-",
+            "terminus_end": "-NH2",
+            "strand_role": "complement_segment",
+            "segment_of": "complement",
+            "segment_order": 1,
+            "pairs_with": [
+              "PNA1"
+            ],
+            "carries_anchor": false,
+            "source": {
+              "doc": "SI",
+              "loc": "S1 scheme + Table S1"
+            }
+          },
+          {
+            "strand_id": "PNA3",
+            "polymer_type": "PNA",
+            "direction": "N_to_C",
+            "sequence": "AGTTTGTACG",
+            "n_units": 10,
+            "terminus_start": "Ac-",
+            "terminus_end": "-(CH2)3SH",
+            "strand_role": "complement_segment",
+            "segment_of": "complement",
+            "segment_order": 2,
+            "pairs_with": [
+              "PNA1"
+            ],
+            "carries_anchor": true,
+            "source": {
+              "doc": "SI",
+              "loc": "S1 scheme + Table S1"
+            }
+          }
+        ],
+        "chirality_origin": "induced_by_seeds",
+        "chiral_elements": [
+          {
+            "element_id": "lys_PNA1_C",
+            "element_type": "terminal_residue",
+            "description": "lysine(s) at C terminus of template (Lys3)",
+            "configuration": "L",
+            "strand_id": "PNA1",
+            "positions": [],
+            "terminus": "end",
+            "count": {
+              "value": 3,
+              "unit": "residues",
+              "status": "reported",
+              "source": {
+                "doc": "SI",
+                "loc": "S1 scheme + Table S1"
+              },
+              "note": "three Lys for solubility; text gives D/L for 'lysine groups' at this end, per-residue configuration not itemized"
+            },
+            "function": "chiral_seed",
+            "induced_handedness": {
+              "value": "left",
+              "status": "reported",
+              "source": {
+                "doc": "main",
+                "loc": "p.95 §2.1",
+                "evidence": "L- or D-lysine groups ... induce a preference for left- or right-handed"
+              }
+            },
+            "dominant": null,
+            "source": {
+              "doc": "main",
+              "loc": "p.95 §2.1",
+              "evidence": "L- or D-lysine groups ... induce a preference for left- or right-handed"
+            }
+          },
+          {
+            "element_id": "lys_PNA2_N",
+            "element_type": "terminal_residue",
+            "description": "lysine at N terminus of non-thiolated decamer",
+            "configuration": "L",
+            "strand_id": "PNA2",
+            "positions": [],
+            "terminus": "start",
+            "count": {
+              "value": 1,
+              "unit": "residues",
+              "status": "reported",
+              "source": {
+                "doc": "SI",
+                "loc": "S1 scheme + Table S1"
+              }
+            },
+            "function": "chiral_seed",
+            "induced_handedness": {
+              "value": "left",
+              "status": "reported",
+              "source": {
+                "doc": "main",
+                "loc": "p.95 §2.1",
+                "evidence": "L- or D-lysine groups ... induce a preference for left- or right-handed"
+              }
+            },
+            "dominant": null,
+            "source": {
+              "doc": "main",
+              "loc": "p.95 §2.1",
+              "evidence": "L- or D-lysine groups ... induce a preference for left- or right-handed"
+            }
+          }
+        ]
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": null,
+        "cleaning": "boiled 10 min in acetone, then 10 min in ethanol; 5 min oxygen plasma; 40 min incubation in ethanol; dried under N2 flow and immediately put in contact with PNA solution",
+        "adhesion_layer": "Ti, 5-8 nm",
+        "film_thickness": {
+          "value": null,
+          "unit": "nm",
+          "status": "not_reported",
+          "note": "Two substrate types used: 120 nm Au on Si wafer, or 20 nm Au on fused silica wafer (fused silica used for 'a fraction of the samples' to allow back-side irradiation). Which type was used for each spin-polarization sample is not reported."
+        },
+        "deposition": {
+          "method": "e-beam evaporation"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "paper invokes intrinsic SOC of polycrystalline Au but quotes no value"
+        },
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.96, §2.2",
+          "evidence": "gold surfaces were prepared via e-beam evaporation"
+        },
+        "note": "Support is either Si wafer (Au 120 nm) or fused silica wafer (Au 20 nm); per-sample assignment not reported.",
+        "work_function": {
+          "value": 3.86,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "S2 UPS, Fig. S1",
+            "evidence": "reveal the sample work functions of 3.86 eV and 4.62 eV"
+          },
+          "note": "He I UPS on a dsPNA SAM on 20-nm Au; handedness of the UPS specimen not stated and it is not stated to be the same specimen used for spin-polarization measurements."
+        }
+      },
+      "assembly": {
+        "method": "solution self-assembly (thiol on gold)",
+        "concentration": {
+          "value": 20,
+          "unit": "µM",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2",
+            "evidence": "incubated with 40 μl of the 20 μM dsPNA solution"
+          }
+        },
+        "volume": {
+          "value": 40,
+          "unit": "µl",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2"
+          }
+        },
+        "buffer": "Incubation solvent not restated; duplexes were annealed in 1:1 acetonitrile / 20 mM phosphate buffer pH 7.2 (§2.1)",
+        "pH": {
+          "value": 7.2,
+          "unit": null,
+          "status": "inferred",
+          "source": {
+            "doc": "main",
+            "loc": "p.95, §2.1",
+            "evidence": "1:1 mixture of acetonitrile and pH = 7.2, 20 mM phosphate buffer"
+          },
+          "note": "pH of the hybridization solution; assumed to be the incubation solution (not restated in §2.2)"
+        },
+        "incubation_time": {
+          "value": 40,
+          "unit": "h",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2",
+            "evidence": "for 40 h at 27°C"
+          }
+        },
+        "substrate_temperature": {
+          "value": 27,
+          "unit": "°C",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2",
+            "evidence": "for 40 h at 27°C under a water saturated atmosphere"
+          }
+        },
+        "post_treatment": "washed twice with pH 7.2, 20 mM phosphate buffer, twice with water, dried under N2 flow",
+        "characterization_methods": [
+          "ellipsometry",
+          "PM-IRRAS",
+          "XPS"
+        ],
+        "coverage_regime": "monolayer",
+        "preparation_variant": null,
+        "layer_thickness": {
+          "value": 4.8,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, Table 2"
+          },
+          "note": "Ellipsometry average of six different samples (Table 2 note); these are not stated to be the specimens used for spin-polarization measurements.",
+          "uncertainty": 0.3,
+          "uncertainty_type": "SD_between_preparations"
+        },
+        "surface_coverage": {
+          "value": 12.4,
+          "unit": "N 1s / Au 4f x100 (XPS intensity ratio)",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "S2, Table S2"
+          },
+          "note": "Relative-coverage proxy only (main p.97: nitrogen signal 'can be employed as a measure of the relative surface coverage'); not an absolute coverage.",
+          "uncertainty_type": "not_reported"
+        },
+        "tilt_angle": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "paper cannot distinguish uniform tilt from standing+lying two-phase model"
+        },
+        "molecular_orientation": "Two-phase interpretation: ~57% lying-down duplexes (worst-case limit, Table 2); high sample-to-sample variability"
+      },
+      "structure_verification": [
+        {
+          "method": "CD",
+          "conditions": "3 µM duplex in pH 7.0, 10 mM sodium phosphate buffer; duplexes identical except lacking the thiol linker; ±1 mdeg",
+          "outcome": "approximately mirror image of (P) dsPNA spectrum -> left-handed (M)",
+          "source": {
+            "doc": "main",
+            "loc": "p.95, §2.1, Fig. 2"
+          }
+        },
+        {
+          "method": "MALDI-ToF MS",
+          "conditions": "single strands, α-cyano-4-hydroxycinnamic acid matrix",
+          "outcome": "observed MW in good agreement with calculated (Table S1)",
+          "source": {
+            "doc": "SI",
+            "loc": "S1, Table S1"
+          }
+        },
+        {
+          "method": "PM-IRRAS",
+          "conditions": "incidence angle 82°",
+          "outcome": "no significant differences between SAMs; intense in-plane base vibrations -> bases considerably tilted vs surface normal",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2, Fig. 3"
+          }
+        },
+        {
+          "method": "XPS",
+          "conditions": "monochromatized Al Kα 1486.6 eV",
+          "outcome": "N 1s present; N 1s correlates with C 1s 288 eV (N-C=O) component; similar macroscopic coverage across samples",
+          "source": {
+            "doc": "SI",
+            "loc": "S2, Figs. S2-S3, Table S2"
+          }
+        },
+        {
+          "method": "UPS (He I, 21.22 eV)",
+          "conditions": "dsPNA SAM on 20-nm Au, sample bias -4.10 V; handedness of specimen not stated",
+          "outcome": "work function 3.86 eV (bare Au 4.62 eV); ionization energy of adsorbed dsPNA 7.40 eV > hν 5.83 eV, so no photoemission from the SAM",
+          "source": {
+            "doc": "SI",
+            "loc": "S2, Fig. S1; main p.97 Fig. 4"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_P_dsPNA",
+      "role": "test",
+      "molecule": {
+        "class": "other",
+        "name": "dsPNA duplex (20 bp, unmodified aeg backbone)",
+        "formula": null,
+        "helix_handedness": {
+          "value": "right",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.95, §2.1; Fig. 2"
+          },
+          "note": "Handedness induced by chiral seeds (PNA backbone itself achiral); confirmed by solution CD."
+        },
+        "stereo_descriptor": "P",
+        "chirality_counterpart_of": "S_M_dsPNA",
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "not quantified; CD asymmetries attributed to 'minor differences in the purity of the L and D amino acids'"
+        },
+        "helix_axis_orientation": {
+          "value": "unknown",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "pp.96-97, §2.2",
+            "evidence": "these two possibilities are hard to distinguish"
+          },
+          "note": "Either uniformly tilted helices or two phases (standing + lying-down); not resolved."
+        },
+        "anchor": {
+          "group": "thiol",
+          "linker": "(CH2)3",
+          "attached_end": "C_terminus",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "S1 sequence scheme, Table S1",
+            "evidence": "A GTT TGT ACG - (CH2)3SH"
+          },
+          "note": "Thiol at C end of decamer PNA3 (not of the 20-mer template); 3-amino-1-propanethiol-loaded resin."
+        },
+        "treatment": null,
+        "host_matrix": null,
+        "cofactor": null,
+        "source_organism": null,
+        "structure_db_id": null,
+        "geometry": {
+          "n_units": {
+            "value": 20,
+            "unit": "bp",
+            "status": "reported",
+            "basis": "measured_this_work_on_sample",
+            "source": {
+              "doc": "main",
+              "loc": "p.95 §2.1",
+              "evidence": "The investigated 20 base pair PNA duplexes"
+            },
+            "note": "design length (synthesized sequence)"
+          },
+          "secondary_structure": "double_helix",
+          "diameter_definition": "unspecified",
+          "pitch": {
+            "value": 7.8,
+            "unit": "nm/turn",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "dsPNA, NMR/MD (Table 1)",
+            "source": {
+              "doc": "main",
+              "loc": "p.95 Table 1"
+            }
+          },
+          "units_per_turn": {
+            "value": 21,
+            "unit": "bp/turn",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "ref 34",
+            "source": {
+              "doc": "main",
+              "loc": "p.95 Table 1"
+            }
+          },
+          "rise_per_unit": {
+            "value": 0.37,
+            "unit": "nm/bp",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "ref 34",
+            "source": {
+              "doc": "main",
+              "loc": "p.95 Table 1"
+            }
+          },
+          "diameter": {
+            "value": 2.8,
+            "unit": "nm",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "refs 34, 35",
+            "source": {
+              "doc": "main",
+              "loc": "p.95 Table 1"
+            }
+          },
+          "axial_length": {
+            "value": 7.4,
+            "unit": "nm",
+            "status": "reported",
+            "basis": "model_estimate_this_work",
+            "source": {
+              "doc": "main",
+              "loc": "p.96 §2.2",
+              "evidence": "theoretical lengths of 7.4 and 5.8 nm"
+            },
+            "note": "estimated from Table 1 helical parameters; measured SAM thickness 4.8/5.2 nm is in assembly.layer_thickness"
+          },
+          "helical_turns": {
+            "value": 0.95,
+            "unit": "turns",
+            "status": "derived",
+            "basis": "model_estimate_this_work",
+            "source": {
+              "doc": "main",
+              "loc": "p.100 §4",
+              "evidence": "a bit less than one helical turn"
+            },
+            "note": "20 bp / 21 bp per turn"
+          },
+          "helix_form": {
+            "value": "P-type",
+            "unit": null,
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "refs 34-36",
+            "source": {
+              "doc": "main",
+              "loc": "p.94 §1",
+              "evidence": "dsPNA adopts a P-type helix"
+            }
+          }
+        },
+        "strands": [
+          {
+            "strand_id": "PNA1",
+            "polymer_type": "PNA",
+            "direction": "N_to_C",
+            "sequence": "CGTACAAACTTAGACACCAG",
+            "n_units": 20,
+            "terminus_start": "H-",
+            "terminus_end": "-Lys3-NH2",
+            "strand_role": "template",
+            "segment_of": null,
+            "segment_order": null,
+            "pairs_with": [
+              "PNA2",
+              "PNA3"
+            ],
+            "carries_anchor": false,
+            "source": {
+              "doc": "SI",
+              "loc": "S1 scheme + Table S1"
+            }
+          },
+          {
+            "strand_id": "PNA2",
+            "polymer_type": "PNA",
+            "direction": "N_to_C",
+            "sequence": "CTGGTGTCTA",
+            "n_units": 10,
+            "terminus_start": "H-Lys-",
+            "terminus_end": "-NH2",
+            "strand_role": "complement_segment",
+            "segment_of": "complement",
+            "segment_order": 1,
+            "pairs_with": [
+              "PNA1"
+            ],
+            "carries_anchor": false,
+            "source": {
+              "doc": "SI",
+              "loc": "S1 scheme + Table S1"
+            }
+          },
+          {
+            "strand_id": "PNA3",
+            "polymer_type": "PNA",
+            "direction": "N_to_C",
+            "sequence": "AGTTTGTACG",
+            "n_units": 10,
+            "terminus_start": "Ac-",
+            "terminus_end": "-(CH2)3SH",
+            "strand_role": "complement_segment",
+            "segment_of": "complement",
+            "segment_order": 2,
+            "pairs_with": [
+              "PNA1"
+            ],
+            "carries_anchor": true,
+            "source": {
+              "doc": "SI",
+              "loc": "S1 scheme + Table S1"
+            }
+          }
+        ],
+        "chirality_origin": "induced_by_seeds",
+        "chiral_elements": [
+          {
+            "element_id": "lys_PNA1_C",
+            "element_type": "terminal_residue",
+            "description": "lysine(s) at C terminus of template (Lys3)",
+            "configuration": "D",
+            "strand_id": "PNA1",
+            "positions": [],
+            "terminus": "end",
+            "count": {
+              "value": 3,
+              "unit": "residues",
+              "status": "reported",
+              "source": {
+                "doc": "SI",
+                "loc": "S1 scheme + Table S1"
+              },
+              "note": "three Lys for solubility; text gives D/L for 'lysine groups' at this end, per-residue configuration not itemized"
+            },
+            "function": "chiral_seed",
+            "induced_handedness": {
+              "value": "right",
+              "status": "reported",
+              "source": {
+                "doc": "main",
+                "loc": "p.95 §2.1",
+                "evidence": "L- or D-lysine groups ... induce a preference for left- or right-handed"
+              }
+            },
+            "dominant": null,
+            "source": {
+              "doc": "main",
+              "loc": "p.95 §2.1",
+              "evidence": "L- or D-lysine groups ... induce a preference for left- or right-handed"
+            }
+          },
+          {
+            "element_id": "lys_PNA2_N",
+            "element_type": "terminal_residue",
+            "description": "lysine at N terminus of non-thiolated decamer",
+            "configuration": "D",
+            "strand_id": "PNA2",
+            "positions": [],
+            "terminus": "start",
+            "count": {
+              "value": 1,
+              "unit": "residues",
+              "status": "reported",
+              "source": {
+                "doc": "SI",
+                "loc": "S1 scheme + Table S1"
+              }
+            },
+            "function": "chiral_seed",
+            "induced_handedness": {
+              "value": "right",
+              "status": "reported",
+              "source": {
+                "doc": "main",
+                "loc": "p.95 §2.1",
+                "evidence": "L- or D-lysine groups ... induce a preference for left- or right-handed"
+              }
+            },
+            "dominant": null,
+            "source": {
+              "doc": "main",
+              "loc": "p.95 §2.1",
+              "evidence": "L- or D-lysine groups ... induce a preference for left- or right-handed"
+            }
+          }
+        ]
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": null,
+        "cleaning": "boiled 10 min in acetone, then 10 min in ethanol; 5 min oxygen plasma; 40 min incubation in ethanol; dried under N2 flow and immediately put in contact with PNA solution",
+        "adhesion_layer": "Ti, 5-8 nm",
+        "film_thickness": {
+          "value": null,
+          "unit": "nm",
+          "status": "not_reported",
+          "note": "Two substrate types used: 120 nm Au on Si wafer, or 20 nm Au on fused silica wafer (fused silica used for 'a fraction of the samples' to allow back-side irradiation). Which type was used for each spin-polarization sample is not reported."
+        },
+        "deposition": {
+          "method": "e-beam evaporation"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "paper invokes intrinsic SOC of polycrystalline Au but quotes no value"
+        },
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.96, §2.2",
+          "evidence": "gold surfaces were prepared via e-beam evaporation"
+        },
+        "note": "Support is either Si wafer (Au 120 nm) or fused silica wafer (Au 20 nm); per-sample assignment not reported.",
+        "work_function": {
+          "value": 3.86,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "S2 UPS, Fig. S1",
+            "evidence": "reveal the sample work functions of 3.86 eV and 4.62 eV"
+          },
+          "note": "He I UPS on a dsPNA SAM on 20-nm Au; handedness of the UPS specimen not stated and it is not stated to be the same specimen used for spin-polarization measurements."
+        }
+      },
+      "assembly": {
+        "method": "solution self-assembly (thiol on gold)",
+        "concentration": {
+          "value": 20,
+          "unit": "µM",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2",
+            "evidence": "incubated with 40 μl of the 20 μM dsPNA solution"
+          }
+        },
+        "volume": {
+          "value": 40,
+          "unit": "µl",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2"
+          }
+        },
+        "buffer": "Incubation solvent not restated; duplexes were annealed in 1:1 acetonitrile / 20 mM phosphate buffer pH 7.2 (§2.1)",
+        "pH": {
+          "value": 7.2,
+          "unit": null,
+          "status": "inferred",
+          "source": {
+            "doc": "main",
+            "loc": "p.95, §2.1",
+            "evidence": "1:1 mixture of acetonitrile and pH = 7.2, 20 mM phosphate buffer"
+          },
+          "note": "pH of the hybridization solution; assumed to be the incubation solution (not restated in §2.2)"
+        },
+        "incubation_time": {
+          "value": 40,
+          "unit": "h",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2",
+            "evidence": "for 40 h at 27°C"
+          }
+        },
+        "substrate_temperature": {
+          "value": 27,
+          "unit": "°C",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2",
+            "evidence": "for 40 h at 27°C under a water saturated atmosphere"
+          }
+        },
+        "post_treatment": "washed twice with pH 7.2, 20 mM phosphate buffer, twice with water, dried under N2 flow",
+        "characterization_methods": [
+          "ellipsometry",
+          "PM-IRRAS",
+          "XPS"
+        ],
+        "coverage_regime": "monolayer",
+        "preparation_variant": null,
+        "layer_thickness": {
+          "value": 5.2,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, Table 2"
+          },
+          "note": "Ellipsometry average of six different samples (Table 2 note); these are not stated to be the specimens used for spin-polarization measurements.",
+          "uncertainty": 0.5,
+          "uncertainty_type": "SD_between_preparations"
+        },
+        "surface_coverage": {
+          "value": 9.1,
+          "unit": "N 1s / Au 4f x100 (XPS intensity ratio)",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "S2, Table S2"
+          },
+          "note": "Relative-coverage proxy only (main p.97: nitrogen signal 'can be employed as a measure of the relative surface coverage'); not an absolute coverage.",
+          "uncertainty_type": "not_reported"
+        },
+        "tilt_angle": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "paper cannot distinguish uniform tilt from standing+lying two-phase model"
+        },
+        "molecular_orientation": "Two-phase interpretation: ~48% lying-down duplexes (worst-case limit, Table 2); high sample-to-sample variability"
+      },
+      "structure_verification": [
+        {
+          "method": "CD",
+          "conditions": "3 µM duplex in pH 7.0, 10 mM sodium phosphate buffer; duplexes identical except lacking the thiol linker; ±1 mdeg",
+          "outcome": "positive band <220 nm and positive feature ~255 nm -> right-handed (P); exciton coupling minima ~240/280 nm",
+          "source": {
+            "doc": "main",
+            "loc": "p.95, §2.1, Fig. 2"
+          }
+        },
+        {
+          "method": "MALDI-ToF MS",
+          "conditions": "single strands, α-cyano-4-hydroxycinnamic acid matrix",
+          "outcome": "observed MW in good agreement with calculated (Table S1)",
+          "source": {
+            "doc": "SI",
+            "loc": "S1, Table S1"
+          }
+        },
+        {
+          "method": "PM-IRRAS",
+          "conditions": "incidence angle 82°",
+          "outcome": "no significant differences between SAMs; intense in-plane base vibrations -> bases considerably tilted vs surface normal",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2, Fig. 3"
+          }
+        },
+        {
+          "method": "XPS",
+          "conditions": "monochromatized Al Kα 1486.6 eV",
+          "outcome": "N 1s present; N 1s correlates with C 1s 288 eV (N-C=O) component; similar macroscopic coverage across samples",
+          "source": {
+            "doc": "SI",
+            "loc": "S2, Figs. S2-S3, Table S2"
+          }
+        },
+        {
+          "method": "UPS (He I, 21.22 eV)",
+          "conditions": "dsPNA SAM on 20-nm Au, sample bias -4.10 V; handedness of specimen not stated",
+          "outcome": "work function 3.86 eV (bare Au 4.62 eV); ionization energy of adsorbed dsPNA 7.40 eV > hν 5.83 eV, so no photoemission from the SAM",
+          "source": {
+            "doc": "SI",
+            "loc": "S2, Fig. S1; main p.97 Fig. 4"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_M_gPNA",
+      "role": "test",
+      "molecule": {
+        "class": "other",
+        "name": "γPNA-PNA duplex (20 bp; one decamer with 3 γ-(serine-derived hydroxymethyl) monomers)",
+        "formula": null,
+        "helix_handedness": {
+          "value": "left",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.95, §2.1; Fig. 2"
+          },
+          "note": "Handedness induced by chiral seeds (PNA backbone itself achiral); confirmed by solution CD."
+        },
+        "stereo_descriptor": "M",
+        "chirality_counterpart_of": "S_P_gPNA",
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "not quantified; CD asymmetries attributed to 'minor differences in the purity of the L and D amino acids'"
+        },
+        "helix_axis_orientation": {
+          "value": "unknown",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "pp.96-97, §2.2",
+            "evidence": "these two possibilities are hard to distinguish"
+          },
+          "note": "Either uniformly tilted helices or two phases (standing + lying-down); not resolved."
+        },
+        "anchor": {
+          "group": "thiol",
+          "linker": "(CH2)3",
+          "attached_end": "C_terminus",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "S1 sequence scheme, Table S1",
+            "evidence": "A GTT TGT ACG - (CH2)3SH"
+          },
+          "note": "Thiol at C end of decamer PNA3 (not of the 20-mer template); 3-amino-1-propanethiol-loaded resin."
+        },
+        "treatment": null,
+        "host_matrix": null,
+        "cofactor": null,
+        "source_organism": null,
+        "structure_db_id": null,
+        "geometry": {
+          "n_units": {
+            "value": 20,
+            "unit": "bp",
+            "status": "reported",
+            "basis": "measured_this_work_on_sample",
+            "source": {
+              "doc": "main",
+              "loc": "p.95 §2.1",
+              "evidence": "The investigated 20 base pair PNA duplexes"
+            },
+            "note": "design length (synthesized sequence)"
+          },
+          "secondary_structure": "double_helix",
+          "diameter_definition": "unspecified",
+          "pitch": {
+            "value": 6.4,
+            "unit": "nm/turn",
+            "status": "reported",
+            "basis": "literature_proxy_molecule",
+            "basis_reference": "dsγPNA homoduplex (both strands γ-modified), NMR/MD literature (Table 1, ref 36); measured duplex is a γPNA-PNA hybrid",
+            "source": {
+              "doc": "main",
+              "loc": "p.95 Table 1"
+            }
+          },
+          "units_per_turn": {
+            "value": 22,
+            "unit": "bp/turn",
+            "status": "reported",
+            "basis": "literature_proxy_molecule",
+            "basis_reference": "dsγPNA homoduplex (both strands γ-modified), NMR/MD literature (Table 1, ref 36); measured duplex is a γPNA-PNA hybrid",
+            "source": {
+              "doc": "main",
+              "loc": "p.95 Table 1"
+            }
+          },
+          "rise_per_unit": {
+            "value": 0.29,
+            "unit": "nm/bp",
+            "status": "reported",
+            "basis": "literature_proxy_molecule",
+            "basis_reference": "dsγPNA homoduplex (both strands γ-modified), NMR/MD literature (Table 1, ref 36); measured duplex is a γPNA-PNA hybrid",
+            "source": {
+              "doc": "main",
+              "loc": "p.95 Table 1"
+            }
+          },
+          "diameter": {
+            "value": 2.8,
+            "unit": "nm",
+            "status": "reported",
+            "basis": "literature_proxy_molecule",
+            "basis_reference": "assumed equal to dsPNA backbone diameter (ref 35)",
+            "source": {
+              "doc": "main",
+              "loc": "p.100 §4",
+              "evidence": "diameter of the helical backbone can be assumed to be similar at about 2.8 nm"
+            },
+            "note": "Table 1 leaves dsγPNA diameter blank; value is the authors' assumption"
+          },
+          "axial_length": {
+            "value": 5.8,
+            "unit": "nm",
+            "status": "reported",
+            "basis": "model_estimate_this_work",
+            "basis_reference": "dsγPNA homoduplex (both strands γ-modified), NMR/MD literature (Table 1, ref 36); measured duplex is a γPNA-PNA hybrid",
+            "source": {
+              "doc": "main",
+              "loc": "p.96 §2.2",
+              "evidence": "theoretical lengths of 7.4 and 5.8 nm"
+            }
+          },
+          "helical_turns": {
+            "value": 0.91,
+            "unit": "turns",
+            "status": "derived",
+            "basis": "literature_proxy_molecule",
+            "basis_reference": "dsγPNA homoduplex (both strands γ-modified), NMR/MD literature (Table 1, ref 36); measured duplex is a γPNA-PNA hybrid",
+            "note": "20 bp / 22 bp per turn"
+          },
+          "helix_form": {
+            "value": null,
+            "status": "not_reported",
+            "note": "dsγPNA described as having features of both dsPNA and dsDNA; hybrid form not reported"
+          }
+        },
+        "strands": [
+          {
+            "strand_id": "PNA1",
+            "polymer_type": "PNA",
+            "direction": "N_to_C",
+            "sequence": "CGTACAAACTTAGACACCAG",
+            "n_units": 20,
+            "terminus_start": "H-",
+            "terminus_end": "-Lys3-NH2",
+            "strand_role": "template",
+            "segment_of": null,
+            "segment_order": null,
+            "pairs_with": [
+              "γPNA2",
+              "PNA3"
+            ],
+            "carries_anchor": false,
+            "source": {
+              "doc": "SI",
+              "loc": "S1 scheme + Table S1"
+            }
+          },
+          {
+            "strand_id": "γPNA2",
+            "polymer_type": "PNA",
+            "direction": "N_to_C",
+            "sequence": "CTGGTGTCTA",
+            "n_units": 10,
+            "terminus_start": "H-",
+            "terminus_end": "-Lys-NH2",
+            "note": "γ-modified at positions 4, 7, 10 (see chiral_elements)",
+            "strand_role": "complement_segment",
+            "segment_of": "complement",
+            "segment_order": 1,
+            "pairs_with": [
+              "PNA1"
+            ],
+            "carries_anchor": false,
+            "source": {
+              "doc": "SI",
+              "loc": "S1 scheme + Table S1"
+            }
+          },
+          {
+            "strand_id": "PNA3",
+            "polymer_type": "PNA",
+            "direction": "N_to_C",
+            "sequence": "AGTTTGTACG",
+            "n_units": 10,
+            "terminus_start": "Ac-",
+            "terminus_end": "-(CH2)3SH",
+            "strand_role": "complement_segment",
+            "segment_of": "complement",
+            "segment_order": 2,
+            "pairs_with": [
+              "PNA1"
+            ],
+            "carries_anchor": true,
+            "source": {
+              "doc": "SI",
+              "loc": "S1 scheme + Table S1"
+            }
+          }
+        ],
+        "chirality_origin": "inherent_and_seeds",
+        "chiral_elements": [
+          {
+            "element_id": "gamma_ser",
+            "element_type": "backbone_stereocenter",
+            "description": "γ-hydroxymethyl (D-serine-derived) aeg monomer",
+            "configuration": "D",
+            "strand_id": "γPNA2",
+            "positions": [
+              4,
+              7,
+              10
+            ],
+            "terminus": "not_applicable",
+            "count": {
+              "value": 3,
+              "unit": "monomers",
+              "status": "reported",
+              "source": {
+                "doc": "main",
+                "loc": "p.95 §2.1",
+                "evidence": "at the γ position in three of the 10 monomers"
+              },
+              "note": "positions from underlining in SI S1 (.docx formatting)"
+            },
+            "function": "determines_handedness",
+            "induced_handedness": {
+              "value": "left",
+              "status": "reported",
+              "source": {
+                "doc": "main",
+                "loc": "p.95 §2.1",
+                "evidence": "effect of the γ-modified monomers is dominant"
+              }
+            },
+            "dominant": true,
+            "source": {
+              "doc": "main",
+              "loc": "p.95 §2.1",
+              "evidence": "effect of the γ-modified monomers is dominant"
+            }
+          },
+          {
+            "element_id": "lys_PNA1_C",
+            "element_type": "terminal_residue",
+            "description": "lysine(s) at C terminus of template (Lys3)",
+            "configuration": "D",
+            "strand_id": "PNA1",
+            "positions": [],
+            "terminus": "end",
+            "count": {
+              "value": 3,
+              "unit": "residues",
+              "status": "reported",
+              "source": {
+                "doc": "SI",
+                "loc": "S1 scheme + Table S1"
+              }
+            },
+            "function": "chiral_seed",
+            "induced_handedness": {
+              "value": "unknown",
+              "status": "reported",
+              "note": "paper gives the lysine->handedness rule only for unmodified dsPNA; γ-monomers stated dominant"
+            },
+            "dominant": false,
+            "source": {
+              "doc": "main",
+              "loc": "p.95 §2.1",
+              "evidence": "contained L-lysine and L-serine-derived γ-substituents"
+            }
+          },
+          {
+            "element_id": "lys_gPNA2_C",
+            "element_type": "terminal_residue",
+            "description": "lysine at C terminus of γ-decamer",
+            "configuration": "D",
+            "strand_id": "γPNA2",
+            "positions": [],
+            "terminus": "end",
+            "count": {
+              "value": 1,
+              "unit": "residues",
+              "status": "reported",
+              "source": {
+                "doc": "SI",
+                "loc": "S1 scheme + Table S1"
+              }
+            },
+            "function": "chiral_seed",
+            "induced_handedness": {
+              "value": "unknown",
+              "status": "reported",
+              "note": "paper gives the lysine->handedness rule only for unmodified dsPNA; γ-monomers stated dominant"
+            },
+            "dominant": false,
+            "source": {
+              "doc": "main",
+              "loc": "p.95 §2.1",
+              "evidence": "nonthiolized decamers feature a lysine group at the C end"
+            }
+          }
+        ]
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": null,
+        "cleaning": "boiled 10 min in acetone, then 10 min in ethanol; 5 min oxygen plasma; 40 min incubation in ethanol; dried under N2 flow and immediately put in contact with PNA solution",
+        "adhesion_layer": "Ti, 5-8 nm",
+        "film_thickness": {
+          "value": null,
+          "unit": "nm",
+          "status": "not_reported",
+          "note": "Two substrate types used: 120 nm Au on Si wafer, or 20 nm Au on fused silica wafer (fused silica used for 'a fraction of the samples' to allow back-side irradiation). Which type was used for each spin-polarization sample is not reported."
+        },
+        "deposition": {
+          "method": "e-beam evaporation"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "paper invokes intrinsic SOC of polycrystalline Au but quotes no value"
+        },
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.96, §2.2",
+          "evidence": "gold surfaces were prepared via e-beam evaporation"
+        },
+        "note": "Support is either Si wafer (Au 120 nm) or fused silica wafer (Au 20 nm); per-sample assignment not reported.",
+        "work_function": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "UPS reported only for dsPNA; not for γPNA-PNA"
+        }
+      },
+      "assembly": {
+        "method": "solution self-assembly (thiol on gold)",
+        "concentration": {
+          "value": 20,
+          "unit": "µM",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2",
+            "evidence": "incubated with 40 μl of the 20 μM dsPNA solution"
+          }
+        },
+        "volume": {
+          "value": 40,
+          "unit": "µl",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2"
+          }
+        },
+        "buffer": "Incubation solvent not restated; duplexes were annealed in 1:1 acetonitrile / 20 mM phosphate buffer pH 7.2 (§2.1)",
+        "pH": {
+          "value": 7.2,
+          "unit": null,
+          "status": "inferred",
+          "source": {
+            "doc": "main",
+            "loc": "p.95, §2.1",
+            "evidence": "1:1 mixture of acetonitrile and pH = 7.2, 20 mM phosphate buffer"
+          },
+          "note": "pH of the hybridization solution; assumed to be the incubation solution (not restated in §2.2)"
+        },
+        "incubation_time": {
+          "value": 40,
+          "unit": "h",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2",
+            "evidence": "for 40 h at 27°C"
+          }
+        },
+        "substrate_temperature": {
+          "value": 27,
+          "unit": "°C",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2",
+            "evidence": "for 40 h at 27°C under a water saturated atmosphere"
+          }
+        },
+        "post_treatment": "washed twice with pH 7.2, 20 mM phosphate buffer, twice with water, dried under N2 flow",
+        "characterization_methods": [
+          "ellipsometry",
+          "PM-IRRAS",
+          "XPS"
+        ],
+        "coverage_regime": "monolayer",
+        "preparation_variant": null,
+        "layer_thickness": {
+          "value": 4.3,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, Table 2"
+          },
+          "note": "Ellipsometry average of six different samples (Table 2 note); these are not stated to be the specimens used for spin-polarization measurements.",
+          "uncertainty": 0.1,
+          "uncertainty_type": "SD_between_preparations"
+        },
+        "surface_coverage": {
+          "value": 8.9,
+          "unit": "N 1s / Au 4f x100 (XPS intensity ratio)",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "S2, Table S2"
+          },
+          "note": "Relative-coverage proxy only (main p.97: nitrogen signal 'can be employed as a measure of the relative surface coverage'); not an absolute coverage.",
+          "uncertainty_type": "not_reported"
+        },
+        "tilt_angle": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "paper cannot distinguish uniform tilt from standing+lying two-phase model"
+        },
+        "molecular_orientation": "Two-phase interpretation: lying-down fraction ≲50% (worst-case limit, Table 2); more consistent, better-defined monolayers"
+      },
+      "structure_verification": [
+        {
+          "method": "CD",
+          "conditions": "3 µM duplex in pH 7.0, 10 mM sodium phosphate buffer; duplexes identical except lacking the thiol linker; ±1 mdeg",
+          "outcome": "approximately mirror image of (P) γPNA-PNA spectrum -> left-handed (M); ~4x larger |CD| than dsPNA",
+          "source": {
+            "doc": "main",
+            "loc": "p.95, §2.1, Fig. 2"
+          }
+        },
+        {
+          "method": "MALDI-ToF MS",
+          "conditions": "single strands, α-cyano-4-hydroxycinnamic acid matrix",
+          "outcome": "observed MW in good agreement with calculated (Table S1)",
+          "source": {
+            "doc": "SI",
+            "loc": "S1, Table S1"
+          }
+        },
+        {
+          "method": "PM-IRRAS",
+          "conditions": "incidence angle 82°",
+          "outcome": "no significant differences between SAMs; intense in-plane base vibrations -> bases considerably tilted vs surface normal",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2, Fig. 3"
+          }
+        },
+        {
+          "method": "XPS",
+          "conditions": "monochromatized Al Kα 1486.6 eV",
+          "outcome": "N 1s present; N 1s correlates with C 1s 288 eV (N-C=O) component; similar macroscopic coverage across samples",
+          "source": {
+            "doc": "SI",
+            "loc": "S2, Figs. S2-S3, Table S2"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_P_gPNA",
+      "role": "test",
+      "molecule": {
+        "class": "other",
+        "name": "γPNA-PNA duplex (20 bp; one decamer with 3 γ-(serine-derived hydroxymethyl) monomers)",
+        "formula": null,
+        "helix_handedness": {
+          "value": "right",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.95, §2.1; Fig. 2"
+          },
+          "note": "Handedness induced by chiral seeds (PNA backbone itself achiral); confirmed by solution CD."
+        },
+        "stereo_descriptor": "P",
+        "chirality_counterpart_of": "S_M_gPNA",
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "not quantified; CD asymmetries attributed to 'minor differences in the purity of the L and D amino acids'"
+        },
+        "helix_axis_orientation": {
+          "value": "unknown",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "pp.96-97, §2.2",
+            "evidence": "these two possibilities are hard to distinguish"
+          },
+          "note": "Either uniformly tilted helices or two phases (standing + lying-down); not resolved."
+        },
+        "anchor": {
+          "group": "thiol",
+          "linker": "(CH2)3",
+          "attached_end": "C_terminus",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "S1 sequence scheme, Table S1",
+            "evidence": "A GTT TGT ACG - (CH2)3SH"
+          },
+          "note": "Thiol at C end of decamer PNA3 (not of the 20-mer template); 3-amino-1-propanethiol-loaded resin."
+        },
+        "treatment": null,
+        "host_matrix": null,
+        "cofactor": null,
+        "source_organism": null,
+        "structure_db_id": null,
+        "geometry": {
+          "n_units": {
+            "value": 20,
+            "unit": "bp",
+            "status": "reported",
+            "basis": "measured_this_work_on_sample",
+            "source": {
+              "doc": "main",
+              "loc": "p.95 §2.1",
+              "evidence": "The investigated 20 base pair PNA duplexes"
+            },
+            "note": "design length (synthesized sequence)"
+          },
+          "secondary_structure": "double_helix",
+          "diameter_definition": "unspecified",
+          "pitch": {
+            "value": 6.4,
+            "unit": "nm/turn",
+            "status": "reported",
+            "basis": "literature_proxy_molecule",
+            "basis_reference": "dsγPNA homoduplex (both strands γ-modified), NMR/MD literature (Table 1, ref 36); measured duplex is a γPNA-PNA hybrid",
+            "source": {
+              "doc": "main",
+              "loc": "p.95 Table 1"
+            }
+          },
+          "units_per_turn": {
+            "value": 22,
+            "unit": "bp/turn",
+            "status": "reported",
+            "basis": "literature_proxy_molecule",
+            "basis_reference": "dsγPNA homoduplex (both strands γ-modified), NMR/MD literature (Table 1, ref 36); measured duplex is a γPNA-PNA hybrid",
+            "source": {
+              "doc": "main",
+              "loc": "p.95 Table 1"
+            }
+          },
+          "rise_per_unit": {
+            "value": 0.29,
+            "unit": "nm/bp",
+            "status": "reported",
+            "basis": "literature_proxy_molecule",
+            "basis_reference": "dsγPNA homoduplex (both strands γ-modified), NMR/MD literature (Table 1, ref 36); measured duplex is a γPNA-PNA hybrid",
+            "source": {
+              "doc": "main",
+              "loc": "p.95 Table 1"
+            }
+          },
+          "diameter": {
+            "value": 2.8,
+            "unit": "nm",
+            "status": "reported",
+            "basis": "literature_proxy_molecule",
+            "basis_reference": "assumed equal to dsPNA backbone diameter (ref 35)",
+            "source": {
+              "doc": "main",
+              "loc": "p.100 §4",
+              "evidence": "diameter of the helical backbone can be assumed to be similar at about 2.8 nm"
+            },
+            "note": "Table 1 leaves dsγPNA diameter blank; value is the authors' assumption"
+          },
+          "axial_length": {
+            "value": 5.8,
+            "unit": "nm",
+            "status": "reported",
+            "basis": "model_estimate_this_work",
+            "basis_reference": "dsγPNA homoduplex (both strands γ-modified), NMR/MD literature (Table 1, ref 36); measured duplex is a γPNA-PNA hybrid",
+            "source": {
+              "doc": "main",
+              "loc": "p.96 §2.2",
+              "evidence": "theoretical lengths of 7.4 and 5.8 nm"
+            }
+          },
+          "helical_turns": {
+            "value": 0.91,
+            "unit": "turns",
+            "status": "derived",
+            "basis": "literature_proxy_molecule",
+            "basis_reference": "dsγPNA homoduplex (both strands γ-modified), NMR/MD literature (Table 1, ref 36); measured duplex is a γPNA-PNA hybrid",
+            "note": "20 bp / 22 bp per turn"
+          },
+          "helix_form": {
+            "value": null,
+            "status": "not_reported",
+            "note": "dsγPNA described as having features of both dsPNA and dsDNA; hybrid form not reported"
+          }
+        },
+        "strands": [
+          {
+            "strand_id": "PNA1",
+            "polymer_type": "PNA",
+            "direction": "N_to_C",
+            "sequence": "CGTACAAACTTAGACACCAG",
+            "n_units": 20,
+            "terminus_start": "H-",
+            "terminus_end": "-Lys3-NH2",
+            "strand_role": "template",
+            "segment_of": null,
+            "segment_order": null,
+            "pairs_with": [
+              "γPNA2",
+              "PNA3"
+            ],
+            "carries_anchor": false,
+            "source": {
+              "doc": "SI",
+              "loc": "S1 scheme + Table S1"
+            }
+          },
+          {
+            "strand_id": "γPNA2",
+            "polymer_type": "PNA",
+            "direction": "N_to_C",
+            "sequence": "CTGGTGTCTA",
+            "n_units": 10,
+            "terminus_start": "H-",
+            "terminus_end": "-Lys-NH2",
+            "note": "γ-modified at positions 4, 7, 10 (see chiral_elements)",
+            "strand_role": "complement_segment",
+            "segment_of": "complement",
+            "segment_order": 1,
+            "pairs_with": [
+              "PNA1"
+            ],
+            "carries_anchor": false,
+            "source": {
+              "doc": "SI",
+              "loc": "S1 scheme + Table S1"
+            }
+          },
+          {
+            "strand_id": "PNA3",
+            "polymer_type": "PNA",
+            "direction": "N_to_C",
+            "sequence": "AGTTTGTACG",
+            "n_units": 10,
+            "terminus_start": "Ac-",
+            "terminus_end": "-(CH2)3SH",
+            "strand_role": "complement_segment",
+            "segment_of": "complement",
+            "segment_order": 2,
+            "pairs_with": [
+              "PNA1"
+            ],
+            "carries_anchor": true,
+            "source": {
+              "doc": "SI",
+              "loc": "S1 scheme + Table S1"
+            }
+          }
+        ],
+        "chirality_origin": "inherent_and_seeds",
+        "chiral_elements": [
+          {
+            "element_id": "gamma_ser",
+            "element_type": "backbone_stereocenter",
+            "description": "γ-hydroxymethyl (L-serine-derived) aeg monomer",
+            "configuration": "L",
+            "strand_id": "γPNA2",
+            "positions": [
+              4,
+              7,
+              10
+            ],
+            "terminus": "not_applicable",
+            "count": {
+              "value": 3,
+              "unit": "monomers",
+              "status": "reported",
+              "source": {
+                "doc": "main",
+                "loc": "p.95 §2.1",
+                "evidence": "at the γ position in three of the 10 monomers"
+              },
+              "note": "positions from underlining in SI S1 (.docx formatting)"
+            },
+            "function": "determines_handedness",
+            "induced_handedness": {
+              "value": "right",
+              "status": "reported",
+              "source": {
+                "doc": "main",
+                "loc": "p.95 §2.1",
+                "evidence": "effect of the γ-modified monomers is dominant"
+              }
+            },
+            "dominant": true,
+            "source": {
+              "doc": "main",
+              "loc": "p.95 §2.1",
+              "evidence": "effect of the γ-modified monomers is dominant"
+            }
+          },
+          {
+            "element_id": "lys_PNA1_C",
+            "element_type": "terminal_residue",
+            "description": "lysine(s) at C terminus of template (Lys3)",
+            "configuration": "L",
+            "strand_id": "PNA1",
+            "positions": [],
+            "terminus": "end",
+            "count": {
+              "value": 3,
+              "unit": "residues",
+              "status": "reported",
+              "source": {
+                "doc": "SI",
+                "loc": "S1 scheme + Table S1"
+              }
+            },
+            "function": "chiral_seed",
+            "induced_handedness": {
+              "value": "unknown",
+              "status": "reported",
+              "note": "paper gives the lysine->handedness rule only for unmodified dsPNA; γ-monomers stated dominant"
+            },
+            "dominant": false,
+            "source": {
+              "doc": "main",
+              "loc": "p.95 §2.1",
+              "evidence": "contained L-lysine and L-serine-derived γ-substituents"
+            }
+          },
+          {
+            "element_id": "lys_gPNA2_C",
+            "element_type": "terminal_residue",
+            "description": "lysine at C terminus of γ-decamer",
+            "configuration": "L",
+            "strand_id": "γPNA2",
+            "positions": [],
+            "terminus": "end",
+            "count": {
+              "value": 1,
+              "unit": "residues",
+              "status": "reported",
+              "source": {
+                "doc": "SI",
+                "loc": "S1 scheme + Table S1"
+              }
+            },
+            "function": "chiral_seed",
+            "induced_handedness": {
+              "value": "unknown",
+              "status": "reported",
+              "note": "paper gives the lysine->handedness rule only for unmodified dsPNA; γ-monomers stated dominant"
+            },
+            "dominant": false,
+            "source": {
+              "doc": "main",
+              "loc": "p.95 §2.1",
+              "evidence": "nonthiolized decamers feature a lysine group at the C end"
+            }
+          }
+        ]
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": null,
+        "cleaning": "boiled 10 min in acetone, then 10 min in ethanol; 5 min oxygen plasma; 40 min incubation in ethanol; dried under N2 flow and immediately put in contact with PNA solution",
+        "adhesion_layer": "Ti, 5-8 nm",
+        "film_thickness": {
+          "value": null,
+          "unit": "nm",
+          "status": "not_reported",
+          "note": "Two substrate types used: 120 nm Au on Si wafer, or 20 nm Au on fused silica wafer (fused silica used for 'a fraction of the samples' to allow back-side irradiation). Which type was used for each spin-polarization sample is not reported."
+        },
+        "deposition": {
+          "method": "e-beam evaporation"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "paper invokes intrinsic SOC of polycrystalline Au but quotes no value"
+        },
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.96, §2.2",
+          "evidence": "gold surfaces were prepared via e-beam evaporation"
+        },
+        "note": "Support is either Si wafer (Au 120 nm) or fused silica wafer (Au 20 nm); per-sample assignment not reported.",
+        "work_function": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "UPS reported only for dsPNA; not for γPNA-PNA"
+        }
+      },
+      "assembly": {
+        "method": "solution self-assembly (thiol on gold)",
+        "concentration": {
+          "value": 20,
+          "unit": "µM",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2",
+            "evidence": "incubated with 40 μl of the 20 μM dsPNA solution"
+          }
+        },
+        "volume": {
+          "value": 40,
+          "unit": "µl",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2"
+          }
+        },
+        "buffer": "Incubation solvent not restated; duplexes were annealed in 1:1 acetonitrile / 20 mM phosphate buffer pH 7.2 (§2.1)",
+        "pH": {
+          "value": 7.2,
+          "unit": null,
+          "status": "inferred",
+          "source": {
+            "doc": "main",
+            "loc": "p.95, §2.1",
+            "evidence": "1:1 mixture of acetonitrile and pH = 7.2, 20 mM phosphate buffer"
+          },
+          "note": "pH of the hybridization solution; assumed to be the incubation solution (not restated in §2.2)"
+        },
+        "incubation_time": {
+          "value": 40,
+          "unit": "h",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2",
+            "evidence": "for 40 h at 27°C"
+          }
+        },
+        "substrate_temperature": {
+          "value": 27,
+          "unit": "°C",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2",
+            "evidence": "for 40 h at 27°C under a water saturated atmosphere"
+          }
+        },
+        "post_treatment": "washed twice with pH 7.2, 20 mM phosphate buffer, twice with water, dried under N2 flow",
+        "characterization_methods": [
+          "ellipsometry",
+          "PM-IRRAS",
+          "XPS"
+        ],
+        "coverage_regime": "monolayer",
+        "preparation_variant": null,
+        "layer_thickness": {
+          "value": 4.4,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, Table 2"
+          },
+          "note": "Ellipsometry average of six different samples (Table 2 note); these are not stated to be the specimens used for spin-polarization measurements.",
+          "uncertainty": 0.1,
+          "uncertainty_type": "SD_between_preparations"
+        },
+        "surface_coverage": {
+          "value": 6.4,
+          "unit": "N 1s / Au 4f x100 (XPS intensity ratio)",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "S2, Table S2"
+          },
+          "note": "Relative-coverage proxy only (main p.97: nitrogen signal 'can be employed as a measure of the relative surface coverage'); not an absolute coverage.",
+          "uncertainty_type": "not_reported"
+        },
+        "tilt_angle": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "paper cannot distinguish uniform tilt from standing+lying two-phase model"
+        },
+        "molecular_orientation": "Two-phase interpretation: lying-down fraction ≲50% (worst-case limit, Table 2); more consistent, better-defined monolayers"
+      },
+      "structure_verification": [
+        {
+          "method": "CD",
+          "conditions": "3 µM duplex in pH 7.0, 10 mM sodium phosphate buffer; duplexes identical except lacking the thiol linker; ±1 mdeg",
+          "outcome": "right-handed (P) pattern; |CD| 18 mdeg at 255 nm, ~4x larger than unmodified dsPNA",
+          "source": {
+            "doc": "main",
+            "loc": "p.95, §2.1, Fig. 2"
+          }
+        },
+        {
+          "method": "MALDI-ToF MS",
+          "conditions": "single strands, α-cyano-4-hydroxycinnamic acid matrix",
+          "outcome": "observed MW in good agreement with calculated (Table S1)",
+          "source": {
+            "doc": "SI",
+            "loc": "S1, Table S1"
+          }
+        },
+        {
+          "method": "PM-IRRAS",
+          "conditions": "incidence angle 82°",
+          "outcome": "no significant differences between SAMs; intense in-plane base vibrations -> bases considerably tilted vs surface normal",
+          "source": {
+            "doc": "main",
+            "loc": "p.96, §2.2, Fig. 3"
+          }
+        },
+        {
+          "method": "XPS",
+          "conditions": "monochromatized Al Kα 1486.6 eV",
+          "outcome": "N 1s present; N 1s correlates with C 1s 288 eV (N-C=O) component; similar macroscopic coverage across samples",
+          "source": {
+            "doc": "SI",
+            "loc": "S2, Figs. S2-S3, Table S2"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_Au_poly_ref",
+      "role": "control_bare_substrate",
+      "molecule": {
+        "class": "none",
+        "name": null,
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "no molecule"
+        },
+        "chirality_counterpart_of": null,
+        "geometry": {
+          "secondary_structure": "not_applicable"
+        }
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": null,
+        "cleaning": "neither sputtered nor annealed (XPS reference description, main p.97); spin-reference treatment not stated",
+        "work_function": {
+          "value": 4.62,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "S2 UPS, Fig. S1"
+          },
+          "note": "UPS on unfunctionalized 20-nm Au film; lower than bulk Au due to low film thickness (main p.97)"
+        },
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.98, §2.3",
+          "evidence": "A polycrystalline gold substrate was mounted as a reference directly beneath the sample"
+        },
+        "note": "Bare reference mounted beneath each sample; used for zero-polarization calibration (linear light). Film type/thickness of the reference not stated."
+      }
+    },
+    {
+      "sample_id": "S_Au111_check",
+      "role": "control_reference",
+      "molecule": {
+        "class": "none",
+        "name": null,
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "no molecule"
+        },
+        "chirality_counterpart_of": null,
+        "geometry": {
+          "secondary_structure": "not_applicable"
+        }
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "single_crystal",
+        "facet": "111",
+        "support": null,
+        "cleaning": "sputter-cleaned",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.98, §2.3",
+          "evidence": "sputter-cleaned Au(111) single crystal"
+        },
+        "note": "Polarimeter alignment check before and after each PNA measurement; data kept only if ~±25% obtained."
+      }
+    }
+  ],
+  "setups": [
+    {
+      "setup_id": "SU_mott_213nm",
+      "technique": "photoemission_mott",
+      "observable_definition": {
+        "symbol": "P",
+        "formula": "P = (I+ - I-)/(I+ + I-) * S^-1, S = 0.18; value = expectation of Gaussian fitted to per-run histogram",
+        "spin_component": {
+          "value": "longitudinal",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.98, §2.3",
+            "evidence": "initially longitudinal spin component along the surface normal"
+          }
+        },
+        "spin_reference_axis": "electron velocity = surface normal (normal emission)",
+        "spin_quantization_axis": "surface normal of the sample",
+        "sign_convention": {
+          "value": "positive = spin parallel to electron velocity vector",
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.98, §2.3",
+            "evidence": "A positive polarization value corresponds to a spin aligned parallel"
+          }
+        },
+        "energy_reference": "not_applicable"
+      },
+      "transport_regime": "photoemission_through_layer",
+      "excitation": {
+        "source": "5th harmonic of regeneratively amplified, actively mode-locked Nd:YVO4 laser (1064 nm fundamental; LBO/LBO/BBO mixing)",
+        "photon_energy": {
+          "value": 5.83,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.97, §2.3"
+          }
+        },
+        "wavelength": {
+          "value": 213,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.97, §2.3"
+          }
+        },
+        "pulse_duration": {
+          "value": 200,
+          "unit": "ps",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.97, §2.3",
+            "evidence": "pulse duration of about 200 ps"
+          },
+          "note": "approximate"
+        },
+        "repetition_rate": {
+          "value": 20,
+          "unit": "kHz",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.97, §2.3"
+          }
+        },
+        "pulse_energy_on_sample": {
+          "value": 10,
+          "unit": "pJ",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.97, §2.3",
+            "evidence": "pulse energy was in the range of 10–100 pJ"
+          },
+          "note": "e^-2 area ~0.3 mm^2; peak intensity ~100 W cm^-2 (two-photon processes negligible); ~1e-4 of light absorbed in the monolayer",
+          "value_max": 100
+        },
+        "incidence_angle": {
+          "value": 0,
+          "unit": "deg",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.97, §2.3",
+            "evidence": "The laser impinged normal onto the sample surface"
+          },
+          "note": "For fused-silica-supported samples irradiation from the back side was intended (§2.2); per-sample geometry not reported."
+        },
+        "polarizations_used": [
+          "linear",
+          "cw_circular",
+          "ccw_circular"
+        ],
+        "polarization_optics": "zero-order quarter-wave plate after half-wave plate + Glan-Laser polarizer; linear = s-polarized; 10 mm fused-silica UHV windows, no birefringence measured",
+        "helicity_convention": {
+          "value": "cw/ccw defined relative to the spin quantization axis (surface normal of the sample)",
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.98, §2.3",
+            "evidence": "direction of circular polarization is defined relative to the spin quantization axis"
+          }
+        },
+        "ellipticity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "polarization 'carefully characterized using a second polarizer' but no ellipticity value given"
+        }
+      },
+      "detection": {
+        "detector": "compact Mott polarimeter; two PIPS detectors (Canberra PD300-15-300AM)",
+        "scattering_energy": {
+          "value": 50,
+          "unit": "keV",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.98, §2.3",
+            "evidence": "accelerated toward a scattering target at +50 kV"
+          }
+        },
+        "target": "Au foil, 70 nm",
+        "sherman_function": {
+          "value": -0.18,
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "S3",
+            "evidence": "S_eff = −0.18"
+          },
+          "note": "SI gives S_eff = -0.18; main text gives S = 0.18 (magnitude) in the P formula."
+        },
+        "calibration": "zero of P defined by linear-light measurement on bare polycrystalline Au reference mounted beneath the sample (Fig. 5C highlighted); polarimeter alignment checked on sputtered Au(111) (~±25% for circular light) before and after each sample",
+        "component_measured": "transverse",
+        "spin_rotation_optics": "90 deg electron beam bend before polarimeter (longitudinal -> transverse)",
+        "reference_sample": "polycrystalline Au mounted directly beneath the sample",
+        "switching_protocol": "QWP rotated through linear/cw/ccw; sample interchanged in vacuum with bare Au reference after each full QWP rotation",
+        "counts_per_point": {
+          "value": 100000.0,
+          "unit": "electrons per QWP position",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.98, §2.3"
+          },
+          "note": "~1e6 laser pulses per QWP position (one 'run')"
+        },
+        "electron_kinetic_energy_range": {
+          "value": 1,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.97, §2.3",
+            "evidence": "maximum kinetic energy of about 1 eV"
+          },
+          "note": "approximate maximum kinetic energy; lower bound not stated"
+        },
+        "emission_angle": {
+          "value": 0,
+          "unit": "deg",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.97, §2.3",
+            "evidence": "extracted normal to the surface"
+          }
+        },
+        "scattering_angle": {
+          "value": 120,
+          "unit": "deg",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "S3",
+            "evidence": "scattering angles of ϑ = ±120°"
+          },
+          "note": "detectors at ±120°"
+        }
+      },
+      "environment": {
+        "medium": "UHV",
+        "temperature": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "pressure": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        }
+      },
+      "apparatus_id": "muenster_mott",
+      "apparatus_changes": null
+    }
+  ],
+  "measurements": [
+    {
+      "measurement_id": "M_M_gPNA_pos1_lin",
+      "sample_id": "S_M_gPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "linear",
+      "result": {
+        "value": -16.4,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.98 Fig. 5(A), panel label; also p.99 §3.1; abstract"
+        },
+        "note": "Measurement position 1 on the sample; Fig. 5 shows the highest values measured on each sample (SI S4). Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 3.7,
+        "uncertainty_type": "fit_width",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_M_gPNA_pos1_cw",
+      "sample_id": "S_M_gPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "cw_circular",
+      "result": {
+        "value": -18.4,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.98 Fig. 5(A), panel label"
+        },
+        "note": "Measurement position 1 on the sample; Fig. 5 shows the highest values measured on each sample (SI S4). Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 2.4,
+        "uncertainty_type": "fit_width",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_M_gPNA_pos1_ccw",
+      "sample_id": "S_M_gPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "ccw_circular",
+      "result": {
+        "value": -15.1,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.98 Fig. 5(A), panel label"
+        },
+        "note": "Measurement position 1 on the sample; Fig. 5 shows the highest values measured on each sample (SI S4). Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 4.1,
+        "uncertainty_type": "fit_width",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_M_dsPNA_pos1_lin",
+      "sample_id": "S_M_dsPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "linear",
+      "result": {
+        "value": -7.3,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.98 Fig. 5(B), panel label; also p.99 §3.1"
+        },
+        "note": "Measurement position 1 on the sample; Fig. 5 shows the highest values measured on each sample (SI S4). Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 4.1,
+        "uncertainty_type": "fit_width",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_M_dsPNA_pos1_cw",
+      "sample_id": "S_M_dsPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "cw_circular",
+      "result": {
+        "value": -4.7,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.98 Fig. 5(B), panel label"
+        },
+        "note": "Measurement position 1 on the sample; Fig. 5 shows the highest values measured on each sample (SI S4). Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 2.5,
+        "uncertainty_type": "fit_width",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_M_dsPNA_pos1_ccw",
+      "sample_id": "S_M_dsPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "ccw_circular",
+      "result": {
+        "value": -8.3,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.98 Fig. 5(B), panel label"
+        },
+        "note": "Measurement position 1 on the sample; Fig. 5 shows the highest values measured on each sample (SI S4). Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 3.2,
+        "uncertainty_type": "fit_width",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_P_dsPNA_pos1_lin",
+      "sample_id": "S_P_dsPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "linear",
+      "result": {
+        "value": 11.6,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.98 Fig. 5(D), panel label; also p.99 §3.1"
+        },
+        "note": "Measurement position 1 on the sample; Fig. 5 shows the highest values measured on each sample (SI S4). Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 4.0,
+        "uncertainty_type": "fit_width",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_P_dsPNA_pos1_cw",
+      "sample_id": "S_P_dsPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "cw_circular",
+      "result": {
+        "value": 11.9,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.98 Fig. 5(D), panel label"
+        },
+        "note": "Measurement position 1 on the sample; Fig. 5 shows the highest values measured on each sample (SI S4). Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 3.5,
+        "uncertainty_type": "fit_width",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_P_dsPNA_pos1_ccw",
+      "sample_id": "S_P_dsPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "ccw_circular",
+      "result": {
+        "value": 13.4,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.98 Fig. 5(D), panel label"
+        },
+        "note": "Measurement position 1 on the sample; Fig. 5 shows the highest values measured on each sample (SI S4). Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 3.3,
+        "uncertainty_type": "fit_width",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_P_gPNA_pos1_lin",
+      "sample_id": "S_P_gPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "linear",
+      "result": {
+        "value": 24.4,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.98 Fig. 5(E), panel label; also p.99 §3.1; abstract"
+        },
+        "note": "Measurement position 1 on the sample; Fig. 5 shows the highest values measured on each sample (SI S4). Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 4.3,
+        "uncertainty_type": "fit_width",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_P_gPNA_pos1_cw",
+      "sample_id": "S_P_gPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "cw_circular",
+      "result": {
+        "value": 26.1,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.98 Fig. 5(E), panel label"
+        },
+        "note": "Measurement position 1 on the sample; Fig. 5 shows the highest values measured on each sample (SI S4). Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 4.2,
+        "uncertainty_type": "fit_width",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_P_gPNA_pos1_ccw",
+      "sample_id": "S_P_gPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "ccw_circular",
+      "result": {
+        "value": 22.0,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.98 Fig. 5(E), panel label"
+        },
+        "note": "Measurement position 1 on the sample; Fig. 5 shows the highest values measured on each sample (SI S4). Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 2.9,
+        "uncertainty_type": "fit_width",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_M_gPNA_pos2_lin",
+      "sample_id": "S_M_gPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "linear",
+      "result": {
+        "value": -7.6,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "S4 Fig. S5(a), panel label; also p.99 §3.1"
+        },
+        "note": "Measurement position 2 (different spot on the same monolayer), SI Fig. S5. Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 3.3,
+        "uncertainty_type": "fit_width",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_M_gPNA_pos2_cw",
+      "sample_id": "S_M_gPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "cw_circular",
+      "result": {
+        "value": -2.9,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "S4 Fig. S5(a), panel label"
+        },
+        "note": "Measurement position 2 (different spot on the same monolayer), SI Fig. S5. Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 0.9,
+        "uncertainty_type": "fit_width",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_M_gPNA_pos2_ccw",
+      "sample_id": "S_M_gPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "ccw_circular",
+      "result": {
+        "value": -8.7,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "S4 Fig. S5(a), panel label"
+        },
+        "note": "Measurement position 2 (different spot on the same monolayer), SI Fig. S5. Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 2.2,
+        "uncertainty_type": "fit_width",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_M_dsPNA_pos2_lin",
+      "sample_id": "S_M_dsPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "linear",
+      "result": {
+        "value": -6.7,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "S4 Fig. S5(b), panel label; also p.99 §3.1"
+        },
+        "note": "Measurement position 2 (different spot on the same monolayer), SI Fig. S5. Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 4.4,
+        "uncertainty_type": "fit_width",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_M_dsPNA_pos2_cw",
+      "sample_id": "S_M_dsPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "cw_circular",
+      "result": {
+        "value": -4.1,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "S4 Fig. S5(b), panel label"
+        },
+        "note": "Measurement position 2 (different spot on the same monolayer), SI Fig. S5. Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 3.4,
+        "uncertainty_type": "fit_width",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_M_dsPNA_pos2_ccw",
+      "sample_id": "S_M_dsPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "ccw_circular",
+      "result": {
+        "value": -8.5,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "S4 Fig. S5(b), panel label"
+        },
+        "note": "Measurement position 2 (different spot on the same monolayer), SI Fig. S5. Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 4.0,
+        "uncertainty_type": "fit_width",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_P_dsPNA_pos2_lin",
+      "sample_id": "S_P_dsPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "linear",
+      "result": {
+        "value": 6.6,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "S4 Fig. S5(c), panel label; also p.99 §3.1"
+        },
+        "note": "Measurement position 2 (different spot on the same monolayer), SI Fig. S5. Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 3.0,
+        "uncertainty_type": "fit_width",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_P_dsPNA_pos2_cw",
+      "sample_id": "S_P_dsPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "cw_circular",
+      "result": {
+        "value": 8.5,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "S4 Fig. S5(c), panel label"
+        },
+        "note": "Measurement position 2 (different spot on the same monolayer), SI Fig. S5. Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 3.4,
+        "uncertainty_type": "fit_width",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_P_dsPNA_pos2_ccw",
+      "sample_id": "S_P_dsPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "ccw_circular",
+      "result": {
+        "value": 6.2,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "S4 Fig. S5(c), panel label"
+        },
+        "note": "Measurement position 2 (different spot on the same monolayer), SI Fig. S5. Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 4.6,
+        "uncertainty_type": "fit_width",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_P_gPNA_pos2_lin",
+      "sample_id": "S_P_gPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "linear",
+      "result": {
+        "value": 18.6,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "S4 Fig. S5(d), panel label; also p.99 §3.1"
+        },
+        "note": "Measurement position 2 (different spot on the same monolayer), SI Fig. S5. Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 3.5,
+        "uncertainty_type": "fit_width",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_P_gPNA_pos2_cw",
+      "sample_id": "S_P_gPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "cw_circular",
+      "result": {
+        "value": 18.7,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "S4 Fig. S5(d), panel label"
+        },
+        "note": "Measurement position 2 (different spot on the same monolayer), SI Fig. S5. Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 4.0,
+        "uncertainty_type": "fit_width",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_P_gPNA_pos2_ccw",
+      "sample_id": "S_P_gPNA",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "ccw_circular",
+      "result": {
+        "value": 16.9,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "S4 Fig. S5(d), panel label"
+        },
+        "note": "Measurement position 2 (different spot on the same monolayer), SI Fig. S5. Uncertainty = SD of Gaussian fitted to histogram of per-run P values (~1e6 pulses per run).",
+        "uncertainty": 3.5,
+        "uncertainty_type": "fit_width",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "n_runs": {
+        "value": null,
+        "unit": "runs",
+        "status": "to_digitize",
+        "note": "number of runs = histogram counts; not stated numerically"
+      },
+      "n_samples": {
+        "value": 1,
+        "unit": null,
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "For each sample, a second measurement on a different position"
+        },
+        "note": "text implies one monolayer per duplex type; not stated explicitly"
+      }
+    },
+    {
+      "measurement_id": "M_Au_poly_ccw",
+      "sample_id": "S_Au_poly_ref",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "ccw_circular",
+      "result": {
+        "value": -6.5,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.98 Fig. 5(C), panel label"
+        },
+        "note": "Bare reference; values 'vary slightly between the individual samples' (p.99). Linear-light distribution defines P = 0 and is not recorded as a result.",
+        "uncertainty": 2.6,
+        "uncertainty_type": "fit_width",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null
+    },
+    {
+      "measurement_id": "M_Au_poly_cw",
+      "sample_id": "S_Au_poly_ref",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "cw_circular",
+      "result": {
+        "value": 4.9,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.98 Fig. 5(C), panel label"
+        },
+        "note": "Bare reference; values 'vary slightly between the individual samples' (p.99). Linear-light distribution defines P = 0 and is not recorded as a result.",
+        "uncertainty": 3.8,
+        "uncertainty_type": "fit_width",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null
+    },
+    {
+      "measurement_id": "M_Au111_cw_check",
+      "sample_id": "S_Au111_check",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "cw_circular",
+      "result": {
+        "value": 25,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.98-99 §2.3",
+          "evidence": "spin polarization values of about ±25% for cw and cw"
+        },
+        "note": "Acceptance criterion ('about +25%'), not an individual result; first 'cw' of '±25% for cw and cw ... respectively' maps to +.",
+        "uncertainty_type": "not_reported",
+        "sign": "positive"
+      }
+    },
+    {
+      "measurement_id": "M_Au111_ccw_check",
+      "sample_id": "S_Au111_check",
+      "setup_id": "SU_mott_213nm",
+      "light_polarization": "ccw_circular",
+      "result": {
+        "value": -25,
+        "unit": "%",
+        "status": "inferred",
+        "source": {
+          "doc": "main",
+          "loc": "p.98-99 §2.3",
+          "evidence": "±25% for cw and cw circularly polarized light"
+        },
+        "note": "Text says 'cw and cw' (typo); assignment of -25% to ccw inferred from 'respectively'. Acceptance criterion, not an individual result.",
+        "uncertainty_type": "not_reported",
+        "sign": "negative"
+      }
+    }
+  ],
+  "derived_quantities": [
+    {
+      "name": "fraction_of_spins_parallel_to_velocity_P_gPNA",
+      "from": [
+        "M_P_gPNA_pos1_lin"
+      ],
+      "formula": "(1 + P)/2",
+      "check": "none",
+      "value": {
+        "value": 62,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.99 §3.1",
+          "evidence": "up to 62% of the electron spins are aligned parallel"
+        },
+        "note": "(1+0.244)/2 = 0.622; schema check enum has no (1+P)/2 option"
+      }
+    },
+    {
+      "name": "theoretical_duplex_length_dsPNA",
+      "from": [
+        "S_M_dsPNA",
+        "S_P_dsPNA"
+      ],
+      "formula": "20 bp x 0.37 nm/bp (Table 1 literature rise)",
+      "check": "none",
+      "value": {
+        "value": 7.4,
+        "unit": "nm",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.96 §2.2",
+          "evidence": "theoretical lengths of 7.4 and 5.8 nm"
+        }
+      }
+    },
+    {
+      "name": "theoretical_duplex_length_dsgammaPNA",
+      "from": [
+        "S_M_gPNA",
+        "S_P_gPNA"
+      ],
+      "formula": "20 bp x 0.29 nm/bp (Table 1 literature dsγPNA rise)",
+      "check": "none",
+      "value": {
+        "value": 5.8,
+        "unit": "nm",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.96 §2.2"
+        },
+        "note": "uses dsγPNA homoduplex parameters for the γPNA-PNA hybrid"
+      }
+    },
+    {
+      "name": "lying_down_fraction_M_dsPNA",
+      "from": [
+        "S_M_dsPNA"
+      ],
+      "formula": "two-phase model: d = f*2.8 nm + (1-f)*L_theor",
+      "check": "none",
+      "value": {
+        "value": 57,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.96 Table 2; p.97 §2.2"
+        },
+        "note": "worst-case limit assuming standing + lying-down phases; helix diameter 2.8 nm"
+      }
+    },
+    {
+      "name": "lying_down_fraction_P_dsPNA",
+      "from": [
+        "S_P_dsPNA"
+      ],
+      "formula": "two-phase model: d = f*2.8 nm + (1-f)*L_theor",
+      "check": "none",
+      "value": {
+        "value": 48,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.96 Table 2; p.97 §2.2"
+        },
+        "note": "worst-case limit assuming standing + lying-down phases; helix diameter 2.8 nm"
+      }
+    },
+    {
+      "name": "lying_down_fraction_M_gPNA",
+      "from": [
+        "S_M_gPNA"
+      ],
+      "formula": "two-phase model: d = f*2.8 nm + (1-f)*L_theor",
+      "check": "none",
+      "value": {
+        "value": 50,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.96 Table 2; p.97 §2.2"
+        },
+        "note": "upper bound (≲50%); worst-case limit assuming standing + lying-down phases; helix diameter 2.8 nm"
+      }
+    },
+    {
+      "name": "lying_down_fraction_P_gPNA",
+      "from": [
+        "S_P_gPNA"
+      ],
+      "formula": "two-phase model: d = f*2.8 nm + (1-f)*L_theor",
+      "check": "none",
+      "value": {
+        "value": 50,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.96 Table 2; p.97 §2.2"
+        },
+        "note": "upper bound (≲50%); worst-case limit assuming standing + lying-down phases; helix diameter 2.8 nm"
+      }
+    },
+    {
+      "name": "surface_dipole_work_function_change_dsPNA",
+      "from": [
+        "S_Au_poly_ref",
+        "S_M_dsPNA"
+      ],
+      "formula": "ΔΦ = Φ(bare Au) - Φ(dsPNA/Au) = 4.62 - 3.86 eV",
+      "check": "none",
+      "value": {
+        "value": 0.76,
+        "unit": "eV",
+        "status": "derived",
+        "source": {
+          "doc": "SI",
+          "loc": "S2 UPS",
+          "evidence": "The difference of these values corresponds to the surface dipole"
+        },
+        "note": "Difference computed by extractor; paper states the difference is the surface dipole but gives no number. UPS specimen handedness not stated."
+      }
+    }
+  ],
+  "theory_results": [],
+  "qualitative_findings": [
+    {
+      "claim": "Sign of P follows helix handedness: (P) duplexes give positive P (spin parallel to momentum), (M) give negative P, for both dsPNA and γPNA-PNA.",
+      "variable": "helix handedness",
+      "trend": "sign_flip",
+      "related_ids": [
+        "S_M_dsPNA",
+        "S_P_dsPNA",
+        "S_M_gPNA",
+        "S_P_gPNA"
+      ],
+      "source": {
+        "doc": "main",
+        "loc": "p.99 §4"
+      }
+    },
+    {
+      "claim": "For all functionalized surfaces P is independent of light polarization within error margins.",
+      "variable": "light polarization",
+      "trend": "independent",
+      "related_ids": [
+        "S_M_dsPNA",
+        "S_P_dsPNA",
+        "S_M_gPNA",
+        "S_P_gPNA"
+      ],
+      "source": {
+        "doc": "main",
+        "loc": "p.99 §3.1"
+      }
+    },
+    {
+      "claim": "Maximum |P| in γPNA-PNA (with 3 chiral γ-monomers) is 2-3x higher than in unmodified dsPNA; correlates with ~4x larger CD magnitude.",
+      "variable": "chiral γ-modified monomers / CD magnitude",
+      "trend": "increases",
+      "related_ids": [
+        "S_M_gPNA",
+        "S_P_gPNA",
+        "S_M_dsPNA",
+        "S_P_dsPNA"
+      ],
+      "source": {
+        "doc": "main",
+        "loc": "p.99 §4"
+      }
+    },
+    {
+      "claim": "Handedness-spin relation is opposite to right-handed dsDNA, oligopeptide α-helices and overcrowded alkenes, but same as heptahelicene and bacteriorhodopsin.",
+      "variable": "molecular class (cross-paper comparison)",
+      "trend": "other",
+      "source": {
+        "doc": "main",
+        "loc": "p.99 §4"
+      }
+    },
+    {
+      "claim": "Measured P varied by as much as 30% over the surface area of the γPNA-PNA monolayer; reduced values attributed to monolayer imperfections.",
+      "variable": "measurement position on sample",
+      "trend": "other",
+      "related_ids": [
+        "S_P_gPNA",
+        "S_M_gPNA"
+      ],
+      "source": {
+        "doc": "main",
+        "loc": "p.100 §4"
+      }
+    },
+    {
+      "claim": "Spin polarization per length is roughly doubled in γPNA-PNA vs dsDNA (dsDNA ~2-3 %/nm for 26-78 bp); unmodified dsPNA ~half as efficient as dsDNA per length.",
+      "variable": "spin polarization per unit length",
+      "trend": "other",
+      "related_ids": [
+        "S_P_gPNA",
+        "S_P_dsPNA"
+      ],
+      "source": {
+        "doc": "main",
+        "loc": "p.100 §4"
+      }
+    }
+  ],
+  "discrepancies": [
+    {
+      "field": "setups[0].detection.sherman_function",
+      "description": "Main text: S = 0.18 (in P formula). SI S3: S_eff = -0.18. Stored SI signed value per schema rule.",
+      "severity": "low",
+      "sources": [
+        {
+          "doc": "main",
+          "loc": "p.99 §3.1"
+        },
+        {
+          "doc": "SI",
+          "loc": "S3"
+        }
+      ]
+    },
+    {
+      "field": "measurements[M_Au111_*]",
+      "description": "Text reads '±25% for cw and cw circularly polarized light ... respectively' (typo); ccw assignment of -25% inferred.",
+      "severity": "low",
+      "sources": [
+        {
+          "doc": "main",
+          "loc": "p.98-99 §2.3"
+        }
+      ]
+    },
+    {
+      "field": "abstract vs results",
+      "description": "Abstract: P in PNA lacking chiral monomers 'about P = 12%' corresponds to (P) dsPNA 11.6%; (M) dsPNA gave only -7.3%. Abstract 'up to 24.4%' refers to linear light; cw on same spot gave 26.1 ± 4.2%.",
+      "severity": "low",
+      "sources": [
+        {
+          "doc": "main",
+          "loc": "p.93 abstract"
+        },
+        {
+          "doc": "main",
+          "loc": "p.98 Fig. 5"
+        }
+      ]
+    },
+    {
+      "field": "measurements n per sample",
+      "description": "SI S4 says 'at least two measurements' per sample; only two positions are reported per sample.",
+      "severity": "low",
+      "sources": [
+        {
+          "doc": "SI",
+          "loc": "S4"
+        },
+        {
+          "doc": "main",
+          "loc": "p.99 §3.1"
+        }
+      ]
+    },
+    {
+      "field": "samples[*].assembly vs spin samples",
+      "description": "Ellipsometry (n=6), XPS and UPS specimens are not stated to be the specimens measured by Mott polarimetry; values are attached at sample-type level.",
+      "severity": "medium",
+      "sources": [
+        {
+          "doc": "main",
+          "loc": "p.96 Table 2"
+        },
+        {
+          "doc": "SI",
+          "loc": "S2"
+        }
+      ]
+    },
+    {
+      "field": "samples[*gPNA].molecule.geometry",
+      "description": "Pitch/bp-per-turn/rise are literature dsγPNA homoduplex values used as proxy for the γPNA-PNA hybrid (3 of 20 monomers modified); recorded with basis = literature_proxy_molecule.",
+      "severity": "medium",
+      "sources": [
+        {
+          "doc": "main",
+          "loc": "p.95 Table 1; p.96 §2.2"
+        }
+      ]
+    }
+  ],
+  "extraction_meta": {
+    "extractor": "Claude (claude-opus-5-5)",
+    "extraction_date": "2026-10-21",
+    "verified_by": null,
+    "verification_date": null,
+    "notes": "v0.4.0 record. Page numbers are journal pages (93-102). Fig. 5 / Fig. S5 values are printed panel labels. related_papers filled with DOIs taken from the cited papers' own PDFs (papers 1-3 supplied later). Still without dedicated fields (out of v0.4 scope): ionization energy 7.40 eV, dipole field ~1e8 V/m, guanine content 30%, peak intensity ~100 W/cm2."
+  }
+}

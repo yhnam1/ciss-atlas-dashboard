@@ -1,0 +1,3310 @@
+{
+  "schema_version": "0.4.0",
+  "paper": {
+    "paper_id": "goehler_2011_dsDNA",
+    "title": "Spin Selectivity in Electron Transmission Through Self-Assembled Monolayers of Double-Stranded DNA",
+    "authors": [
+      "B. Göhler",
+      "V. Hamelbeck",
+      "T. Z. Markus",
+      "M. Kettner",
+      "G. F. Hanne",
+      "Z. Vager",
+      "R. Naaman",
+      "H. Zacharias"
+    ],
+    "journal": "Science",
+    "year": 2011,
+    "doi": "10.1126/science.1199339",
+    "documents_used": [
+      "main",
+      "SI"
+    ]
+  },
+  "samples": [
+    {
+      "sample_id": "S_ds26_polyAu",
+      "role": "test",
+      "molecule": {
+        "class": "dsDNA",
+        "name": null,
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "handedness of the DNA duplex is not stated in this paper (only 'double helix')"
+        },
+        "stereo_descriptor": null,
+        "chirality_counterpart_of": null,
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "not discussed (natural DNA)"
+        },
+        "helix_axis_orientation": {
+          "value": null,
+          "status": "not_reported",
+          "note": "Fig. 1 scheme shows upright rigid rods ('closely packed'); no measured orientation"
+        },
+        "anchor": {
+          "group": "thiol",
+          "linker": "(CH2)3",
+          "attached_end": "3prime",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "thiolated on the 3′ end of one of the DNA strands"
+          },
+          "note": "3'-(CH2)3-SH"
+        },
+        "treatment": null,
+        "host_matrix": null,
+        "cofactor": null,
+        "source_organism": null,
+        "structure_db_id": null,
+        "chirality_origin": "inherent_monomers",
+        "chiral_elements": [
+          {
+            "element_id": "deoxyribose",
+            "element_type": "sugar",
+            "description": "deoxyribose sugars of the backbone ('chiral both because of its primary structure and ... double helix')",
+            "configuration": null,
+            "strand_id": null,
+            "positions": [],
+            "terminus": "not_applicable",
+            "count": {
+              "value": null,
+              "unit": null,
+              "status": "not_reported",
+              "note": "number/configuration of stereocentres not stated"
+            },
+            "function": "inherent",
+            "induced_handedness": {
+              "value": null,
+              "status": "not_reported"
+            },
+            "dominant": null,
+            "source": {
+              "doc": "main",
+              "loc": "p.894",
+              "evidence": "chiral both because of its primary structure"
+            }
+          }
+        ],
+        "strands": [
+          {
+            "strand_id": "ds26_top",
+            "polymer_type": "DNA",
+            "direction": "5to3",
+            "sequence": "TTTGTTTGTTTGTTTGTTTTTTTTTT",
+            "n_units": 26,
+            "terminus_start": null,
+            "terminus_end": "3'-(CH2)3-SH",
+            "strand_role": "other",
+            "segment_of": null,
+            "segment_order": null,
+            "pairs_with": [
+              "ds26_bottom"
+            ],
+            "carries_anchor": true,
+            "source": {
+              "doc": "SI",
+              "loc": "SI p.1-2, 'Sequences used'"
+            }
+          },
+          {
+            "strand_id": "ds26_bottom",
+            "polymer_type": "DNA",
+            "direction": "5to3",
+            "sequence": "AAAAAAAAAACAAACAAACAAACAAA",
+            "n_units": 26,
+            "terminus_start": null,
+            "terminus_end": null,
+            "strand_role": "other",
+            "segment_of": null,
+            "segment_order": null,
+            "pairs_with": [
+              "ds26_top"
+            ],
+            "carries_anchor": false,
+            "source": {
+              "doc": "SI",
+              "loc": "SI p.1-2, 'Sequences used'"
+            },
+            "note": "printed 3'->5' in SI; reversed here to 5'->3'"
+          }
+        ],
+        "geometry": {
+          "n_units": {
+            "value": 26,
+            "unit": "bp",
+            "status": "reported",
+            "basis": "measured_this_work_on_sample",
+            "source": {
+              "doc": "main",
+              "loc": "p.894",
+              "evidence": "26, 40, 50, and 78 base pairs"
+            },
+            "note": "design length"
+          },
+          "units_per_turn": {
+            "value": 10,
+            "unit": "bp/turn",
+            "status": "derived",
+            "basis": "model_estimate_this_work",
+            "source": {
+              "doc": "main",
+              "loc": "p.896 Fig. 4, top axis 'Helical turns (approx.)'"
+            },
+            "note": "top axis of Fig. 4 maps 10 bp per approximate helical turn; no structural value stated"
+          },
+          "helical_turns": {
+            "value": 2.6,
+            "unit": "turns",
+            "status": "derived",
+            "basis": "model_estimate_this_work",
+            "source": {
+              "doc": "main",
+              "loc": "p.896 Fig. 4, top axis"
+            },
+            "note": "n_units / 10 (Fig. 4 top axis)"
+          },
+          "secondary_structure": "double_helix"
+        }
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": null,
+        "cleaning": null,
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.895",
+          "evidence": "polycrystalline gold substrates"
+        },
+        "work_function": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "note": "preparation of poly-Au substrates not described beyond ref. 11"
+      },
+      "assembly": {
+        "method": "solution self-assembly (thiol on gold)",
+        "concentration": {
+          "value": 10,
+          "unit": "µM",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1",
+            "evidence": "20 μl of 10 μM dsDNA"
+          }
+        },
+        "volume": {
+          "value": 20,
+          "unit": "µl",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1"
+          }
+        },
+        "buffer": "0.4 M potassium phosphate buffer",
+        "pH": {
+          "value": 7.2,
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1"
+          }
+        },
+        "incubation_time": {
+          "value": 20,
+          "unit": "h",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1",
+            "evidence": "After 20 hours in a controlled humid environment"
+          }
+        },
+        "post_treatment": "rinsed with 0.4 M potassium phosphate buffer and de-ionized water, dried by N2; transferred to UHV via load lock",
+        "characterization_methods": [
+          "as described in ref. S1 (not shown in this paper)"
+        ],
+        "coverage_regime": "monolayer",
+        "preparation_variant": null
+      },
+      "structure_verification": [
+        {
+          "method": "various (per ref. S1)",
+          "outcome": "methods 'ensure the uniformity and reproducibility of the DNA layer'; no data shown",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "characterized by various methods"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_ds40_polyAu",
+      "role": "test",
+      "molecule": {
+        "class": "dsDNA",
+        "name": null,
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "handedness of the DNA duplex is not stated in this paper (only 'double helix')"
+        },
+        "stereo_descriptor": null,
+        "chirality_counterpart_of": null,
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "not discussed (natural DNA)"
+        },
+        "helix_axis_orientation": {
+          "value": null,
+          "status": "not_reported",
+          "note": "Fig. 1 scheme shows upright rigid rods ('closely packed'); no measured orientation"
+        },
+        "anchor": {
+          "group": "thiol",
+          "linker": "(CH2)3",
+          "attached_end": "3prime",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "thiolated on the 3′ end of one of the DNA strands"
+          },
+          "note": "3'-(CH2)3-SH"
+        },
+        "treatment": null,
+        "host_matrix": null,
+        "cofactor": null,
+        "source_organism": null,
+        "structure_db_id": null,
+        "chirality_origin": "inherent_monomers",
+        "chiral_elements": [
+          {
+            "element_id": "deoxyribose",
+            "element_type": "sugar",
+            "description": "deoxyribose sugars of the backbone ('chiral both because of its primary structure and ... double helix')",
+            "configuration": null,
+            "strand_id": null,
+            "positions": [],
+            "terminus": "not_applicable",
+            "count": {
+              "value": null,
+              "unit": null,
+              "status": "not_reported",
+              "note": "number/configuration of stereocentres not stated"
+            },
+            "function": "inherent",
+            "induced_handedness": {
+              "value": null,
+              "status": "not_reported"
+            },
+            "dominant": null,
+            "source": {
+              "doc": "main",
+              "loc": "p.894",
+              "evidence": "chiral both because of its primary structure"
+            }
+          }
+        ],
+        "strands": [
+          {
+            "strand_id": "ds40_top",
+            "polymer_type": "DNA",
+            "direction": "5to3",
+            "sequence": "TCTCAAGAATCGGCATTAGCTCAACTGTCAACTCCTCTTT",
+            "n_units": 40,
+            "terminus_start": null,
+            "terminus_end": "3'-(CH2)3-SH",
+            "strand_role": "other",
+            "segment_of": null,
+            "segment_order": null,
+            "pairs_with": [
+              "ds40_bottom"
+            ],
+            "carries_anchor": true,
+            "source": {
+              "doc": "SI",
+              "loc": "SI p.1-2, 'Sequences used'"
+            }
+          },
+          {
+            "strand_id": "ds40_bottom",
+            "polymer_type": "DNA",
+            "direction": "5to3",
+            "sequence": "AAAGAGGAGTTGACAGTTGAGCTAATGCCGATTCTTGAGA",
+            "n_units": 40,
+            "terminus_start": null,
+            "terminus_end": null,
+            "strand_role": "other",
+            "segment_of": null,
+            "segment_order": null,
+            "pairs_with": [
+              "ds40_top"
+            ],
+            "carries_anchor": false,
+            "source": {
+              "doc": "SI",
+              "loc": "SI p.1-2, 'Sequences used'"
+            },
+            "note": "printed 3'->5' in SI; reversed here to 5'->3'"
+          }
+        ],
+        "geometry": {
+          "n_units": {
+            "value": 40,
+            "unit": "bp",
+            "status": "reported",
+            "basis": "measured_this_work_on_sample",
+            "source": {
+              "doc": "main",
+              "loc": "p.894",
+              "evidence": "26, 40, 50, and 78 base pairs"
+            },
+            "note": "design length"
+          },
+          "units_per_turn": {
+            "value": 10,
+            "unit": "bp/turn",
+            "status": "derived",
+            "basis": "model_estimate_this_work",
+            "source": {
+              "doc": "main",
+              "loc": "p.896 Fig. 4, top axis 'Helical turns (approx.)'"
+            },
+            "note": "top axis of Fig. 4 maps 10 bp per approximate helical turn; no structural value stated"
+          },
+          "helical_turns": {
+            "value": 4.0,
+            "unit": "turns",
+            "status": "derived",
+            "basis": "model_estimate_this_work",
+            "source": {
+              "doc": "main",
+              "loc": "p.896 Fig. 4, top axis"
+            },
+            "note": "n_units / 10 (Fig. 4 top axis)"
+          },
+          "secondary_structure": "double_helix"
+        }
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": null,
+        "cleaning": null,
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.895",
+          "evidence": "polycrystalline gold substrates"
+        },
+        "work_function": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "note": "preparation of poly-Au substrates not described beyond ref. 11"
+      },
+      "assembly": {
+        "method": "solution self-assembly (thiol on gold)",
+        "concentration": {
+          "value": 10,
+          "unit": "µM",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1",
+            "evidence": "20 μl of 10 μM dsDNA"
+          }
+        },
+        "volume": {
+          "value": 20,
+          "unit": "µl",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1"
+          }
+        },
+        "buffer": "0.4 M potassium phosphate buffer",
+        "pH": {
+          "value": 7.2,
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1"
+          }
+        },
+        "incubation_time": {
+          "value": 20,
+          "unit": "h",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1",
+            "evidence": "After 20 hours in a controlled humid environment"
+          }
+        },
+        "post_treatment": "rinsed with 0.4 M potassium phosphate buffer and de-ionized water, dried by N2; transferred to UHV via load lock",
+        "characterization_methods": [
+          "as described in ref. S1 (not shown in this paper)"
+        ],
+        "coverage_regime": "monolayer",
+        "preparation_variant": null
+      },
+      "structure_verification": [
+        {
+          "method": "various (per ref. S1)",
+          "outcome": "methods 'ensure the uniformity and reproducibility of the DNA layer'; no data shown",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "characterized by various methods"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_ds50_polyAu",
+      "role": "test",
+      "molecule": {
+        "class": "dsDNA",
+        "name": null,
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "handedness of the DNA duplex is not stated in this paper (only 'double helix')"
+        },
+        "stereo_descriptor": null,
+        "chirality_counterpart_of": null,
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "not discussed (natural DNA)"
+        },
+        "helix_axis_orientation": {
+          "value": null,
+          "status": "not_reported",
+          "note": "Fig. 1 scheme shows upright rigid rods ('closely packed'); no measured orientation"
+        },
+        "anchor": {
+          "group": "thiol",
+          "linker": "(CH2)3",
+          "attached_end": "3prime",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "thiolated on the 3′ end of one of the DNA strands"
+          },
+          "note": "3'-(CH2)3-SH"
+        },
+        "treatment": null,
+        "host_matrix": null,
+        "cofactor": null,
+        "source_organism": null,
+        "structure_db_id": null,
+        "chirality_origin": "inherent_monomers",
+        "chiral_elements": [
+          {
+            "element_id": "deoxyribose",
+            "element_type": "sugar",
+            "description": "deoxyribose sugars of the backbone ('chiral both because of its primary structure and ... double helix')",
+            "configuration": null,
+            "strand_id": null,
+            "positions": [],
+            "terminus": "not_applicable",
+            "count": {
+              "value": null,
+              "unit": null,
+              "status": "not_reported",
+              "note": "number/configuration of stereocentres not stated"
+            },
+            "function": "inherent",
+            "induced_handedness": {
+              "value": null,
+              "status": "not_reported"
+            },
+            "dominant": null,
+            "source": {
+              "doc": "main",
+              "loc": "p.894",
+              "evidence": "chiral both because of its primary structure"
+            }
+          }
+        ],
+        "strands": [
+          {
+            "strand_id": "ds50_top",
+            "polymer_type": "DNA",
+            "direction": "5to3",
+            "sequence": "TACTCTACCTTCTCAAGAATCGGCATTAGCTCAACTGTCAACTCCTCTTT",
+            "n_units": 50,
+            "terminus_start": null,
+            "terminus_end": "3'-(CH2)3-SH",
+            "strand_role": "other",
+            "segment_of": null,
+            "segment_order": null,
+            "pairs_with": [
+              "ds50_bottom"
+            ],
+            "carries_anchor": true,
+            "source": {
+              "doc": "SI",
+              "loc": "SI p.1-2, 'Sequences used'"
+            }
+          },
+          {
+            "strand_id": "ds50_bottom",
+            "polymer_type": "DNA",
+            "direction": "5to3",
+            "sequence": "AAAGAGGAGTTGACAGTTGAGCTAATGCCGATTCTTGAGAAGGTAGAGTA",
+            "n_units": 50,
+            "terminus_start": null,
+            "terminus_end": null,
+            "strand_role": "other",
+            "segment_of": null,
+            "segment_order": null,
+            "pairs_with": [
+              "ds50_top"
+            ],
+            "carries_anchor": false,
+            "source": {
+              "doc": "SI",
+              "loc": "SI p.1-2, 'Sequences used'"
+            },
+            "note": "printed 3'->5' in SI; reversed here to 5'->3'"
+          }
+        ],
+        "geometry": {
+          "n_units": {
+            "value": 50,
+            "unit": "bp",
+            "status": "reported",
+            "basis": "measured_this_work_on_sample",
+            "source": {
+              "doc": "main",
+              "loc": "p.894",
+              "evidence": "26, 40, 50, and 78 base pairs"
+            },
+            "note": "design length"
+          },
+          "units_per_turn": {
+            "value": 10,
+            "unit": "bp/turn",
+            "status": "derived",
+            "basis": "model_estimate_this_work",
+            "source": {
+              "doc": "main",
+              "loc": "p.896 Fig. 4, top axis 'Helical turns (approx.)'"
+            },
+            "note": "top axis of Fig. 4 maps 10 bp per approximate helical turn; no structural value stated"
+          },
+          "helical_turns": {
+            "value": 5.0,
+            "unit": "turns",
+            "status": "derived",
+            "basis": "model_estimate_this_work",
+            "source": {
+              "doc": "main",
+              "loc": "p.896 Fig. 4, top axis"
+            },
+            "note": "n_units / 10 (Fig. 4 top axis)"
+          },
+          "secondary_structure": "double_helix"
+        }
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": null,
+        "cleaning": null,
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.895",
+          "evidence": "polycrystalline gold substrates"
+        },
+        "work_function": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "note": "preparation of poly-Au substrates not described beyond ref. 11"
+      },
+      "assembly": {
+        "method": "solution self-assembly (thiol on gold)",
+        "concentration": {
+          "value": 10,
+          "unit": "µM",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1",
+            "evidence": "20 μl of 10 μM dsDNA"
+          }
+        },
+        "volume": {
+          "value": 20,
+          "unit": "µl",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1"
+          }
+        },
+        "buffer": "0.4 M potassium phosphate buffer",
+        "pH": {
+          "value": 7.2,
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1"
+          }
+        },
+        "incubation_time": {
+          "value": 20,
+          "unit": "h",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1",
+            "evidence": "After 20 hours in a controlled humid environment"
+          }
+        },
+        "post_treatment": "rinsed with 0.4 M potassium phosphate buffer and de-ionized water, dried by N2; transferred to UHV via load lock",
+        "characterization_methods": [
+          "as described in ref. S1 (not shown in this paper)"
+        ],
+        "coverage_regime": "monolayer",
+        "preparation_variant": null
+      },
+      "structure_verification": [
+        {
+          "method": "various (per ref. S1)",
+          "outcome": "methods 'ensure the uniformity and reproducibility of the DNA layer'; no data shown",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "characterized by various methods"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_ds78_polyAu",
+      "role": "test",
+      "molecule": {
+        "class": "dsDNA",
+        "name": null,
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "handedness of the DNA duplex is not stated in this paper (only 'double helix')"
+        },
+        "stereo_descriptor": null,
+        "chirality_counterpart_of": null,
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "not discussed (natural DNA)"
+        },
+        "helix_axis_orientation": {
+          "value": null,
+          "status": "not_reported",
+          "note": "Fig. 1 scheme shows upright rigid rods ('closely packed'); no measured orientation"
+        },
+        "anchor": {
+          "group": "thiol",
+          "linker": "(CH2)6",
+          "attached_end": "5prime",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1-2, 'Sequences used'"
+          },
+          "note": "78 bp: thiol on the 5' end via (CH2)6 (SI sequence + primer); main text says 3' for all - see discrepancies"
+        },
+        "treatment": null,
+        "host_matrix": null,
+        "cofactor": null,
+        "source_organism": null,
+        "structure_db_id": null,
+        "chirality_origin": "inherent_monomers",
+        "chiral_elements": [
+          {
+            "element_id": "deoxyribose",
+            "element_type": "sugar",
+            "description": "deoxyribose sugars of the backbone ('chiral both because of its primary structure and ... double helix')",
+            "configuration": null,
+            "strand_id": null,
+            "positions": [],
+            "terminus": "not_applicable",
+            "count": {
+              "value": null,
+              "unit": null,
+              "status": "not_reported",
+              "note": "number/configuration of stereocentres not stated"
+            },
+            "function": "inherent",
+            "induced_handedness": {
+              "value": null,
+              "status": "not_reported"
+            },
+            "dominant": null,
+            "source": {
+              "doc": "main",
+              "loc": "p.894",
+              "evidence": "chiral both because of its primary structure"
+            }
+          }
+        ],
+        "strands": [
+          {
+            "strand_id": "ds78_top",
+            "polymer_type": "DNA",
+            "direction": "5to3",
+            "sequence": "GTAAAACGACGGCCAGTGCCAAGCTTGCATGCCTGCAGGTCGACTCTAGAGGATCCCCGGGTACCGAGCTCGAATTCG",
+            "n_units": 78,
+            "terminus_start": null,
+            "terminus_end": null,
+            "strand_role": "other",
+            "segment_of": null,
+            "segment_order": null,
+            "pairs_with": [
+              "ds78_bottom"
+            ],
+            "carries_anchor": false,
+            "source": {
+              "doc": "SI",
+              "loc": "SI p.1-2, 'Sequences used'"
+            },
+            "note": "PCR product; primers 5'GTAAAACGACGGCCAGTGCCAAGC3' and SH(CH2)6-5'CGAATTCGAGCTCGGTACCCGGG3' (SI p.1)"
+          },
+          {
+            "strand_id": "ds78_bottom",
+            "polymer_type": "DNA",
+            "direction": "5to3",
+            "sequence": "CGAATTCGAGCTCGGTACCCGGGGATCCTCTAGAGTCGACCTGCAGGCATGCAAGCTTGGCACTGGCCGTCGTTTTAC",
+            "n_units": 78,
+            "terminus_start": "SH-(CH2)6-5'",
+            "terminus_end": null,
+            "strand_role": "other",
+            "segment_of": null,
+            "segment_order": null,
+            "pairs_with": [
+              "ds78_top"
+            ],
+            "carries_anchor": true,
+            "source": {
+              "doc": "SI",
+              "loc": "SI p.1-2, 'Sequences used'"
+            },
+            "note": "printed 3'->5' in SI; reversed here to 5'->3'"
+          }
+        ],
+        "geometry": {
+          "n_units": {
+            "value": 78,
+            "unit": "bp",
+            "status": "reported",
+            "basis": "measured_this_work_on_sample",
+            "source": {
+              "doc": "main",
+              "loc": "p.894",
+              "evidence": "26, 40, 50, and 78 base pairs"
+            },
+            "note": "design length"
+          },
+          "units_per_turn": {
+            "value": 10,
+            "unit": "bp/turn",
+            "status": "derived",
+            "basis": "model_estimate_this_work",
+            "source": {
+              "doc": "main",
+              "loc": "p.896 Fig. 4, top axis 'Helical turns (approx.)'"
+            },
+            "note": "top axis of Fig. 4 maps 10 bp per approximate helical turn; no structural value stated"
+          },
+          "helical_turns": {
+            "value": 7.8,
+            "unit": "turns",
+            "status": "derived",
+            "basis": "model_estimate_this_work",
+            "source": {
+              "doc": "main",
+              "loc": "p.896 Fig. 4, top axis"
+            },
+            "note": "n_units / 10 (Fig. 4 top axis)"
+          },
+          "secondary_structure": "double_helix"
+        }
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": null,
+        "cleaning": null,
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.895",
+          "evidence": "polycrystalline gold substrates"
+        },
+        "work_function": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "note": "preparation of poly-Au substrates not described beyond ref. 11"
+      },
+      "assembly": {
+        "method": "solution self-assembly (thiol on gold)",
+        "concentration": {
+          "value": 10,
+          "unit": "µM",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1",
+            "evidence": "20 μl of 10 μM dsDNA"
+          }
+        },
+        "volume": {
+          "value": 20,
+          "unit": "µl",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1"
+          }
+        },
+        "buffer": "0.4 M potassium phosphate buffer",
+        "pH": {
+          "value": 7.2,
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1"
+          }
+        },
+        "incubation_time": {
+          "value": 20,
+          "unit": "h",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1",
+            "evidence": "After 20 hours in a controlled humid environment"
+          }
+        },
+        "post_treatment": "rinsed with 0.4 M potassium phosphate buffer and de-ionized water, dried by N2; transferred to UHV via load lock",
+        "characterization_methods": [
+          "as described in ref. S1 (not shown in this paper)"
+        ],
+        "coverage_regime": "monolayer",
+        "preparation_variant": null
+      },
+      "structure_verification": [
+        {
+          "method": "various (per ref. S1)",
+          "outcome": "methods 'ensure the uniformity and reproducibility of the DNA layer'; no data shown",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "characterized by various methods"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_ds50_Au111",
+      "role": "test",
+      "molecule": {
+        "class": "dsDNA",
+        "name": null,
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "handedness of the DNA duplex is not stated in this paper (only 'double helix')"
+        },
+        "stereo_descriptor": null,
+        "chirality_counterpart_of": null,
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "not discussed (natural DNA)"
+        },
+        "helix_axis_orientation": {
+          "value": null,
+          "status": "not_reported",
+          "note": "Fig. 1 scheme shows upright rigid rods ('closely packed'); no measured orientation"
+        },
+        "anchor": {
+          "group": "thiol",
+          "linker": "(CH2)3",
+          "attached_end": "3prime",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "thiolated on the 3′ end of one of the DNA strands"
+          },
+          "note": "3'-(CH2)3-SH"
+        },
+        "treatment": null,
+        "host_matrix": null,
+        "cofactor": null,
+        "source_organism": null,
+        "structure_db_id": null,
+        "chirality_origin": "inherent_monomers",
+        "chiral_elements": [
+          {
+            "element_id": "deoxyribose",
+            "element_type": "sugar",
+            "description": "deoxyribose sugars of the backbone ('chiral both because of its primary structure and ... double helix')",
+            "configuration": null,
+            "strand_id": null,
+            "positions": [],
+            "terminus": "not_applicable",
+            "count": {
+              "value": null,
+              "unit": null,
+              "status": "not_reported",
+              "note": "number/configuration of stereocentres not stated"
+            },
+            "function": "inherent",
+            "induced_handedness": {
+              "value": null,
+              "status": "not_reported"
+            },
+            "dominant": null,
+            "source": {
+              "doc": "main",
+              "loc": "p.894",
+              "evidence": "chiral both because of its primary structure"
+            }
+          }
+        ],
+        "strands": [
+          {
+            "strand_id": "ds50_top",
+            "polymer_type": "DNA",
+            "direction": "5to3",
+            "sequence": "TACTCTACCTTCTCAAGAATCGGCATTAGCTCAACTGTCAACTCCTCTTT",
+            "n_units": 50,
+            "terminus_start": null,
+            "terminus_end": "3'-(CH2)3-SH",
+            "strand_role": "other",
+            "segment_of": null,
+            "segment_order": null,
+            "pairs_with": [
+              "ds50_bottom"
+            ],
+            "carries_anchor": true,
+            "source": {
+              "doc": "SI",
+              "loc": "SI p.1-2, 'Sequences used'"
+            }
+          },
+          {
+            "strand_id": "ds50_bottom",
+            "polymer_type": "DNA",
+            "direction": "5to3",
+            "sequence": "AAAGAGGAGTTGACAGTTGAGCTAATGCCGATTCTTGAGAAGGTAGAGTA",
+            "n_units": 50,
+            "terminus_start": null,
+            "terminus_end": null,
+            "strand_role": "other",
+            "segment_of": null,
+            "segment_order": null,
+            "pairs_with": [
+              "ds50_top"
+            ],
+            "carries_anchor": false,
+            "source": {
+              "doc": "SI",
+              "loc": "SI p.1-2, 'Sequences used'"
+            },
+            "note": "printed 3'->5' in SI; reversed here to 5'->3'"
+          }
+        ],
+        "geometry": {
+          "n_units": {
+            "value": 50,
+            "unit": "bp",
+            "status": "reported",
+            "basis": "measured_this_work_on_sample",
+            "source": {
+              "doc": "main",
+              "loc": "p.894",
+              "evidence": "26, 40, 50, and 78 base pairs"
+            },
+            "note": "design length"
+          },
+          "units_per_turn": {
+            "value": 10,
+            "unit": "bp/turn",
+            "status": "derived",
+            "basis": "model_estimate_this_work",
+            "source": {
+              "doc": "main",
+              "loc": "p.896 Fig. 4, top axis 'Helical turns (approx.)'"
+            },
+            "note": "top axis of Fig. 4 maps 10 bp per approximate helical turn; no structural value stated"
+          },
+          "helical_turns": {
+            "value": 5.0,
+            "unit": "turns",
+            "status": "derived",
+            "basis": "model_estimate_this_work",
+            "source": {
+              "doc": "main",
+              "loc": "p.896 Fig. 4, top axis"
+            },
+            "note": "n_units / 10 (Fig. 4 top axis)"
+          },
+          "secondary_structure": "double_helix"
+        }
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "single_crystal",
+        "facet": "111",
+        "support": null,
+        "cleaning": "Ar+ sputtering cycles (1.7 -> 0.9 keV) and annealing (several minutes at about 880 K)",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.1"
+        },
+        "work_function": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        }
+      },
+      "assembly": {
+        "method": "solution self-assembly (thiol on gold)",
+        "concentration": {
+          "value": 10,
+          "unit": "µM",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1",
+            "evidence": "20 μl of 10 μM dsDNA"
+          }
+        },
+        "volume": {
+          "value": 20,
+          "unit": "µl",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1"
+          }
+        },
+        "buffer": "0.4 M potassium phosphate buffer",
+        "pH": {
+          "value": 7.2,
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1"
+          }
+        },
+        "incubation_time": {
+          "value": 20,
+          "unit": "h",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1",
+            "evidence": "After 20 hours in a controlled humid environment"
+          }
+        },
+        "post_treatment": "rinsed with 0.4 M potassium phosphate buffer and de-ionized water, dried by N2; transferred to UHV via load lock",
+        "characterization_methods": [
+          "as described in ref. S1 (not shown in this paper)"
+        ],
+        "coverage_regime": "monolayer",
+        "preparation_variant": null
+      },
+      "structure_verification": [
+        {
+          "method": "various (per ref. S1)",
+          "outcome": "methods 'ensure the uniformity and reproducibility of the DNA layer'; no data shown",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "characterized by various methods"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_ds50_Au111_UVdamaged",
+      "role": "control_damaged",
+      "molecule": {
+        "class": "dsDNA",
+        "name": null,
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "handedness of the DNA duplex is not stated in this paper (only 'double helix')"
+        },
+        "stereo_descriptor": null,
+        "chirality_counterpart_of": null,
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "not discussed (natural DNA)"
+        },
+        "helix_axis_orientation": {
+          "value": null,
+          "status": "not_reported",
+          "note": "Fig. 1 scheme shows upright rigid rods ('closely packed'); no measured orientation"
+        },
+        "anchor": {
+          "group": "thiol",
+          "linker": "(CH2)3",
+          "attached_end": "3prime",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "thiolated on the 3′ end of one of the DNA strands"
+          },
+          "note": "3'-(CH2)3-SH"
+        },
+        "treatment": "UV damage: λ = 266 nm, 50 nJ/cm2 (after verifying spin filtering before damage)",
+        "host_matrix": null,
+        "cofactor": null,
+        "source_organism": null,
+        "structure_db_id": null,
+        "chirality_origin": "inherent_monomers",
+        "chiral_elements": [
+          {
+            "element_id": "deoxyribose",
+            "element_type": "sugar",
+            "description": "deoxyribose sugars of the backbone ('chiral both because of its primary structure and ... double helix')",
+            "configuration": null,
+            "strand_id": null,
+            "positions": [],
+            "terminus": "not_applicable",
+            "count": {
+              "value": null,
+              "unit": null,
+              "status": "not_reported",
+              "note": "number/configuration of stereocentres not stated"
+            },
+            "function": "inherent",
+            "induced_handedness": {
+              "value": null,
+              "status": "not_reported"
+            },
+            "dominant": null,
+            "source": {
+              "doc": "main",
+              "loc": "p.894",
+              "evidence": "chiral both because of its primary structure"
+            }
+          }
+        ],
+        "strands": [
+          {
+            "strand_id": "ds50_top",
+            "polymer_type": "DNA",
+            "direction": "5to3",
+            "sequence": "TACTCTACCTTCTCAAGAATCGGCATTAGCTCAACTGTCAACTCCTCTTT",
+            "n_units": 50,
+            "terminus_start": null,
+            "terminus_end": "3'-(CH2)3-SH",
+            "strand_role": "other",
+            "segment_of": null,
+            "segment_order": null,
+            "pairs_with": [
+              "ds50_bottom"
+            ],
+            "carries_anchor": true,
+            "source": {
+              "doc": "SI",
+              "loc": "SI p.1-2, 'Sequences used'"
+            }
+          },
+          {
+            "strand_id": "ds50_bottom",
+            "polymer_type": "DNA",
+            "direction": "5to3",
+            "sequence": "AAAGAGGAGTTGACAGTTGAGCTAATGCCGATTCTTGAGAAGGTAGAGTA",
+            "n_units": 50,
+            "terminus_start": null,
+            "terminus_end": null,
+            "strand_role": "other",
+            "segment_of": null,
+            "segment_order": null,
+            "pairs_with": [
+              "ds50_top"
+            ],
+            "carries_anchor": false,
+            "source": {
+              "doc": "SI",
+              "loc": "SI p.1-2, 'Sequences used'"
+            },
+            "note": "printed 3'->5' in SI; reversed here to 5'->3'"
+          }
+        ],
+        "geometry": {
+          "n_units": {
+            "value": 50,
+            "unit": "bp",
+            "status": "reported",
+            "basis": "measured_this_work_on_sample",
+            "source": {
+              "doc": "main",
+              "loc": "p.894",
+              "evidence": "26, 40, 50, and 78 base pairs"
+            },
+            "note": "design length"
+          },
+          "units_per_turn": {
+            "value": 10,
+            "unit": "bp/turn",
+            "status": "derived",
+            "basis": "model_estimate_this_work",
+            "source": {
+              "doc": "main",
+              "loc": "p.896 Fig. 4, top axis 'Helical turns (approx.)'"
+            },
+            "note": "top axis of Fig. 4 maps 10 bp per approximate helical turn; no structural value stated"
+          },
+          "helical_turns": {
+            "value": 5.0,
+            "unit": "turns",
+            "status": "derived",
+            "basis": "model_estimate_this_work",
+            "source": {
+              "doc": "main",
+              "loc": "p.896 Fig. 4, top axis"
+            },
+            "note": "n_units / 10 (Fig. 4 top axis)"
+          },
+          "secondary_structure": "double_helix"
+        }
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "single_crystal",
+        "facet": "111",
+        "support": null,
+        "cleaning": "Ar+ sputtering cycles (1.7 -> 0.9 keV) and annealing (several minutes at about 880 K)",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.1"
+        },
+        "work_function": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        }
+      },
+      "assembly": {
+        "method": "solution self-assembly (thiol on gold)",
+        "concentration": {
+          "value": 10,
+          "unit": "µM",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1",
+            "evidence": "20 μl of 10 μM dsDNA"
+          }
+        },
+        "volume": {
+          "value": 20,
+          "unit": "µl",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1"
+          }
+        },
+        "buffer": "0.4 M potassium phosphate buffer",
+        "pH": {
+          "value": 7.2,
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1"
+          }
+        },
+        "incubation_time": {
+          "value": 20,
+          "unit": "h",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.1",
+            "evidence": "After 20 hours in a controlled humid environment"
+          }
+        },
+        "post_treatment": "rinsed with 0.4 M potassium phosphate buffer and de-ionized water, dried by N2; transferred to UHV via load lock",
+        "characterization_methods": [
+          "as described in ref. S1 (not shown in this paper)"
+        ],
+        "coverage_regime": "monolayer",
+        "preparation_variant": null
+      },
+      "structure_verification": [
+        {
+          "method": "various (per ref. S1)",
+          "outcome": "methods 'ensure the uniformity and reproducibility of the DNA layer'; no data shown",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "characterized by various methods"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_ss50_polyAu",
+      "role": "control_achiral_or_disordered",
+      "molecule": {
+        "class": "ssDNA",
+        "name": null,
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "handedness of the DNA duplex is not stated in this paper (only 'double helix')"
+        },
+        "stereo_descriptor": null,
+        "chirality_counterpart_of": null,
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "not discussed (natural DNA)"
+        },
+        "helix_axis_orientation": {
+          "value": null,
+          "status": "not_reported",
+          "note": "Fig. 1 scheme shows upright rigid rods ('closely packed'); no measured orientation"
+        },
+        "anchor": {
+          "group": "not reported",
+          "linker": null,
+          "attached_end": "unknown",
+          "status": "not_reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "thiolated on the 3′ end of one of the DNA strands"
+          },
+          "note": "anchoring of the ssDNA not described; assumed thiol? -> not reported"
+        },
+        "treatment": null,
+        "host_matrix": null,
+        "cofactor": null,
+        "source_organism": null,
+        "structure_db_id": null,
+        "chirality_origin": "inherent_monomers",
+        "chiral_elements": [
+          {
+            "element_id": "deoxyribose",
+            "element_type": "sugar",
+            "description": "deoxyribose sugars of the backbone ('chiral both because of its primary structure and ... double helix')",
+            "configuration": null,
+            "strand_id": null,
+            "positions": [],
+            "terminus": "not_applicable",
+            "count": {
+              "value": null,
+              "unit": null,
+              "status": "not_reported",
+              "note": "number/configuration of stereocentres not stated"
+            },
+            "function": "inherent",
+            "induced_handedness": {
+              "value": null,
+              "status": "not_reported"
+            },
+            "dominant": null,
+            "source": {
+              "doc": "main",
+              "loc": "p.894"
+            }
+          }
+        ],
+        "geometry": {
+          "n_units": {
+            "value": 50,
+            "unit": "nt",
+            "status": "reported",
+            "basis": "measured_this_work_on_sample",
+            "source": {
+              "doc": "SI",
+              "loc": "SI p.9",
+              "evidence": "a monolayer of 50bp single strand DNA"
+            }
+          },
+          "secondary_structure": "not_applicable"
+        },
+        "strands": [
+          {
+            "strand_id": "ss50",
+            "polymer_type": "DNA",
+            "direction": "5to3",
+            "sequence": null,
+            "n_units": 50,
+            "strand_role": "single_strand",
+            "carries_anchor": true,
+            "note": "sequence of the ssDNA not given",
+            "source": {
+              "doc": "SI",
+              "loc": "SI p.9"
+            }
+          }
+        ]
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": null,
+        "cleaning": null,
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.895",
+          "evidence": "polycrystalline gold substrates"
+        },
+        "work_function": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "note": "preparation of poly-Au substrates not described beyond ref. 11"
+      },
+      "assembly": {
+        "method": "not described for ssDNA",
+        "buffer": "not reported",
+        "post_treatment": "not reported",
+        "characterization_methods": [
+          "as described in ref. S1 (not shown in this paper)"
+        ],
+        "coverage_regime": "unknown",
+        "preparation_variant": null
+      },
+      "structure_verification": []
+    },
+    {
+      "sample_id": "S_polyAu_bare",
+      "role": "control_bare_substrate",
+      "molecule": {
+        "class": "none",
+        "name": null,
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "no molecule"
+        },
+        "chirality_counterpart_of": null,
+        "geometry": {
+          "secondary_structure": "not_applicable"
+        }
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": "Au evaporated on poly-Cu",
+        "cleaning": "uncleaned (Fig. 4 caption)",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.10 Fig. S8a caption"
+        },
+        "work_function": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "note": "Fig. S8a: 'poly gold evaporated on poly-Cu'; Fig. 4: 'uncleaned bare polycrystalline gold substrate'"
+      }
+    },
+    {
+      "sample_id": "S_Au111_bare",
+      "role": "control_bare_substrate",
+      "molecule": {
+        "class": "none",
+        "name": null,
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "no molecule"
+        },
+        "chirality_counterpart_of": null,
+        "geometry": {
+          "secondary_structure": "not_applicable"
+        }
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "single_crystal",
+        "facet": "111",
+        "support": null,
+        "cleaning": "Ar+ sputtering cycles (1.7 -> 0.9 keV) and annealing (several minutes at about 880 K)",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.1"
+        },
+        "work_function": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        }
+      }
+    },
+    {
+      "sample_id": "S_Mo_ref",
+      "role": "control_reference",
+      "molecule": {
+        "class": "none",
+        "name": null,
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "no molecule"
+        },
+        "chirality_counterpart_of": null,
+        "geometry": {
+          "secondary_structure": "not_applicable"
+        }
+      },
+      "substrate": {
+        "material": "Mo",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": null,
+        "cleaning": null,
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.8",
+          "evidence": "poly-crystalline Mo sample holder"
+        },
+        "note": "sample holder used as zero-polarization reference"
+      }
+    }
+  ],
+  "setups": [
+    {
+      "setup_id": "SU_mott_213nm",
+      "technique": "photoemission_mott",
+      "observable_definition": {
+        "symbol": "P",
+        "formula": "A = (I_U - I_L)/(I_U + I_L); P = A/S_eff",
+        "spin_component": {
+          "value": "longitudinal",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.895",
+            "evidence": "spin polarization parallel to the sample normal"
+          }
+        },
+        "spin_reference_axis": "sample normal = initial electron velocity (normal incidence/emission)",
+        "spin_quantization_axis": "sample normal",
+        "sign_convention": {
+          "value": "negative = spin antiparallel to electron velocity (DNA result)",
+          "unit": null,
+          "status": "inferred",
+          "source": {
+            "doc": "main",
+            "loc": "p.895 Fig. 1 caption",
+            "evidence": "spin aligned antiparallel to their velocity"
+          },
+          "note": "sign meaning inferred from Fig. 1 caption + negative DNA values; Fig. 2A caption conflicts (see discrepancies)"
+        },
+        "energy_reference": "not_applicable"
+      },
+      "transport_regime": "photoemission_through_layer",
+      "excitation": {
+        "source": "5th harmonic of regeneratively amplified, diode-pumped active mode-locked Nd:YVO4 (1064 nm, 20 kHz, ~1.75 mJ, ~300 ps fundamental; LBO/BBO/BBO)",
+        "photon_energy": {
+          "value": 5.84,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.894"
+          }
+        },
+        "wavelength": {
+          "value": 212.8,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.3"
+          }
+        },
+        "pulse_duration": {
+          "value": 200,
+          "unit": "ps",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "pulse duration of about 200 ps"
+          },
+          "note": "SI p.3 gives ~300 ps for the 1064 nm fundamental"
+        },
+        "repetition_rate": {
+          "value": 20,
+          "unit": "kHz",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.894"
+          }
+        },
+        "fluence": {
+          "value": 150,
+          "unit": "pJ/cm2",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "a fluence of 150 pJ/cm2"
+          }
+        },
+        "pulse_energy_on_sample": {
+          "value": 15,
+          "unit": "pJ",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.3",
+            "evidence": "about 15 pJ"
+          },
+          "note": "approximate; 5 µJ available at 5th harmonic"
+        },
+        "incidence_angle": {
+          "value": 0,
+          "unit": "deg",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "incident normal to the sample"
+          }
+        },
+        "polarizations_used": [
+          "linear",
+          "cw_circular",
+          "ccw_circular"
+        ],
+        "polarization_optics": "UV calcite polarizer + zero-order quarter-wave plate; circularity checked with rotating α-BBO analyzer; 5 mm fused-silica window, no birefringence",
+        "helicity_convention": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "cw/ccw viewpoint not defined"
+        },
+        "ellipticity": {
+          "value": 0.96,
+          "unit": "minor/major axis ratio",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.3",
+            "evidence": "ratio of major to minor axes ... about 0.96"
+          },
+          "note": "distortion <2% relative change of ellipticity; text says 'major to minor' but 0.96 < 1"
+        }
+      },
+      "detection": {
+        "detector": "compact Mott polarimeter, upper/lower counters, optical-fibre readout (Ortec 778)",
+        "scattering_energy": {
+          "value": 50,
+          "unit": "keV",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.5"
+          }
+        },
+        "target": "Au foil (Z = 79)",
+        "sherman_function": {
+          "value": -0.229,
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.895"
+          },
+          "note": "calibrated against unstrained GaAs source P = (27 ± 1)%; A = (-6.19 ± 0.64)e-2 from 119 determinations (SI p.5-6)",
+          "uncertainty": 0.011,
+          "uncertainty_type": "unspecified"
+        },
+        "calibration": "S_eff calibrated vs GaAs source (SI p.5-6); zero reference by alternating with polycrystalline Mo sample holder",
+        "component_measured": "transverse",
+        "spin_rotation_optics": "electrostatic 90 deg bender + transport optics (longitudinal -> transverse)",
+        "reference_sample": "polycrystalline Mo sample holder",
+        "switching_protocol": "light polarization changed every 20 s; after each polarization loop sample and reference alternated",
+        "electron_kinetic_energy_range": {
+          "value": 0,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.896",
+            "evidence": "Ekin = 0 to 1.2 eV"
+          },
+          "value_max": 1.2
+        },
+        "emission_angle": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "extraction geometry shown only schematically (Fig. S1)"
+        },
+        "scattering_angle": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "'fixed scattering angles ±θ' without value"
+        }
+      },
+      "environment": {
+        "medium": "UHV",
+        "temperature": {
+          "value": "room temperature",
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "at room temperature"
+          }
+        },
+        "pressure": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "residual_magnetic_field": {
+          "value": 20,
+          "unit": "µT",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.3",
+            "evidence": "less than 20 µT"
+          },
+          "note": "upper bound; three Helmholtz coils + internal µ-metal shield"
+        },
+        "measurement_duration": {
+          "value": 4,
+          "unit": "h",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "No damage was observed ... (~4 hours)"
+          },
+          "note": "approximate duration of a spin measurement"
+        }
+      },
+      "apparatus_id": "muenster_mott",
+      "apparatus_changes": null
+    },
+    {
+      "setup_id": "SU_tof_213nm",
+      "technique": "photoemission_tof",
+      "observable_definition": {
+        "symbol": "ΔI/I (ccw vs cw)",
+        "formula": "(I_ccw - I_cw)/I_cw, total photoelectron yield",
+        "spin_component": {
+          "value": "not_spin_resolved",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.8",
+            "evidence": "the electron signal is not spin resolved"
+          }
+        },
+        "energy_reference": "not_applicable"
+      },
+      "transport_regime": "photoemission_through_layer",
+      "excitation": {
+        "source": "5th harmonic of regeneratively amplified, diode-pumped active mode-locked Nd:YVO4 (1064 nm, 20 kHz, ~1.75 mJ, ~300 ps fundamental; LBO/BBO/BBO)",
+        "photon_energy": {
+          "value": 5.9,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.8 Fig. S6 caption"
+          },
+          "note": "Fig. S6 caption gives 5.9 eV; main text 5.84 eV"
+        },
+        "wavelength": {
+          "value": 212.8,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.3"
+          }
+        },
+        "pulse_duration": {
+          "value": 200,
+          "unit": "ps",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "pulse duration of about 200 ps"
+          },
+          "note": "SI p.3 gives ~300 ps for the 1064 nm fundamental"
+        },
+        "repetition_rate": {
+          "value": 20,
+          "unit": "kHz",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.894"
+          }
+        },
+        "fluence": {
+          "value": 150,
+          "unit": "pJ/cm2",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "a fluence of 150 pJ/cm2"
+          }
+        },
+        "pulse_energy_on_sample": {
+          "value": 15,
+          "unit": "pJ",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.3",
+            "evidence": "about 15 pJ"
+          },
+          "note": "approximate; 5 µJ available at 5th harmonic"
+        },
+        "incidence_angle": {
+          "value": 0,
+          "unit": "deg",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "incident normal to the sample"
+          }
+        },
+        "polarizations_used": [
+          "cw_circular",
+          "ccw_circular"
+        ],
+        "polarization_optics": "UV calcite polarizer + zero-order quarter-wave plate; circularity checked with rotating α-BBO analyzer; 5 mm fused-silica window, no birefringence",
+        "helicity_convention": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "cw/ccw viewpoint not defined"
+        },
+        "ellipticity": {
+          "value": 0.96,
+          "unit": "minor/major axis ratio",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.3",
+            "evidence": "ratio of major to minor axes ... about 0.96"
+          },
+          "note": "distortion <2% relative change of ellipticity; text says 'major to minor' but 0.96 < 1"
+        }
+      },
+      "detection": {
+        "detector": "time-of-flight spectrometer, 399 mm field-free drift tube, chevron MCP, TDC (ACAM AM-GP1)",
+        "electron_kinetic_energy_range": {
+          "value": 0,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.8",
+            "evidence": "kinetic energies up to ~ 1.2 eV"
+          },
+          "value_max": 1.2
+        },
+        "energy_resolved_spin": false
+      },
+      "environment": {
+        "medium": "UHV",
+        "temperature": {
+          "value": "room temperature",
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "at room temperature"
+          }
+        },
+        "pressure": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "residual_magnetic_field": {
+          "value": 20,
+          "unit": "µT",
+          "status": "reported",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.3",
+            "evidence": "less than 20 µT"
+          },
+          "note": "upper bound; three Helmholtz coils + internal µ-metal shield"
+        },
+        "measurement_duration": {
+          "value": 4,
+          "unit": "h",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.894",
+            "evidence": "No damage was observed ... (~4 hours)"
+          },
+          "note": "approximate duration of a spin measurement"
+        }
+      },
+      "apparatus_id": "muenster_mott",
+      "apparatus_changes": null
+    }
+  ],
+  "measurements": [
+    {
+      "measurement_id": "M_Au111_bare_fig2A_cw",
+      "sample_id": "S_Au111_bare",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -22,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.895 text + Fig. 2A caption"
+        },
+        "note": "P = -(22 ± 5)% from A = (5.03 ± 1.1)% with S_eff; caption: cw -22%",
+        "uncertainty": 5,
+        "uncertainty_type": "unspecified",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_Au111_bare_fig2A_ccw",
+      "sample_id": "S_Au111_bare",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 22,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.895 Fig. 2A caption"
+        },
+        "uncertainty": null,
+        "uncertainty_type": "not_reported",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_Au111_bare_fig2A_lin",
+      "sample_id": "S_Au111_bare",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 0,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.895 Fig. 2A caption; text 'no spin polarization was observed'"
+        },
+        "uncertainty": null,
+        "uncertainty_type": "not_reported",
+        "sign": "zero"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_ds50_Au111_fig2_cw",
+      "sample_id": "S_ds50_Au111",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -35,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.895 text + Fig. 2B-D"
+        },
+        "note": "single measurement series on one preparation; ± type not defined in paper",
+        "uncertainty": 3,
+        "uncertainty_type": "unspecified",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_ds50_Au111_fig2_lin",
+      "sample_id": "S_ds50_Au111",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -31,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.895 text + Fig. 2B-D"
+        },
+        "note": "single measurement series on one preparation; ± type not defined in paper",
+        "uncertainty": 4,
+        "uncertainty_type": "unspecified",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_ds50_Au111_fig2_ccw",
+      "sample_id": "S_ds50_Au111",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -29,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.895 text + Fig. 2B-D"
+        },
+        "note": "single measurement series on one preparation; ± type not defined in paper",
+        "uncertainty": 3,
+        "uncertainty_type": "unspecified",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_ds78_polyAu_fig3_cw",
+      "sample_id": "S_ds78_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -54.5,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.895 Fig. 3 caption; = SI p.9 Fig. S7c; text rounded -(55/57/61 ± 7/6/6)%"
+        },
+        "note": "'typical results for one preparation' (SI p.9). single measurement series on one preparation; ± type not defined in paper",
+        "uncertainty": 7.0,
+        "uncertainty_type": "unspecified",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_ds78_polyAu_fig3_lin",
+      "sample_id": "S_ds78_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -57.2,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.895 Fig. 3 caption; = SI p.9 Fig. S7c; text rounded -(55/57/61 ± 7/6/6)%"
+        },
+        "note": "'typical results for one preparation' (SI p.9). single measurement series on one preparation; ± type not defined in paper",
+        "uncertainty": 5.9,
+        "uncertainty_type": "unspecified",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_ds78_polyAu_fig3_ccw",
+      "sample_id": "S_ds78_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -60.8,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.895 Fig. 3 caption; = SI p.9 Fig. S7c; text rounded -(55/57/61 ± 7/6/6)%"
+        },
+        "note": "'typical results for one preparation' (SI p.9). single measurement series on one preparation; ± type not defined in paper",
+        "uncertainty": 5.8,
+        "uncertainty_type": "unspecified",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_ds40_polyAu_figS7_lin",
+      "sample_id": "S_ds40_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -38.0,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.9 Fig. S7a caption"
+        },
+        "note": "'typical results for one preparation'. single measurement series on one preparation; ± type not defined in paper",
+        "uncertainty": 6.5,
+        "uncertainty_type": "unspecified",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_ds40_polyAu_figS7_cw",
+      "sample_id": "S_ds40_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -35.1,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.9 Fig. S7a caption"
+        },
+        "note": "'typical results for one preparation'. single measurement series on one preparation; ± type not defined in paper",
+        "uncertainty": 8.3,
+        "uncertainty_type": "unspecified",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_ds40_polyAu_figS7_ccw",
+      "sample_id": "S_ds40_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -40.1,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.9 Fig. S7a caption"
+        },
+        "note": "'typical results for one preparation'. single measurement series on one preparation; ± type not defined in paper",
+        "uncertainty": 5.5,
+        "uncertainty_type": "unspecified",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_ds50_polyAu_figS7_lin",
+      "sample_id": "S_ds50_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -35.5,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.9 Fig. S7b caption"
+        },
+        "note": "'typical results for one preparation'. single measurement series on one preparation; ± type not defined in paper",
+        "uncertainty": 5.5,
+        "uncertainty_type": "unspecified",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_ds50_polyAu_figS7_cw",
+      "sample_id": "S_ds50_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -31.5,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.9 Fig. S7b caption"
+        },
+        "note": "'typical results for one preparation'. single measurement series on one preparation; ± type not defined in paper",
+        "uncertainty": 5.7,
+        "uncertainty_type": "unspecified",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_ds50_polyAu_figS7_ccw",
+      "sample_id": "S_ds50_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -38.8,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.9 Fig. S7b caption"
+        },
+        "note": "'typical results for one preparation'. single measurement series on one preparation; ± type not defined in paper",
+        "uncertainty": 5.9,
+        "uncertainty_type": "unspecified",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_polyAu_bare_figS8a_lin",
+      "sample_id": "S_polyAu_bare",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 2.0,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.10 Fig. S8a caption"
+        },
+        "note": "single measurement series on one preparation; ± type not defined in paper",
+        "uncertainty": 5.8,
+        "uncertainty_type": "unspecified",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_polyAu_bare_figS8a_cw",
+      "sample_id": "S_polyAu_bare",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 6.3,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.10 Fig. S8a caption"
+        },
+        "note": "single measurement series on one preparation; ± type not defined in paper",
+        "uncertainty": 4.4,
+        "uncertainty_type": "unspecified",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_polyAu_bare_figS8a_ccw",
+      "sample_id": "S_polyAu_bare",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": -4.1,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.10 Fig. S8a caption"
+        },
+        "note": "single measurement series on one preparation; ± type not defined in paper",
+        "uncertainty": 6.3,
+        "uncertainty_type": "unspecified",
+        "sign": "negative"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_ss50_polyAu_figS8b_lin",
+      "sample_id": "S_ss50_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 9.0,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.10 Fig. S8b caption"
+        },
+        "note": "single measurement series on one preparation; ± type not defined in paper",
+        "uncertainty": 5.1,
+        "uncertainty_type": "unspecified",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_ss50_polyAu_figS8b_cw",
+      "sample_id": "S_ss50_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 9.7,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.10 Fig. S8b caption"
+        },
+        "note": "single measurement series on one preparation; ± type not defined in paper",
+        "uncertainty": 5.2,
+        "uncertainty_type": "unspecified",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_ss50_polyAu_figS8b_ccw",
+      "sample_id": "S_ss50_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 7.6,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.10 Fig. S8b caption"
+        },
+        "note": "single measurement series on one preparation; ± type not defined in paper",
+        "uncertainty": 5.5,
+        "uncertainty_type": "unspecified",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_Mo_ref_figS5_all",
+      "sample_id": "S_Mo_ref",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 0,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.895 + SI p.7 Fig. S5 bottom",
+          "evidence": "was zero for circular as well as linear laser polarization"
+        },
+        "note": "zero reference; stated zero, not a fitted value",
+        "uncertainty": null,
+        "uncertainty_type": "not_reported",
+        "sign": "zero"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "pooled_all_polarizations"
+    },
+    {
+      "measurement_id": "M_ds26_polyAu_fig4avg_ccw",
+      "sample_id": "S_ds26_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_ds26_polyAu_fig4avg_lin",
+      "sample_id": "S_ds26_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "linear",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_ds26_polyAu_fig4avg_cw",
+      "sample_id": "S_ds26_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_ds40_polyAu_fig4avg_ccw",
+      "sample_id": "S_ds40_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_ds40_polyAu_fig4avg_lin",
+      "sample_id": "S_ds40_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "linear",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_ds40_polyAu_fig4avg_cw",
+      "sample_id": "S_ds40_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_ds50_polyAu_fig4avg_ccw",
+      "sample_id": "S_ds50_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_ds50_polyAu_fig4avg_lin",
+      "sample_id": "S_ds50_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "linear",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_ds50_polyAu_fig4avg_cw",
+      "sample_id": "S_ds50_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_ds78_polyAu_fig4avg_ccw",
+      "sample_id": "S_ds78_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_ds78_polyAu_fig4avg_lin",
+      "sample_id": "S_ds78_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "linear",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_ds78_polyAu_fig4avg_cw",
+      "sample_id": "S_ds78_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_ss50_polyAu_fig4avg_ccw",
+      "sample_id": "S_ss50_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_ss50_polyAu_fig4avg_lin",
+      "sample_id": "S_ss50_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "linear",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_ss50_polyAu_fig4avg_cw",
+      "sample_id": "S_ss50_polyAu",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_ds50_Au111_UVdamaged_fig4avg_ccw",
+      "sample_id": "S_ds50_Au111_UVdamaged",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_ds50_Au111_UVdamaged_fig4avg_lin",
+      "sample_id": "S_ds50_Au111_UVdamaged",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "linear",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_ds50_Au111_UVdamaged_fig4avg_cw",
+      "sample_id": "S_ds50_Au111_UVdamaged",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_polyAu_bare_fig4avg_ccw",
+      "sample_id": "S_polyAu_bare",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_polyAu_bare_fig4avg_lin",
+      "sample_id": "S_polyAu_bare",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "linear",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_polyAu_bare_fig4avg_cw",
+      "sample_id": "S_polyAu_bare",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.896 Fig. 4"
+        },
+        "note": "Fig. 4 (p.896): average over monolayers; error bars = SD between monolayers; 40 experiments on 12 samples in total. Fig. 4 groups dsDNA lengths on polycrystalline Au (text p.895); UV-damaged point is 50 bp on Au(111) (SI p.9).",
+        "uncertainty": null,
+        "uncertainty_type": "SD_between_preparations"
+      },
+      "dataset_scope": "average_over_preparations",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular",
+      "n_samples": {
+        "value": null,
+        "unit": null,
+        "status": "not_reported",
+        "note": "per-point sample count not given (12 samples total)"
+      }
+    },
+    {
+      "measurement_id": "M_ds50_polyAu_tof_CD",
+      "sample_id": "S_ds50_polyAu",
+      "setup_id": "SU_tof_213nm",
+      "result": {
+        "value": 7,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.8",
+          "evidence": "larger by about 7% relative to that obtained with the cw light"
+        },
+        "note": "ccw yield larger than cw by ~7%, independent of kinetic energy; not spin-resolved; light_polarization omitted (ratio of cw and ccw)",
+        "uncertainty_type": "not_reported",
+        "sign": "positive"
+      },
+      "dataset_scope": "unknown",
+      "duplicate_of": null
+    }
+  ],
+  "derived_quantities": [
+    {
+      "name": "spin_ratio_left_to_right_78bp",
+      "from": [
+        "M_ds78_polyAu_fig3_ccw"
+      ],
+      "formula": "(1+|P|)/(1-|P|)",
+      "check": "ratio_from_P",
+      "value": {
+        "value": 4.1,
+        "unit": "ratio",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.896",
+          "evidence": "a ratio of 4.1:1 for left- to right-handed spins"
+        },
+        "note": "paper: 'observed spin polarization of -61% translates into a ratio of 4.1:1'"
+      }
+    },
+    {
+      "name": "sherman_calibration_asymmetry",
+      "from": [],
+      "formula": "S_eff = A/P_GaAs = -0.0619/0.27",
+      "check": "none",
+      "value": {
+        "value": -0.229,
+        "unit": null,
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.6"
+        },
+        "uncertainty": 0.011,
+        "uncertainty_type": "unspecified"
+      }
+    }
+  ],
+  "theory_results": [],
+  "qualitative_findings": [
+    {
+      "claim": "dsDNA monolayers transmit predominantly negatively polarized electrons independent of light polarization (linear, cw, ccw).",
+      "variable": "light polarization",
+      "trend": "independent",
+      "related_ids": [
+        "S_ds50_Au111",
+        "S_ds78_polyAu"
+      ],
+      "source": {
+        "doc": "main",
+        "loc": "p.895"
+      }
+    },
+    {
+      "claim": "Absolute spin polarization tends to increase with dsDNA length (26-78 bp).",
+      "variable": "dsDNA length (bp)",
+      "trend": "increases",
+      "related_ids": [
+        "S_ds26_polyAu",
+        "S_ds40_polyAu",
+        "S_ds50_polyAu",
+        "S_ds78_polyAu"
+      ],
+      "source": {
+        "doc": "main",
+        "loc": "p.896 Fig. 4"
+      }
+    },
+    {
+      "claim": "No net spin selectivity for ssDNA monolayers or UV-damaged dsDNA.",
+      "variable": "double-strand integrity / order",
+      "trend": "vanishes",
+      "related_ids": [
+        "S_ss50_polyAu",
+        "S_ds50_Au111_UVdamaged"
+      ],
+      "source": {
+        "doc": "main",
+        "loc": "p.896"
+      }
+    },
+    {
+      "claim": "With ccw light the |P| of dsDNA increases slightly because injected electrons are pre-polarized in the filter's preferred direction.",
+      "variable": "initial electron polarization (light helicity)",
+      "trend": "additive",
+      "related_ids": [
+        "S_ds78_polyAu"
+      ],
+      "source": {
+        "doc": "main",
+        "loc": "p.896 Fig. 4 caption"
+      }
+    },
+    {
+      "claim": "Polarization is energy independent within Ekin = 0-1.2 eV.",
+      "variable": "electron kinetic energy",
+      "trend": "independent",
+      "source": {
+        "doc": "main",
+        "loc": "p.896"
+      }
+    },
+    {
+      "claim": "Total photoelectron yield through 50 bp dsDNA is ~7% larger for ccw than cw light (circular dichroism), independent of kinetic energy.",
+      "variable": "light helicity (yield)",
+      "trend": "other",
+      "related_ids": [
+        "M_ds50_polyAu_tof_CD"
+      ],
+      "source": {
+        "doc": "SI",
+        "loc": "SI p.8"
+      }
+    }
+  ],
+  "discrepancies": [
+    {
+      "field": "samples[S_ds78_polyAu].molecule.anchor",
+      "description": "Main text: dsDNA 'thiolated on the 3′ end of one of the DNA strands'. SI: 78 bp duplex carries SH-(CH2)6 on the 5′ end of the bottom strand (also primer). Recorded per SI.",
+      "severity": "medium",
+      "sources": [
+        {
+          "doc": "main",
+          "loc": "p.894"
+        },
+        {
+          "doc": "SI",
+          "loc": "SI p.1-2"
+        }
+      ]
+    },
+    {
+      "field": "setups[SU_mott_213nm].observable_definition.sign_convention",
+      "description": "Fig. 1 caption: DNA-transmitted (negative P) electrons have spin antiparallel to velocity. Fig. 2A caption: cw light gives -22% and 'spin ... parallel (green)'. These imply opposite sign meanings.",
+      "severity": "medium",
+      "sources": [
+        {
+          "doc": "main",
+          "loc": "p.895 Fig. 1, Fig. 2 captions"
+        }
+      ]
+    },
+    {
+      "field": "setups[*].excitation",
+      "description": "Pulse duration ~200 ps (main) vs ~300 ps fundamental (SI); photon energy 5.84 eV (main/SI p.3) vs 5.9 eV (Fig. S6 caption).",
+      "severity": "low",
+      "sources": [
+        {
+          "doc": "main",
+          "loc": "p.894"
+        },
+        {
+          "doc": "SI",
+          "loc": "SI p.3, p.8"
+        }
+      ]
+    },
+    {
+      "field": "setups[SU_mott_213nm].excitation.ellipticity",
+      "description": "SI states 'ratio of major to minor axes ... about 0.96'; a value < 1 corresponds to minor/major.",
+      "severity": "low",
+      "sources": [
+        {
+          "doc": "SI",
+          "loc": "SI p.3"
+        }
+      ]
+    },
+    {
+      "field": "measurements[*_fig4avg_*]",
+      "description": "Fig. 4 averages are the only multi-preparation data and are graphical only; per-length sample counts not given (12 samples, 40 experiments total).",
+      "severity": "medium",
+      "sources": [
+        {
+          "doc": "main",
+          "loc": "p.896"
+        }
+      ]
+    },
+    {
+      "field": "cross-paper sign of bare Au(111) circular-light polarization",
+      "description": "Here cw light on Au(111) gives -22%; Möllers 2021 reports ~+25% for cw on Au(111) with the same apparatus family. Helicity/sign conventions are not harmonized across papers.",
+      "severity": "medium",
+      "sources": [
+        {
+          "doc": "main",
+          "loc": "p.895 Fig. 2A"
+        }
+      ]
+    }
+  ],
+  "extraction_meta": {
+    "extractor": "Claude (claude-opus-5-5)",
+    "extraction_date": "2026-10-21",
+    "verified_by": null,
+    "verification_date": null,
+    "notes": "Science pages 894-897 (PDF also contains unrelated neighbouring articles). SI cited by printed page numbers. Fig. 4 points are to_digitize. Duplex handedness/helix form not stated in this paper and left not_reported."
+  }
+}

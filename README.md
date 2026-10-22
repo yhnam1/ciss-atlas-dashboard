@@ -12,6 +12,10 @@ and open it in a browser for offline use.
 The [pipeline](pipeline/) contains the extraction and validation code, both schema
 versions, extraction prompt, search queries, dependencies and one example with
 its local validation report. See [pipeline instructions](pipeline/README.md).
+The [public dataset](dataset/) provides all six paper JSON records, explicit human
+review status, file hashes and local validation results. Three records have completed
+expert review and three remain pending.
+
 The dashboard HTML contains its own display code and embedded dataset. This curated
 package does not include the private dashboard build system or source PDFs.
 
@@ -30,4 +34,4 @@ canonical standard. Historical v0.4.0 records retain their original schema.
 - Code: https://github.com/yhnam1/ciss-atlas-dashboard
 
 Only the generated dashboard HTML is refreshed by the existing dashboard publisher.
-The public pipeline package is a curated snapshot and must be updated separately.
+The public pipeline and standalone dataset are curated snapshots and must be updated separately.

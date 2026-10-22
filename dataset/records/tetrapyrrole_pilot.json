@@ -1,0 +1,647 @@
+{
+  "schema_version": "0.5.0",
+  "paper": {
+    "paper_id": "Moellers_2024_TPBT",
+    "title": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity: Photoelectron Spin Polarization in Helical Tetrapyrroles",
+    "authors": [
+      "Paul V. Möllers",
+      "Adrian J. Urban",
+      "Steven De Feyter",
+      "Hiroshi M. Yamamoto",
+      "Helmut Zacharias"
+    ],
+    "year": 2024,
+    "doi": "10.1021/acs.jpclett.4c02209",
+    "documents_used": [
+      "main",
+      "SI"
+    ],
+    "documents": [
+      {
+        "document_id": "tetra_main",
+        "role": "main",
+        "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+        "sha256": "0ba97ac48e5d7d51cefebc2f1a75fb216a4ecf9205151caf985bb46b5dc615e6"
+      },
+      {
+        "document_id": "tetra_si",
+        "role": "SI",
+        "filename": "jz4c02209_si_001.pdf",
+        "sha256": "6330e4d0821ac8bea61780491efe72446fbccf6a48ab542e07d6c81215ca065e"
+      }
+    ]
+  },
+  "samples": [
+    {
+      "sample_id": "P_fig2",
+      "role": "test",
+      "molecule": {
+        "class": "small_molecule_other",
+        "name": "Ni(TPBT)",
+        "stereo_descriptor": "(P)",
+        "treatment": null
+      },
+      "substrate": {
+        "material": "Cu",
+        "crystallinity": "single_crystal",
+        "facet": "(111)",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "document_id": "tetra_main",
+          "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+          "pdf_page": 3,
+          "loc": "Deposition and photoemission methods",
+          "printed_page": "9622"
+        }
+      },
+      "assembly": {
+        "method": "Vacuum sublimation",
+        "source_temperature": {
+          "status": "reported",
+          "value": 443,
+          "unit": "K",
+          "source": {
+            "doc": "main",
+            "document_id": "tetra_main",
+            "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+            "pdf_page": 3,
+            "loc": "Deposition and photoemission methods",
+            "printed_page": "9622"
+          },
+          "qualifier": "exact"
+        },
+        "substrate_temperature": {
+          "status": "reported",
+          "value": 508,
+          "unit": "K",
+          "source": {
+            "doc": "main",
+            "document_id": "tetra_main",
+            "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+            "pdf_page": 3,
+            "loc": "Deposition and photoemission methods",
+            "printed_page": "9622"
+          },
+          "qualifier": "exact"
+        },
+        "preparation_variant": "Source condition P_fig2. Physical preparation identity relative to other figures is not established in this pilot.",
+        "coverage_regime": "monolayer"
+      }
+    },
+    {
+      "sample_id": "P_before_heat",
+      "role": "test",
+      "molecule": {
+        "class": "small_molecule_other",
+        "name": "Ni(TPBT)",
+        "stereo_descriptor": "(P)",
+        "treatment": null
+      },
+      "substrate": {
+        "material": "Cu",
+        "crystallinity": "single_crystal",
+        "facet": "(111)",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "document_id": "tetra_main",
+          "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+          "pdf_page": 3,
+          "loc": "Deposition and photoemission methods",
+          "printed_page": "9622"
+        }
+      },
+      "assembly": {
+        "method": "Vacuum sublimation",
+        "source_temperature": {
+          "status": "reported",
+          "value": 443,
+          "unit": "K",
+          "source": {
+            "doc": "main",
+            "document_id": "tetra_main",
+            "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+            "pdf_page": 3,
+            "loc": "Deposition and photoemission methods",
+            "printed_page": "9622"
+          },
+          "qualifier": "exact"
+        },
+        "substrate_temperature": {
+          "status": "reported",
+          "value": 508,
+          "unit": "K",
+          "source": {
+            "doc": "main",
+            "document_id": "tetra_main",
+            "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+            "pdf_page": 3,
+            "loc": "Deposition and photoemission methods",
+            "printed_page": "9622"
+          },
+          "qualifier": "exact"
+        },
+        "preparation_variant": "Source condition P_before_heat. Physical preparation identity relative to other figures is not established in this pilot.",
+        "coverage_regime": "monolayer"
+      }
+    },
+    {
+      "sample_id": "P_after_heat",
+      "role": "control_reference",
+      "molecule": {
+        "class": "small_molecule_other",
+        "name": "Ni(TPBT)",
+        "stereo_descriptor": "(P)",
+        "treatment": "After heating-induced molecular desorption and subsequent cooling; do not equate with an independently prepared pristine Cu substrate."
+      },
+      "substrate": {
+        "material": "Cu",
+        "crystallinity": "single_crystal",
+        "facet": "(111)",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "document_id": "tetra_main",
+          "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+          "pdf_page": 3,
+          "loc": "Deposition and photoemission methods",
+          "printed_page": "9622"
+        }
+      },
+      "assembly": {
+        "method": "Vacuum sublimation",
+        "source_temperature": {
+          "status": "reported",
+          "value": 443,
+          "unit": "K",
+          "source": {
+            "doc": "main",
+            "document_id": "tetra_main",
+            "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+            "pdf_page": 3,
+            "loc": "Deposition and photoemission methods",
+            "printed_page": "9622"
+          },
+          "qualifier": "exact"
+        },
+        "substrate_temperature": {
+          "status": "reported",
+          "value": 508,
+          "unit": "K",
+          "source": {
+            "doc": "main",
+            "document_id": "tetra_main",
+            "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+            "pdf_page": 3,
+            "loc": "Deposition and photoemission methods",
+            "printed_page": "9622"
+          },
+          "qualifier": "exact"
+        },
+        "preparation_variant": "Source condition P_after_heat. Physical preparation identity relative to other figures is not established in this pilot.",
+        "coverage_regime": "unknown",
+        "post_treatment": "After heating-induced molecular desorption and subsequent cooling; do not equate with an independently prepared pristine Cu substrate."
+      }
+    },
+    {
+      "sample_id": "M_figS5",
+      "role": "test",
+      "molecule": {
+        "class": "small_molecule_other",
+        "name": "Ni(TPBT)",
+        "stereo_descriptor": "(M)",
+        "treatment": null
+      },
+      "substrate": {
+        "material": "Cu",
+        "crystallinity": "single_crystal",
+        "facet": "(111)",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "document_id": "tetra_main",
+          "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+          "pdf_page": 3,
+          "loc": "Deposition and photoemission methods",
+          "printed_page": "9622"
+        }
+      },
+      "assembly": {
+        "method": "Vacuum sublimation",
+        "source_temperature": {
+          "status": "reported",
+          "value": 443,
+          "unit": "K",
+          "source": {
+            "doc": "main",
+            "document_id": "tetra_main",
+            "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+            "pdf_page": 3,
+            "loc": "Deposition and photoemission methods",
+            "printed_page": "9622"
+          },
+          "qualifier": "exact"
+        },
+        "substrate_temperature": {
+          "status": "reported",
+          "value": 508,
+          "unit": "K",
+          "source": {
+            "doc": "main",
+            "document_id": "tetra_main",
+            "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+            "pdf_page": 3,
+            "loc": "Deposition and photoemission methods",
+            "printed_page": "9622"
+          },
+          "qualifier": "exact"
+        },
+        "preparation_variant": "Source condition M_figS5. Physical preparation identity relative to other figures is not established in this pilot.",
+        "coverage_regime": "monolayer"
+      }
+    }
+  ],
+  "setups": [
+    {
+      "setup_id": "tpbt_mott",
+      "technique": "photoemission_mott",
+      "experiment_family": "photoelectron_transmission",
+      "observable_definition": {
+        "symbol": "P",
+        "formula": "P = A/S; A = (I_u-I_l)/(I_u+I_l). Results are reported in percent.",
+        "spin_component": {
+          "status": "reported",
+          "value": "longitudinal",
+          "source": {
+            "doc": "main",
+            "document_id": "tetra_main",
+            "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+            "pdf_page": 3,
+            "loc": "Spin polarization measurement methods",
+            "printed_page": "9622"
+          }
+        },
+        "spin_reference_axis": "Electron momentum immediately after emission, along the outward sample surface normal",
+        "spin_quantization_axis": "Sample surface normal",
+        "observable_type": "electron_spin_polarization",
+        "sign_convention": {
+          "status": "reported",
+          "value": "Positive: spin parallel to emitted electron momentum; negative: antiparallel.",
+          "unit": null,
+          "source": {
+            "doc": "main",
+            "document_id": "tetra_main",
+            "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+            "pdf_page": 3,
+            "loc": "Spin polarization measurement methods",
+            "printed_page": "9622"
+          },
+          "qualifier": "exact"
+        },
+        "interpretation_model": "Substrate photoelectrons transmitted through the adsorbed layer; main PDF p.3 states photon energy is below molecular ionization energy."
+      },
+      "excitation": {
+        "source": "Deep-UV pulsed laser",
+        "wavelength": {
+          "status": "reported",
+          "value": 213,
+          "unit": "nm",
+          "source": {
+            "doc": "main",
+            "document_id": "tetra_main",
+            "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+            "pdf_page": 3,
+            "loc": "Spin polarization measurement methods",
+            "printed_page": "9622"
+          },
+          "qualifier": "exact"
+        },
+        "photon_energy": {
+          "status": "reported",
+          "value": 5.83,
+          "unit": "eV",
+          "source": {
+            "doc": "main",
+            "document_id": "tetra_main",
+            "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+            "pdf_page": 3,
+            "loc": "Spin polarization measurement methods",
+            "printed_page": "9622"
+          },
+          "qualifier": "exact"
+        },
+        "repetition_rate": {
+          "status": "reported",
+          "value": 20,
+          "unit": "kHz",
+          "source": {
+            "doc": "main",
+            "document_id": "tetra_main",
+            "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+            "pdf_page": 3,
+            "loc": "Spin polarization measurement methods",
+            "printed_page": "9622"
+          },
+          "qualifier": "exact"
+        },
+        "polarizations_used": [
+          "linear"
+        ],
+        "pulse_duration": {
+          "status": "reported",
+          "value": 200,
+          "unit": "ps",
+          "source": {
+            "doc": "main",
+            "document_id": "tetra_main",
+            "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+            "pdf_page": 3,
+            "loc": "Deposition and photoemission methods",
+            "printed_page": "9622"
+          },
+          "qualifier": "range",
+          "value_max": 300
+        },
+        "pulse_energy_on_sample": {
+          "status": "reported",
+          "value": 10,
+          "unit": "pJ",
+          "source": {
+            "doc": "main",
+            "document_id": "tetra_main",
+            "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+            "pdf_page": 3,
+            "loc": "Deposition and photoemission methods",
+            "printed_page": "9622"
+          },
+          "qualifier": "range",
+          "value_max": 100
+        }
+      },
+      "detection": {
+        "detector": "Mott polarimeter",
+        "component_measured": "transverse",
+        "spin_rotation_optics": "Electrostatic 90 degree bend before acceleration converts the initially longitudinal component to transverse at the detector.",
+        "energy_resolved_spin": false,
+        "sherman_function": {
+          "status": "reported",
+          "value": 0.18,
+          "unit": "1",
+          "source": {
+            "doc": "SI",
+            "document_id": "tetra_si",
+            "filename": "jz4c02209_si_001.pdf",
+            "pdf_page": 5,
+            "loc": "S3, Sherman function"
+          },
+          "qualifier": "exact"
+        },
+        "scattering_energy": {
+          "status": "reported",
+          "value": 50,
+          "unit": "keV",
+          "source": {
+            "doc": "SI",
+            "document_id": "tetra_si",
+            "filename": "jz4c02209_si_001.pdf",
+            "pdf_page": 5,
+            "loc": "S3, target potential +50 kV"
+          },
+          "qualifier": "exact",
+          "note": "Electron scattering energy associated with reported acceleration potential."
+        },
+        "reference_sample": "Molybdenum for instrumental asymmetry; Au(111) under circular light for spin-sensitivity check",
+        "calibration": "SI pp.5-6, alternate sample and molybdenum measurements; Au(111) circular-light response checks alignment and sensitivity. The roughly ±25% Au reference description is not added as a measured CISS result."
+      },
+      "environment": {
+        "medium": "UHV"
+      },
+      "transport_regime": "photoemission_through_layer"
+    }
+  ],
+  "measurements": [
+    {
+      "measurement_id": "tpbt_fig2_P",
+      "sample_id": "P_fig2",
+      "setup_id": "tpbt_mott",
+      "light_polarization": "linear",
+      "record_kind": "observed_result",
+      "selection_rule": "reported_average",
+      "dataset_scope": "unknown",
+      "result": {
+        "status": "reported",
+        "value": 33.0,
+        "unit": "%",
+        "source": {
+          "doc": "main",
+          "document_id": "tetra_main",
+          "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+          "pdf_page": 3,
+          "loc": "Figure 2(b), caption and text",
+          "figure_or_table": "2(b)",
+          "printed_page": "9622"
+        },
+        "qualifier": "exact",
+        "uncertainty": 3.5,
+        "uncertainty_type": "fit_width",
+        "note": "Reported plus/minus value retained. Authors describe uncertainty using the Gaussian-fit FWHM. Do not reinterpret as SD, SE or a conventional confidence level."
+      },
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "review_date": null
+      },
+      "conditions": {
+        "temperature": {
+          "status": "reported",
+          "value": "room temperature",
+          "unit": null,
+          "source": {
+            "doc": "main",
+            "document_id": "tetra_main",
+            "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+            "pdf_page": 3,
+            "loc": "Text following Figure 2 discussion",
+            "printed_page": "9622"
+          },
+          "qualifier": "exact",
+          "note": "No exact numeric temperature assigned."
+        }
+      }
+    },
+    {
+      "measurement_id": "tpbt_fig3_before",
+      "sample_id": "P_before_heat",
+      "setup_id": "tpbt_mott",
+      "light_polarization": "linear",
+      "record_kind": "observed_result",
+      "selection_rule": "reported_average",
+      "dataset_scope": "unknown",
+      "result": {
+        "status": "reported",
+        "value": 30.2,
+        "unit": "%",
+        "source": {
+          "doc": "main",
+          "document_id": "tetra_main",
+          "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+          "pdf_page": 4,
+          "loc": "Figure 3(b), caption, before heating",
+          "figure_or_table": "3(b)",
+          "printed_page": "9623"
+        },
+        "qualifier": "exact",
+        "uncertainty": 3.6,
+        "uncertainty_type": "fit_width",
+        "note": "Reported plus/minus value retained. Authors describe uncertainty using the Gaussian-fit FWHM. Do not reinterpret as SD, SE or a conventional confidence level."
+      },
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "review_date": null
+      },
+      "measurement_group_id": "thermal_desorption"
+    },
+    {
+      "measurement_id": "tpbt_fig3_after",
+      "sample_id": "P_after_heat",
+      "setup_id": "tpbt_mott",
+      "light_polarization": "linear",
+      "record_kind": "observed_result",
+      "selection_rule": "reported_average",
+      "dataset_scope": "unknown",
+      "result": {
+        "status": "reported",
+        "value": -0.4,
+        "unit": "%",
+        "source": {
+          "doc": "main",
+          "document_id": "tetra_main",
+          "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+          "pdf_page": 4,
+          "loc": "Figure 3(c), caption, after cooling",
+          "figure_or_table": "3(c)",
+          "printed_page": "9623"
+        },
+        "qualifier": "exact",
+        "uncertainty": 4.2,
+        "uncertainty_type": "fit_width",
+        "note": "Reported plus/minus value retained. Authors describe uncertainty using the Gaussian-fit FWHM. Do not reinterpret as SD, SE or a conventional confidence level."
+      },
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "review_date": null
+      },
+      "measurement_group_id": "thermal_desorption"
+    },
+    {
+      "measurement_id": "tpbt_M_spot1",
+      "sample_id": "M_figS5",
+      "setup_id": "tpbt_mott",
+      "light_polarization": "linear",
+      "record_kind": "observed_result",
+      "selection_rule": "reported_average",
+      "dataset_scope": "single_preparation",
+      "result": {
+        "status": "reported",
+        "value": -5.1,
+        "unit": "%",
+        "source": {
+          "doc": "SI",
+          "document_id": "tetra_si",
+          "filename": "jz4c02209_si_001.pdf",
+          "pdf_page": 7,
+          "loc": "S4, first reported position in Figure S5",
+          "figure_or_table": "S5"
+        },
+        "qualifier": "exact",
+        "uncertainty": 4.9,
+        "uncertainty_type": "fit_width",
+        "note": "Reported plus/minus value retained. Authors describe uncertainty using the Gaussian-fit FWHM. Do not reinterpret as SD, SE or a conventional confidence level."
+      },
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "review_date": null
+      },
+      "measurement_group_id": "M_two_positions",
+      "spot_id": "S5_position_1"
+    },
+    {
+      "measurement_id": "tpbt_M_spot2",
+      "sample_id": "M_figS5",
+      "setup_id": "tpbt_mott",
+      "light_polarization": "linear",
+      "record_kind": "observed_result",
+      "selection_rule": "reported_average",
+      "dataset_scope": "single_preparation",
+      "result": {
+        "status": "reported",
+        "value": -4.7,
+        "unit": "%",
+        "source": {
+          "doc": "SI",
+          "document_id": "tetra_si",
+          "filename": "jz4c02209_si_001.pdf",
+          "pdf_page": 7,
+          "loc": "S4, second reported position in Figure S5",
+          "figure_or_table": "S5"
+        },
+        "qualifier": "exact",
+        "uncertainty": 2.8,
+        "uncertainty_type": "fit_width",
+        "note": "Reported plus/minus value retained. Authors describe uncertainty using the Gaussian-fit FWHM. Do not reinterpret as SD, SE or a conventional confidence level."
+      },
+      "review": {
+        "status": "unreviewed",
+        "reviewer": null,
+        "review_date": null
+      },
+      "measurement_group_id": "M_two_positions",
+      "spot_id": "S5_position_2"
+    }
+  ],
+  "extraction_meta": {
+    "extractor": "ChatGPT source-reading pilot, not an API run",
+    "extraction_date": "2026-10-22",
+    "verified_by": null,
+    "review_status": "unreviewed",
+    "scope_status": "in_scope",
+    "model_id": null,
+    "prompt_version": null,
+    "notes": "PARTIAL SCHEMA PILOT. Selected text/caption-reported results only, not a complete extraction. Source pages were visually checked by the assistant, not human verified. Missing graph points and related controls are listed in extraction_queue.json. Sample IDs distinguish source conditions; they do not establish independent physical preparations. No paid API request was made."
+  },
+  "qualitative_findings": [
+    {
+      "claim": "Within the experimental uncertainty, polarization stays constant during heating up to about 623 K; subsequent desorption decreases coverage and polarization.",
+      "variable": "temperature before desorption",
+      "trend": "independent",
+      "related_ids": [
+        "tpbt_fig3_before"
+      ],
+      "source": {
+        "doc": "main",
+        "document_id": "tetra_main",
+        "filename": "Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity- Photoelectron Spin Polarization in Helical Tetrapyrroles.pdf",
+        "pdf_page": 3,
+        "loc": "Temperature dependence discussion",
+        "printed_page": "9622"
+      }
+    },
+    {
+      "claim": "The main text uses about -120 meV for its full-monolayer work-function change, while SI describes -340 meV in a second measurement series. Keep the series distinct when reconstructing coverage.",
+      "variable": "work-function coverage calibration",
+      "trend": "other",
+      "source": {
+        "doc": "SI",
+        "document_id": "tetra_si",
+        "filename": "jz4c02209_si_001.pdf",
+        "pdf_page": 3,
+        "loc": "S1, second measurement series and Figure S2",
+        "figure_or_table": "S2"
+      }
+    }
+  ]
+}

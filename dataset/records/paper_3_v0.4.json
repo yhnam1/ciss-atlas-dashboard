@@ -1,0 +1,3062 @@
+{
+  "schema_version": "0.4.0",
+  "paper": {
+    "paper_id": "mishra_2013_bR",
+    "title": "Spin-dependent electron transmission through bacteriorhodopsin embedded in purple membrane",
+    "authors": [
+      "Debabrata Mishra",
+      "Tal Z. Markus",
+      "Ron Naaman",
+      "Matthias Kettner",
+      "Benjamin Göhler",
+      "Helmut Zacharias",
+      "Noga Friedman",
+      "Mordechai Sheves",
+      "Claudio Fontanesi"
+    ],
+    "journal": "Proc. Natl. Acad. Sci. USA",
+    "year": 2013,
+    "doi": "10.1073/pnas.1311493110",
+    "documents_used": [
+      "main",
+      "SI"
+    ],
+    "related_papers": [
+      {
+        "doi": "10.1126/science.1199339",
+        "relation": "same_apparatus",
+        "note": "ref 4 (Göhler 2011): 'experimental system was described in detail in ref. 4'; reference method from its SI. DOI from paper_1's own PDF."
+      }
+    ]
+  },
+  "samples": [
+    {
+      "sample_id": "S_bR_Au_partial",
+      "role": "test",
+      "molecule": {
+        "class": "protein",
+        "name": "bacteriorhodopsin (bR) in native purple membrane",
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "α-helix handedness not stated in this paper"
+        },
+        "stereo_descriptor": null,
+        "chirality_counterpart_of": null,
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "natural protein; not discussed"
+        },
+        "helix_axis_orientation": {
+          "value": "normal_to_surface",
+          "status": "inferred",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "height h of an individual patch is h ∼ 49Å"
+          },
+          "note": "'seven parallel, upright-oriented α-helices'; AFM patch height consistent with bR upright in a membrane lying flat on the substrate"
+        },
+        "anchor": {
+          "group": "physisorbed/none",
+          "linker": null,
+          "attached_end": "not_applicable",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "the purple membrane ... was physisorbed"
+          }
+        },
+        "treatment": null,
+        "host_matrix": "native purple membrane (phospholipids)",
+        "chiral_volume_fraction": {
+          "value": 10,
+          "unit": "% (v/v)",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872 abstract",
+            "evidence": "occupies only about 10% of the volume"
+          }
+        },
+        "cofactor": "retinal (implied: denaturation releases 'free retinal', SI p.4)",
+        "source_organism": null,
+        "structure_db_id": null,
+        "geometry": {
+          "n_helices": {
+            "value": 7,
+            "unit": "helices",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "protein structure (Fig. 1A)",
+            "source": {
+              "doc": "main",
+              "loc": "p.14872",
+              "evidence": "composed of seven parallel, upright-oriented α-helices"
+            }
+          },
+          "helix_form": {
+            "value": "alpha",
+            "unit": null,
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "source": {
+              "doc": "main",
+              "loc": "p.14872"
+            }
+          },
+          "secondary_structure": "alpha_helix"
+        },
+        "chiral_elements": [],
+        "strands": []
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": null,
+        "cleaning": null,
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.14876 Methods",
+          "evidence": "thin films of thicknesses of about 150 nm"
+        },
+        "film_thickness": {
+          "value": 150,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          },
+          "note": "'about 150 nm'"
+        },
+        "adhesion_layer": null,
+        "deposition": {
+          "method": "e-beam evaporation",
+          "rate": {
+            "value": null,
+            "unit": null,
+            "status": "not_reported"
+          },
+          "base_pressure": {
+            "value": 1e-06,
+            "unit": "Torr",
+            "status": "reported",
+            "source": {
+              "doc": "main",
+              "loc": "p.14876 Methods"
+            },
+            "note": "SI p.1 gives ~1e-6 mbar for Ni/Al"
+          }
+        },
+        "note": "~150 nm, e-beam, 1e-6 Torr, room temperature, kept in inert atmosphere; adhesion layer for Au not stated",
+        "soc_strength": {
+          "value": 4.54,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14873",
+            "evidence": "0.12 eV compared with 4.54 eV for gold"
+          }
+        }
+      },
+      "assembly": {
+        "method": "drop-cast purple-membrane patch suspension, physisorption",
+        "concentration": {
+          "value": 0.4,
+          "unit": "OD",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "suspended in water with a concentration of 0.4 OD"
+          }
+        },
+        "volume": {
+          "value": 70,
+          "unit": "µl",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          }
+        },
+        "buffer": "water",
+        "incubation_time": {
+          "value": 15,
+          "unit": "min",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "kept for 15 min in vacuum"
+          },
+          "note": "monolayer protocol; multilayer protocol (Al or Ni): 48 h in pumped desiccator - which protocol each spin sample used is not stated"
+        },
+        "post_treatment": "gently washed with water",
+        "layer_thickness": {
+          "value": 4.9,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "h ∼ 49Å"
+          },
+          "note": "AFM height of an isolated patch on Al; SI p.3: 'approximately 5 nm'"
+        },
+        "characterization_methods": [
+          "FE-SEM",
+          "AFM",
+          "CD"
+        ],
+        "coverage_regime": "submonolayer",
+        "preparation_variant": null,
+        "molecular_orientation": "membrane patches lying flat, bR helices upright"
+      },
+      "structure_verification": [
+        {
+          "method": "FE-SEM",
+          "conditions": "air-dried bR film on Al and Ni",
+          "outcome": "densely packed, ~100% coverage",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.2 Fig. S1"
+          }
+        },
+        {
+          "method": "AFM",
+          "conditions": "isolated air-dried patch on Al",
+          "outcome": "patch height ~4.9-5 nm (bR upright)",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872; SI p.3"
+          }
+        },
+        {
+          "method": "CD",
+          "conditions": "air-dried bR thin film, 180-260 nm",
+          "outcome": "consistent with literature for air-dried bR; helical structure retained",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.3 Fig. S3"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_bR_Au_full",
+      "role": "test",
+      "molecule": {
+        "class": "protein",
+        "name": "bacteriorhodopsin (bR) in native purple membrane",
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "α-helix handedness not stated in this paper"
+        },
+        "stereo_descriptor": null,
+        "chirality_counterpart_of": null,
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "natural protein; not discussed"
+        },
+        "helix_axis_orientation": {
+          "value": "normal_to_surface",
+          "status": "inferred",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "height h of an individual patch is h ∼ 49Å"
+          },
+          "note": "'seven parallel, upright-oriented α-helices'; AFM patch height consistent with bR upright in a membrane lying flat on the substrate"
+        },
+        "anchor": {
+          "group": "physisorbed/none",
+          "linker": null,
+          "attached_end": "not_applicable",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "the purple membrane ... was physisorbed"
+          }
+        },
+        "treatment": null,
+        "host_matrix": "native purple membrane (phospholipids)",
+        "chiral_volume_fraction": {
+          "value": 10,
+          "unit": "% (v/v)",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872 abstract",
+            "evidence": "occupies only about 10% of the volume"
+          }
+        },
+        "cofactor": "retinal (implied: denaturation releases 'free retinal', SI p.4)",
+        "source_organism": null,
+        "structure_db_id": null,
+        "geometry": {
+          "n_helices": {
+            "value": 7,
+            "unit": "helices",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "protein structure (Fig. 1A)",
+            "source": {
+              "doc": "main",
+              "loc": "p.14872",
+              "evidence": "composed of seven parallel, upright-oriented α-helices"
+            }
+          },
+          "helix_form": {
+            "value": "alpha",
+            "unit": null,
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "source": {
+              "doc": "main",
+              "loc": "p.14872"
+            }
+          },
+          "secondary_structure": "alpha_helix"
+        },
+        "chiral_elements": [],
+        "strands": []
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": null,
+        "cleaning": null,
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.14876 Methods",
+          "evidence": "thin films of thicknesses of about 150 nm"
+        },
+        "film_thickness": {
+          "value": 150,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          },
+          "note": "'about 150 nm'"
+        },
+        "adhesion_layer": null,
+        "deposition": {
+          "method": "e-beam evaporation",
+          "rate": {
+            "value": null,
+            "unit": null,
+            "status": "not_reported"
+          },
+          "base_pressure": {
+            "value": 1e-06,
+            "unit": "Torr",
+            "status": "reported",
+            "source": {
+              "doc": "main",
+              "loc": "p.14876 Methods"
+            },
+            "note": "SI p.1 gives ~1e-6 mbar for Ni/Al"
+          }
+        },
+        "note": "~150 nm, e-beam, 1e-6 Torr, room temperature, kept in inert atmosphere; adhesion layer for Au not stated",
+        "soc_strength": {
+          "value": 4.54,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14873",
+            "evidence": "0.12 eV compared with 4.54 eV for gold"
+          }
+        }
+      },
+      "assembly": {
+        "method": "drop-cast purple-membrane patch suspension, physisorption",
+        "concentration": {
+          "value": 0.4,
+          "unit": "OD",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "suspended in water with a concentration of 0.4 OD"
+          }
+        },
+        "volume": {
+          "value": 70,
+          "unit": "µl",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          }
+        },
+        "buffer": "water",
+        "incubation_time": {
+          "value": 15,
+          "unit": "min",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "kept for 15 min in vacuum"
+          },
+          "note": "monolayer protocol; multilayer protocol (Al or Ni): 48 h in pumped desiccator - which protocol each spin sample used is not stated"
+        },
+        "post_treatment": "gently washed with water",
+        "layer_thickness": {
+          "value": 4.9,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "h ∼ 49Å"
+          },
+          "note": "AFM height of an isolated patch on Al; SI p.3: 'approximately 5 nm'"
+        },
+        "characterization_methods": [
+          "FE-SEM",
+          "AFM",
+          "CD"
+        ],
+        "coverage_regime": "full_coverage",
+        "preparation_variant": null,
+        "molecular_orientation": "membrane patches lying flat, bR helices upright"
+      },
+      "structure_verification": [
+        {
+          "method": "FE-SEM",
+          "conditions": "air-dried bR film on Al and Ni",
+          "outcome": "densely packed, ~100% coverage",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.2 Fig. S1"
+          }
+        },
+        {
+          "method": "AFM",
+          "conditions": "isolated air-dried patch on Al",
+          "outcome": "patch height ~4.9-5 nm (bR upright)",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872; SI p.3"
+          }
+        },
+        {
+          "method": "CD",
+          "conditions": "air-dried bR thin film, 180-260 nm",
+          "outcome": "consistent with literature for air-dried bR; helical structure retained",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.3 Fig. S3"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_bR_Al_full",
+      "role": "test",
+      "molecule": {
+        "class": "protein",
+        "name": "bacteriorhodopsin (bR) in native purple membrane",
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "α-helix handedness not stated in this paper"
+        },
+        "stereo_descriptor": null,
+        "chirality_counterpart_of": null,
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "natural protein; not discussed"
+        },
+        "helix_axis_orientation": {
+          "value": "normal_to_surface",
+          "status": "inferred",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "height h of an individual patch is h ∼ 49Å"
+          },
+          "note": "'seven parallel, upright-oriented α-helices'; AFM patch height consistent with bR upright in a membrane lying flat on the substrate"
+        },
+        "anchor": {
+          "group": "physisorbed/none",
+          "linker": null,
+          "attached_end": "not_applicable",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "the purple membrane ... was physisorbed"
+          }
+        },
+        "treatment": null,
+        "host_matrix": "native purple membrane (phospholipids)",
+        "chiral_volume_fraction": {
+          "value": 10,
+          "unit": "% (v/v)",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872 abstract",
+            "evidence": "occupies only about 10% of the volume"
+          }
+        },
+        "cofactor": "retinal (implied: denaturation releases 'free retinal', SI p.4)",
+        "source_organism": null,
+        "structure_db_id": null,
+        "geometry": {
+          "n_helices": {
+            "value": 7,
+            "unit": "helices",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "protein structure (Fig. 1A)",
+            "source": {
+              "doc": "main",
+              "loc": "p.14872",
+              "evidence": "composed of seven parallel, upright-oriented α-helices"
+            }
+          },
+          "helix_form": {
+            "value": "alpha",
+            "unit": null,
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "source": {
+              "doc": "main",
+              "loc": "p.14872"
+            }
+          },
+          "secondary_structure": "alpha_helix"
+        },
+        "chiral_elements": [],
+        "strands": []
+      },
+      "substrate": {
+        "material": "Al",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": "Si wafer (native oxide)",
+        "cleaning": null,
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.14876 Methods",
+          "evidence": "thin films of thicknesses of about 150 nm"
+        },
+        "film_thickness": {
+          "value": 150,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          },
+          "note": "'about 150 nm'"
+        },
+        "adhesion_layer": "Ti, 5 nm",
+        "deposition": {
+          "method": "e-beam evaporation",
+          "rate": {
+            "value": 2,
+            "unit": "Å/s",
+            "status": "reported",
+            "source": {
+              "doc": "SI",
+              "loc": "SI p.1"
+            }
+          },
+          "base_pressure": {
+            "value": 1e-06,
+            "unit": "Torr",
+            "status": "reported",
+            "source": {
+              "doc": "main",
+              "loc": "p.14876 Methods"
+            },
+            "note": "SI p.1 gives ~1e-6 mbar for Ni/Al"
+          }
+        },
+        "note": "150 nm Al on 5 nm Ti on native-oxide Si (SI p.1); 2 Å/s",
+        "soc_strength": {
+          "value": 0.12,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14873"
+          }
+        },
+        "surface_oxide": {
+          "composition": "AlOx (native)",
+          "thickness": {
+            "value": null,
+            "unit": null,
+            "status": "not_reported"
+          },
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "aluminum (with its native oxide)"
+          }
+        }
+      },
+      "assembly": {
+        "method": "drop-cast purple-membrane patch suspension, physisorption",
+        "concentration": {
+          "value": 0.4,
+          "unit": "OD",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "suspended in water with a concentration of 0.4 OD"
+          }
+        },
+        "volume": {
+          "value": 70,
+          "unit": "µl",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          }
+        },
+        "buffer": "water",
+        "incubation_time": {
+          "value": 15,
+          "unit": "min",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "kept for 15 min in vacuum"
+          },
+          "note": "monolayer protocol; multilayer protocol (Al or Ni): 48 h in pumped desiccator - which protocol each spin sample used is not stated"
+        },
+        "post_treatment": "gently washed with water",
+        "layer_thickness": {
+          "value": 4.9,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "h ∼ 49Å"
+          },
+          "note": "AFM height of an isolated patch on Al; SI p.3: 'approximately 5 nm'"
+        },
+        "characterization_methods": [
+          "FE-SEM",
+          "AFM",
+          "CD"
+        ],
+        "coverage_regime": "full_coverage",
+        "preparation_variant": null,
+        "molecular_orientation": "membrane patches lying flat, bR helices upright"
+      },
+      "structure_verification": [
+        {
+          "method": "FE-SEM",
+          "conditions": "air-dried bR film on Al and Ni",
+          "outcome": "densely packed, ~100% coverage",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.2 Fig. S1"
+          }
+        },
+        {
+          "method": "AFM",
+          "conditions": "isolated air-dried patch on Al",
+          "outcome": "patch height ~4.9-5 nm (bR upright)",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872; SI p.3"
+          }
+        },
+        {
+          "method": "CD",
+          "conditions": "air-dried bR thin film, 180-260 nm",
+          "outcome": "consistent with literature for air-dried bR; helical structure retained",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.3 Fig. S3"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_bR_Au_sandwich_top",
+      "role": "test",
+      "molecule": {
+        "class": "protein",
+        "name": "bacteriorhodopsin (bR) in native purple membrane",
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "α-helix handedness not stated in this paper"
+        },
+        "stereo_descriptor": null,
+        "chirality_counterpart_of": null,
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "natural protein; not discussed"
+        },
+        "helix_axis_orientation": {
+          "value": "normal_to_surface",
+          "status": "inferred",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "height h of an individual patch is h ∼ 49Å"
+          },
+          "note": "'seven parallel, upright-oriented α-helices'; AFM patch height consistent with bR upright in a membrane lying flat on the substrate"
+        },
+        "anchor": {
+          "group": "physisorbed/none",
+          "linker": null,
+          "attached_end": "not_applicable",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "the purple membrane ... was physisorbed"
+          }
+        },
+        "treatment": null,
+        "host_matrix": "native purple membrane (phospholipids)",
+        "chiral_volume_fraction": {
+          "value": 10,
+          "unit": "% (v/v)",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872 abstract",
+            "evidence": "occupies only about 10% of the volume"
+          }
+        },
+        "cofactor": "retinal (implied: denaturation releases 'free retinal', SI p.4)",
+        "source_organism": null,
+        "structure_db_id": null,
+        "geometry": {
+          "n_helices": {
+            "value": 7,
+            "unit": "helices",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "protein structure (Fig. 1A)",
+            "source": {
+              "doc": "main",
+              "loc": "p.14872",
+              "evidence": "composed of seven parallel, upright-oriented α-helices"
+            }
+          },
+          "helix_form": {
+            "value": "alpha",
+            "unit": null,
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "source": {
+              "doc": "main",
+              "loc": "p.14872"
+            }
+          },
+          "secondary_structure": "alpha_helix"
+        },
+        "chiral_elements": [],
+        "strands": []
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": null,
+        "cleaning": null,
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.14876 Methods",
+          "evidence": "thin films of thicknesses of about 150 nm"
+        },
+        "film_thickness": {
+          "value": 150,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          },
+          "note": "'about 150 nm'"
+        },
+        "adhesion_layer": null,
+        "deposition": {
+          "method": "e-beam evaporation",
+          "rate": {
+            "value": null,
+            "unit": null,
+            "status": "not_reported"
+          },
+          "base_pressure": {
+            "value": 1e-06,
+            "unit": "Torr",
+            "status": "reported",
+            "source": {
+              "doc": "main",
+              "loc": "p.14876 Methods"
+            },
+            "note": "SI p.1 gives ~1e-6 mbar for Ni/Al"
+          }
+        },
+        "note": "~150 nm, e-beam, 1e-6 Torr, room temperature, kept in inert atmosphere; adhesion layer for Au not stated",
+        "soc_strength": {
+          "value": 4.54,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14873",
+            "evidence": "0.12 eV compared with 4.54 eV for gold"
+          }
+        }
+      },
+      "assembly": {
+        "method": "drop-cast purple-membrane patch suspension, physisorption",
+        "concentration": {
+          "value": 0.4,
+          "unit": "OD",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "suspended in water with a concentration of 0.4 OD"
+          }
+        },
+        "volume": {
+          "value": 70,
+          "unit": "µl",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          }
+        },
+        "buffer": "water",
+        "incubation_time": {
+          "value": 15,
+          "unit": "min",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "kept for 15 min in vacuum"
+          },
+          "note": "monolayer protocol; multilayer protocol (Al or Ni): 48 h in pumped desiccator - which protocol each spin sample used is not stated"
+        },
+        "post_treatment": "gently washed with water",
+        "layer_thickness": {
+          "value": 4.9,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "h ∼ 49Å"
+          },
+          "note": "AFM height of an isolated patch on Al; SI p.3: 'approximately 5 nm'"
+        },
+        "characterization_methods": [
+          "FE-SEM",
+          "AFM",
+          "CD"
+        ],
+        "coverage_regime": "unknown",
+        "preparation_variant": "sandwich_top",
+        "molecular_orientation": "membrane patches lying flat, bR helices upright"
+      },
+      "structure_verification": [
+        {
+          "method": "FE-SEM",
+          "conditions": "air-dried bR film on Al and Ni",
+          "outcome": "densely packed, ~100% coverage",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.2 Fig. S1"
+          }
+        },
+        {
+          "method": "AFM",
+          "conditions": "isolated air-dried patch on Al",
+          "outcome": "patch height ~4.9-5 nm (bR upright)",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872; SI p.3"
+          }
+        },
+        {
+          "method": "CD",
+          "conditions": "air-dried bR thin film, 180-260 nm",
+          "outcome": "consistent with literature for air-dried bR; helical structure retained",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.3 Fig. S3"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_bR_Au_sandwich_bottom",
+      "role": "test",
+      "molecule": {
+        "class": "protein",
+        "name": "bacteriorhodopsin (bR) in native purple membrane",
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "α-helix handedness not stated in this paper"
+        },
+        "stereo_descriptor": null,
+        "chirality_counterpart_of": null,
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "natural protein; not discussed"
+        },
+        "helix_axis_orientation": {
+          "value": "normal_to_surface",
+          "status": "inferred",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "height h of an individual patch is h ∼ 49Å"
+          },
+          "note": "'seven parallel, upright-oriented α-helices'; AFM patch height consistent with bR upright in a membrane lying flat on the substrate"
+        },
+        "anchor": {
+          "group": "physisorbed/none",
+          "linker": null,
+          "attached_end": "not_applicable",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "the purple membrane ... was physisorbed"
+          }
+        },
+        "treatment": null,
+        "host_matrix": "native purple membrane (phospholipids)",
+        "chiral_volume_fraction": {
+          "value": 10,
+          "unit": "% (v/v)",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872 abstract",
+            "evidence": "occupies only about 10% of the volume"
+          }
+        },
+        "cofactor": "retinal (implied: denaturation releases 'free retinal', SI p.4)",
+        "source_organism": null,
+        "structure_db_id": null,
+        "geometry": {
+          "n_helices": {
+            "value": 7,
+            "unit": "helices",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "protein structure (Fig. 1A)",
+            "source": {
+              "doc": "main",
+              "loc": "p.14872",
+              "evidence": "composed of seven parallel, upright-oriented α-helices"
+            }
+          },
+          "helix_form": {
+            "value": "alpha",
+            "unit": null,
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "source": {
+              "doc": "main",
+              "loc": "p.14872"
+            }
+          },
+          "secondary_structure": "alpha_helix"
+        },
+        "chiral_elements": [],
+        "strands": []
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": null,
+        "cleaning": null,
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.14876 Methods",
+          "evidence": "thin films of thicknesses of about 150 nm"
+        },
+        "film_thickness": {
+          "value": 150,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          },
+          "note": "'about 150 nm'"
+        },
+        "adhesion_layer": null,
+        "deposition": {
+          "method": "e-beam evaporation",
+          "rate": {
+            "value": null,
+            "unit": null,
+            "status": "not_reported"
+          },
+          "base_pressure": {
+            "value": 1e-06,
+            "unit": "Torr",
+            "status": "reported",
+            "source": {
+              "doc": "main",
+              "loc": "p.14876 Methods"
+            },
+            "note": "SI p.1 gives ~1e-6 mbar for Ni/Al"
+          }
+        },
+        "note": "~150 nm, e-beam, 1e-6 Torr, room temperature, kept in inert atmosphere; adhesion layer for Au not stated",
+        "soc_strength": {
+          "value": 4.54,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14873",
+            "evidence": "0.12 eV compared with 4.54 eV for gold"
+          }
+        }
+      },
+      "assembly": {
+        "method": "drop-cast purple-membrane patch suspension, physisorption",
+        "concentration": {
+          "value": 0.4,
+          "unit": "OD",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "suspended in water with a concentration of 0.4 OD"
+          }
+        },
+        "volume": {
+          "value": 70,
+          "unit": "µl",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          }
+        },
+        "buffer": "water",
+        "incubation_time": {
+          "value": 15,
+          "unit": "min",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "kept for 15 min in vacuum"
+          },
+          "note": "monolayer protocol; multilayer protocol (Al or Ni): 48 h in pumped desiccator - which protocol each spin sample used is not stated"
+        },
+        "post_treatment": "gently washed with water",
+        "layer_thickness": {
+          "value": 4.9,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "h ∼ 49Å"
+          },
+          "note": "AFM height of an isolated patch on Al; SI p.3: 'approximately 5 nm'"
+        },
+        "characterization_methods": [
+          "FE-SEM",
+          "AFM",
+          "CD"
+        ],
+        "coverage_regime": "unknown",
+        "preparation_variant": "sandwich_bottom",
+        "molecular_orientation": "membrane patches lying flat, bR helices upright"
+      },
+      "structure_verification": [
+        {
+          "method": "FE-SEM",
+          "conditions": "air-dried bR film on Al and Ni",
+          "outcome": "densely packed, ~100% coverage",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.2 Fig. S1"
+          }
+        },
+        {
+          "method": "AFM",
+          "conditions": "isolated air-dried patch on Al",
+          "outcome": "patch height ~4.9-5 nm (bR upright)",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872; SI p.3"
+          }
+        },
+        {
+          "method": "CD",
+          "conditions": "air-dried bR thin film, 180-260 nm",
+          "outcome": "consistent with literature for air-dried bR; helical structure retained",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.3 Fig. S3"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_bR_Au_washed_reimmersed",
+      "role": "test",
+      "molecule": {
+        "class": "protein",
+        "name": "bacteriorhodopsin (bR) in native purple membrane",
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "α-helix handedness not stated in this paper"
+        },
+        "stereo_descriptor": null,
+        "chirality_counterpart_of": null,
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "natural protein; not discussed"
+        },
+        "helix_axis_orientation": {
+          "value": "normal_to_surface",
+          "status": "inferred",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "height h of an individual patch is h ∼ 49Å"
+          },
+          "note": "'seven parallel, upright-oriented α-helices'; AFM patch height consistent with bR upright in a membrane lying flat on the substrate"
+        },
+        "anchor": {
+          "group": "physisorbed/none",
+          "linker": null,
+          "attached_end": "not_applicable",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "the purple membrane ... was physisorbed"
+          }
+        },
+        "treatment": null,
+        "host_matrix": "native purple membrane (phospholipids)",
+        "chiral_volume_fraction": {
+          "value": 10,
+          "unit": "% (v/v)",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872 abstract",
+            "evidence": "occupies only about 10% of the volume"
+          }
+        },
+        "cofactor": "retinal (implied: denaturation releases 'free retinal', SI p.4)",
+        "source_organism": null,
+        "structure_db_id": null,
+        "geometry": {
+          "n_helices": {
+            "value": 7,
+            "unit": "helices",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "protein structure (Fig. 1A)",
+            "source": {
+              "doc": "main",
+              "loc": "p.14872",
+              "evidence": "composed of seven parallel, upright-oriented α-helices"
+            }
+          },
+          "helix_form": {
+            "value": "alpha",
+            "unit": null,
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "source": {
+              "doc": "main",
+              "loc": "p.14872"
+            }
+          },
+          "secondary_structure": "alpha_helix"
+        },
+        "chiral_elements": [],
+        "strands": []
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": null,
+        "cleaning": null,
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.14876 Methods",
+          "evidence": "thin films of thicknesses of about 150 nm"
+        },
+        "film_thickness": {
+          "value": 150,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          },
+          "note": "'about 150 nm'"
+        },
+        "adhesion_layer": null,
+        "deposition": {
+          "method": "e-beam evaporation",
+          "rate": {
+            "value": null,
+            "unit": null,
+            "status": "not_reported"
+          },
+          "base_pressure": {
+            "value": 1e-06,
+            "unit": "Torr",
+            "status": "reported",
+            "source": {
+              "doc": "main",
+              "loc": "p.14876 Methods"
+            },
+            "note": "SI p.1 gives ~1e-6 mbar for Ni/Al"
+          }
+        },
+        "note": "~150 nm, e-beam, 1e-6 Torr, room temperature, kept in inert atmosphere; adhesion layer for Au not stated",
+        "soc_strength": {
+          "value": 4.54,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14873",
+            "evidence": "0.12 eV compared with 4.54 eV for gold"
+          }
+        }
+      },
+      "assembly": {
+        "method": "drop-cast purple-membrane patch suspension, physisorption",
+        "concentration": {
+          "value": 0.4,
+          "unit": "OD",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "suspended in water with a concentration of 0.4 OD"
+          }
+        },
+        "volume": {
+          "value": 70,
+          "unit": "µl",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          }
+        },
+        "buffer": "water",
+        "incubation_time": {
+          "value": 15,
+          "unit": "min",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "kept for 15 min in vacuum"
+          },
+          "note": "monolayer protocol; multilayer protocol (Al or Ni): 48 h in pumped desiccator - which protocol each spin sample used is not stated"
+        },
+        "post_treatment": "gently washed with water",
+        "layer_thickness": {
+          "value": 4.9,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "h ∼ 49Å"
+          },
+          "note": "AFM height of an isolated patch on Al; SI p.3: 'approximately 5 nm'"
+        },
+        "characterization_methods": [
+          "FE-SEM",
+          "AFM",
+          "CD"
+        ],
+        "coverage_regime": "unknown",
+        "preparation_variant": "solution_washed_then_reimmersed",
+        "molecular_orientation": "membrane patches lying flat, bR helices upright"
+      },
+      "structure_verification": [
+        {
+          "method": "FE-SEM",
+          "conditions": "air-dried bR film on Al and Ni",
+          "outcome": "densely packed, ~100% coverage",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.2 Fig. S1"
+          }
+        },
+        {
+          "method": "AFM",
+          "conditions": "isolated air-dried patch on Al",
+          "outcome": "patch height ~4.9-5 nm (bR upright)",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872; SI p.3"
+          }
+        },
+        {
+          "method": "CD",
+          "conditions": "air-dried bR thin film, 180-260 nm",
+          "outcome": "consistent with literature for air-dried bR; helical structure retained",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.3 Fig. S3"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_bR_Au_solution",
+      "role": "test",
+      "molecule": {
+        "class": "protein",
+        "name": "bacteriorhodopsin (bR) in native purple membrane",
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "α-helix handedness not stated in this paper"
+        },
+        "stereo_descriptor": null,
+        "chirality_counterpart_of": null,
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "natural protein; not discussed"
+        },
+        "helix_axis_orientation": {
+          "value": "normal_to_surface",
+          "status": "inferred",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "height h of an individual patch is h ∼ 49Å"
+          },
+          "note": "'seven parallel, upright-oriented α-helices'; AFM patch height consistent with bR upright in a membrane lying flat on the substrate"
+        },
+        "anchor": {
+          "group": "physisorbed/none",
+          "linker": null,
+          "attached_end": "not_applicable",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "the purple membrane ... was physisorbed"
+          }
+        },
+        "treatment": null,
+        "host_matrix": "native purple membrane (phospholipids)",
+        "chiral_volume_fraction": {
+          "value": 10,
+          "unit": "% (v/v)",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872 abstract",
+            "evidence": "occupies only about 10% of the volume"
+          }
+        },
+        "cofactor": "retinal (implied: denaturation releases 'free retinal', SI p.4)",
+        "source_organism": null,
+        "structure_db_id": null,
+        "geometry": {
+          "n_helices": {
+            "value": 7,
+            "unit": "helices",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "protein structure (Fig. 1A)",
+            "source": {
+              "doc": "main",
+              "loc": "p.14872",
+              "evidence": "composed of seven parallel, upright-oriented α-helices"
+            }
+          },
+          "helix_form": {
+            "value": "alpha",
+            "unit": null,
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "source": {
+              "doc": "main",
+              "loc": "p.14872"
+            }
+          },
+          "secondary_structure": "alpha_helix"
+        },
+        "chiral_elements": [],
+        "strands": []
+      },
+      "substrate": {
+        "material": "Au",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": null,
+        "cleaning": null,
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.14876 Methods",
+          "evidence": "thin films of thicknesses of about 150 nm"
+        },
+        "film_thickness": {
+          "value": 150,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          },
+          "note": "'about 150 nm'"
+        },
+        "adhesion_layer": null,
+        "deposition": {
+          "method": "e-beam evaporation",
+          "rate": {
+            "value": null,
+            "unit": null,
+            "status": "not_reported"
+          },
+          "base_pressure": {
+            "value": 1e-06,
+            "unit": "Torr",
+            "status": "reported",
+            "source": {
+              "doc": "main",
+              "loc": "p.14876 Methods"
+            },
+            "note": "SI p.1 gives ~1e-6 mbar for Ni/Al"
+          }
+        },
+        "note": "~150 nm, e-beam, 1e-6 Torr, room temperature, kept in inert atmosphere; adhesion layer for Au not stated",
+        "soc_strength": {
+          "value": 4.54,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14873",
+            "evidence": "0.12 eV compared with 4.54 eV for gold"
+          }
+        }
+      },
+      "assembly": {
+        "method": "drop-cast purple-membrane patch suspension, physisorption",
+        "concentration": {
+          "value": 0.4,
+          "unit": "OD",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "suspended in water with a concentration of 0.4 OD"
+          }
+        },
+        "volume": {
+          "value": 70,
+          "unit": "µl",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          }
+        },
+        "buffer": "water",
+        "incubation_time": {
+          "value": 15,
+          "unit": "min",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "kept for 15 min in vacuum"
+          },
+          "note": "monolayer protocol; multilayer protocol (Al or Ni): 48 h in pumped desiccator - which protocol each spin sample used is not stated"
+        },
+        "post_treatment": "gently washed with water",
+        "layer_thickness": {
+          "value": 4.9,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "h ∼ 49Å"
+          },
+          "note": "AFM height of an isolated patch on Al; SI p.3: 'approximately 5 nm'"
+        },
+        "characterization_methods": [
+          "FE-SEM",
+          "AFM",
+          "CD"
+        ],
+        "coverage_regime": "unknown",
+        "preparation_variant": "solution_adsorbed",
+        "molecular_orientation": "membrane patches lying flat, bR helices upright"
+      },
+      "structure_verification": [
+        {
+          "method": "FE-SEM",
+          "conditions": "air-dried bR film on Al and Ni",
+          "outcome": "densely packed, ~100% coverage",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.2 Fig. S1"
+          }
+        },
+        {
+          "method": "AFM",
+          "conditions": "isolated air-dried patch on Al",
+          "outcome": "patch height ~4.9-5 nm (bR upright)",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872; SI p.3"
+          }
+        },
+        {
+          "method": "CD",
+          "conditions": "air-dried bR thin film, 180-260 nm",
+          "outcome": "consistent with literature for air-dried bR; helical structure retained",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.3 Fig. S3"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_bR_Ni_EC",
+      "role": "test",
+      "molecule": {
+        "class": "protein",
+        "name": "bacteriorhodopsin (bR) in native purple membrane",
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "α-helix handedness not stated in this paper"
+        },
+        "stereo_descriptor": null,
+        "chirality_counterpart_of": null,
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "natural protein; not discussed"
+        },
+        "helix_axis_orientation": {
+          "value": "normal_to_surface",
+          "status": "inferred",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "height h of an individual patch is h ∼ 49Å"
+          },
+          "note": "'seven parallel, upright-oriented α-helices'; AFM patch height consistent with bR upright in a membrane lying flat on the substrate"
+        },
+        "anchor": {
+          "group": "physisorbed/none",
+          "linker": null,
+          "attached_end": "not_applicable",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "the purple membrane ... was physisorbed"
+          }
+        },
+        "treatment": null,
+        "host_matrix": "native purple membrane (phospholipids)",
+        "chiral_volume_fraction": {
+          "value": 10,
+          "unit": "% (v/v)",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872 abstract",
+            "evidence": "occupies only about 10% of the volume"
+          }
+        },
+        "cofactor": "retinal (implied: denaturation releases 'free retinal', SI p.4)",
+        "source_organism": null,
+        "structure_db_id": null,
+        "geometry": {
+          "n_helices": {
+            "value": 7,
+            "unit": "helices",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "protein structure (Fig. 1A)",
+            "source": {
+              "doc": "main",
+              "loc": "p.14872",
+              "evidence": "composed of seven parallel, upright-oriented α-helices"
+            }
+          },
+          "helix_form": {
+            "value": "alpha",
+            "unit": null,
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "source": {
+              "doc": "main",
+              "loc": "p.14872"
+            }
+          },
+          "secondary_structure": "alpha_helix"
+        },
+        "chiral_elements": [],
+        "strands": []
+      },
+      "substrate": {
+        "material": "Ni",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": "Si wafer (native oxide)",
+        "cleaning": null,
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.14876 Methods",
+          "evidence": "thin films of thicknesses of about 150 nm"
+        },
+        "film_thickness": {
+          "value": 150,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          },
+          "note": "'about 150 nm'"
+        },
+        "adhesion_layer": "Ti, 5 nm",
+        "deposition": {
+          "method": "e-beam evaporation",
+          "rate": {
+            "value": 2,
+            "unit": "Å/s",
+            "status": "reported",
+            "source": {
+              "doc": "SI",
+              "loc": "SI p.1"
+            }
+          },
+          "base_pressure": {
+            "value": 1e-06,
+            "unit": "Torr",
+            "status": "reported",
+            "source": {
+              "doc": "main",
+              "loc": "p.14876 Methods"
+            },
+            "note": "SI p.1 gives ~1e-6 mbar for Ni/Al"
+          }
+        },
+        "note": "150 nm Ni on 5 nm Ti on native-oxide Si (SI p.1); 2 Å/s",
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "surface_oxide": {
+          "composition": "NiO (thermal)",
+          "thickness": {
+            "value": 2,
+            "unit": "nm",
+            "status": "reported",
+            "source": {
+              "doc": "main",
+              "loc": "p.14874",
+              "evidence": "roughly 2 nm of thermal oxide, NiO"
+            }
+          },
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14874"
+          }
+        }
+      },
+      "assembly": {
+        "method": "drop-cast purple-membrane patch suspension, physisorption",
+        "concentration": {
+          "value": 0.4,
+          "unit": "OD",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "suspended in water with a concentration of 0.4 OD"
+          }
+        },
+        "volume": {
+          "value": 70,
+          "unit": "µl",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          }
+        },
+        "buffer": "water",
+        "incubation_time": {
+          "value": 15,
+          "unit": "min",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "kept for 15 min in vacuum"
+          },
+          "note": "monolayer protocol; multilayer protocol (Al or Ni): 48 h in pumped desiccator - which protocol each spin sample used is not stated"
+        },
+        "post_treatment": "gently washed with water",
+        "layer_thickness": {
+          "value": 4.9,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "h ∼ 49Å"
+          },
+          "note": "AFM height of an isolated patch on Al; SI p.3: 'approximately 5 nm'"
+        },
+        "characterization_methods": [
+          "FE-SEM",
+          "AFM",
+          "CD"
+        ],
+        "coverage_regime": "unknown",
+        "preparation_variant": null,
+        "molecular_orientation": "membrane patches lying flat, bR helices upright"
+      },
+      "structure_verification": [
+        {
+          "method": "FE-SEM",
+          "conditions": "air-dried bR film on Al and Ni",
+          "outcome": "densely packed, ~100% coverage",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.2 Fig. S1"
+          }
+        },
+        {
+          "method": "AFM",
+          "conditions": "isolated air-dried patch on Al",
+          "outcome": "patch height ~4.9-5 nm (bR upright)",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872; SI p.3"
+          }
+        },
+        {
+          "method": "CD",
+          "conditions": "air-dried bR thin film, 180-260 nm",
+          "outcome": "consistent with literature for air-dried bR; helical structure retained",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.3 Fig. S3"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_bR_Ni_EC_denatured",
+      "role": "control_damaged",
+      "molecule": {
+        "class": "protein",
+        "name": "bacteriorhodopsin (bR) in native purple membrane",
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "α-helix handedness not stated in this paper"
+        },
+        "stereo_descriptor": null,
+        "chirality_counterpart_of": null,
+        "enantiomeric_purity": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "natural protein; not discussed"
+        },
+        "helix_axis_orientation": {
+          "value": "normal_to_surface",
+          "status": "inferred",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "height h of an individual patch is h ∼ 49Å"
+          },
+          "note": "'seven parallel, upright-oriented α-helices'; AFM patch height consistent with bR upright in a membrane lying flat on the substrate"
+        },
+        "anchor": {
+          "group": "physisorbed/none",
+          "linker": null,
+          "attached_end": "not_applicable",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "the purple membrane ... was physisorbed"
+          }
+        },
+        "treatment": "electrochemical denaturation by a -1.0 to +1.0 V CV scan (free retinal in absorption, no CD signal)",
+        "host_matrix": "native purple membrane (phospholipids)",
+        "chiral_volume_fraction": {
+          "value": 10,
+          "unit": "% (v/v)",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872 abstract",
+            "evidence": "occupies only about 10% of the volume"
+          }
+        },
+        "cofactor": "retinal (implied: denaturation releases 'free retinal', SI p.4)",
+        "source_organism": null,
+        "structure_db_id": null,
+        "geometry": {
+          "n_helices": {
+            "value": 7,
+            "unit": "helices",
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "basis_reference": "protein structure (Fig. 1A)",
+            "source": {
+              "doc": "main",
+              "loc": "p.14872",
+              "evidence": "composed of seven parallel, upright-oriented α-helices"
+            }
+          },
+          "helix_form": {
+            "value": "alpha",
+            "unit": null,
+            "status": "reported",
+            "basis": "literature_same_molecule",
+            "source": {
+              "doc": "main",
+              "loc": "p.14872"
+            }
+          },
+          "secondary_structure": "alpha_helix"
+        },
+        "chiral_elements": [],
+        "strands": []
+      },
+      "substrate": {
+        "material": "Ni",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": "Si wafer (native oxide)",
+        "cleaning": null,
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.14876 Methods",
+          "evidence": "thin films of thicknesses of about 150 nm"
+        },
+        "film_thickness": {
+          "value": 150,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          },
+          "note": "'about 150 nm'"
+        },
+        "adhesion_layer": "Ti, 5 nm",
+        "deposition": {
+          "method": "e-beam evaporation",
+          "rate": {
+            "value": 2,
+            "unit": "Å/s",
+            "status": "reported",
+            "source": {
+              "doc": "SI",
+              "loc": "SI p.1"
+            }
+          },
+          "base_pressure": {
+            "value": 1e-06,
+            "unit": "Torr",
+            "status": "reported",
+            "source": {
+              "doc": "main",
+              "loc": "p.14876 Methods"
+            },
+            "note": "SI p.1 gives ~1e-6 mbar for Ni/Al"
+          }
+        },
+        "note": "150 nm Ni on 5 nm Ti on native-oxide Si (SI p.1); 2 Å/s",
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "surface_oxide": {
+          "composition": "NiO (thermal)",
+          "thickness": {
+            "value": 2,
+            "unit": "nm",
+            "status": "reported",
+            "source": {
+              "doc": "main",
+              "loc": "p.14874",
+              "evidence": "roughly 2 nm of thermal oxide, NiO"
+            }
+          },
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14874"
+          }
+        }
+      },
+      "assembly": {
+        "method": "drop-cast purple-membrane patch suspension, physisorption",
+        "concentration": {
+          "value": 0.4,
+          "unit": "OD",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "suspended in water with a concentration of 0.4 OD"
+          }
+        },
+        "volume": {
+          "value": 70,
+          "unit": "µl",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          }
+        },
+        "buffer": "water",
+        "incubation_time": {
+          "value": 15,
+          "unit": "min",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "kept for 15 min in vacuum"
+          },
+          "note": "monolayer protocol; multilayer protocol (Al or Ni): 48 h in pumped desiccator - which protocol each spin sample used is not stated"
+        },
+        "post_treatment": "gently washed with water",
+        "layer_thickness": {
+          "value": 4.9,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14872",
+            "evidence": "h ∼ 49Å"
+          },
+          "note": "AFM height of an isolated patch on Al; SI p.3: 'approximately 5 nm'"
+        },
+        "characterization_methods": [
+          "FE-SEM",
+          "AFM",
+          "CD"
+        ],
+        "coverage_regime": "unknown",
+        "preparation_variant": null,
+        "molecular_orientation": "membrane patches lying flat, bR helices upright"
+      },
+      "structure_verification": [
+        {
+          "method": "absorbance + CD of film re-suspended after +1 to -1 V",
+          "outcome": "absorption of free retinal; no detectable CD -> denatured",
+          "source": {
+            "doc": "SI",
+            "loc": "SI p.4 Fig. S4"
+          }
+        }
+      ]
+    },
+    {
+      "sample_id": "S_Ni_bare_EC",
+      "role": "control_bare_substrate",
+      "molecule": {
+        "class": "none",
+        "name": null,
+        "formula": null,
+        "helix_handedness": {
+          "value": null,
+          "status": "not_reported",
+          "note": "no molecule"
+        },
+        "chirality_counterpart_of": null,
+        "geometry": {
+          "secondary_structure": "not_applicable"
+        }
+      },
+      "substrate": {
+        "material": "Ni",
+        "crystallinity": "polycrystalline",
+        "facet": null,
+        "support": "Si wafer (native oxide)",
+        "cleaning": null,
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.14876 Methods",
+          "evidence": "thin films of thicknesses of about 150 nm"
+        },
+        "film_thickness": {
+          "value": 150,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          },
+          "note": "'about 150 nm'"
+        },
+        "adhesion_layer": "Ti, 5 nm",
+        "deposition": {
+          "method": "e-beam evaporation",
+          "rate": {
+            "value": 2,
+            "unit": "Å/s",
+            "status": "reported",
+            "source": {
+              "doc": "SI",
+              "loc": "SI p.1"
+            }
+          },
+          "base_pressure": {
+            "value": 1e-06,
+            "unit": "Torr",
+            "status": "reported",
+            "source": {
+              "doc": "main",
+              "loc": "p.14876 Methods"
+            },
+            "note": "SI p.1 gives ~1e-6 mbar for Ni/Al"
+          }
+        },
+        "note": "150 nm Ni on 5 nm Ti on native-oxide Si (SI p.1); 2 Å/s",
+        "soc_strength": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "surface_oxide": {
+          "composition": "NiO (thermal)",
+          "thickness": {
+            "value": 2,
+            "unit": "nm",
+            "status": "reported",
+            "source": {
+              "doc": "main",
+              "loc": "p.14874",
+              "evidence": "roughly 2 nm of thermal oxide, NiO"
+            }
+          },
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14874"
+          }
+        }
+      }
+    }
+  ],
+  "setups": [
+    {
+      "setup_id": "SU_mott_213nm",
+      "technique": "photoemission_mott",
+      "observable_definition": {
+        "symbol": "P",
+        "formula": "P = (I+ - I-)/(I+ + I-); A = P * S_eff",
+        "spin_component": {
+          "value": "longitudinal",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14873 Fig. 1B",
+            "evidence": "determine their longitudinal spin polarization"
+          }
+        },
+        "spin_reference_axis": "electron velocity (extracted antiparallel to light incidence)",
+        "sign_convention": {
+          "value": "positive = spin parallel to velocity",
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14873",
+            "evidence": "I+ and I− are the signals for electrons with their spin aligned parallel"
+          }
+        },
+        "energy_reference": "not_applicable"
+      },
+      "transport_regime": "photoemission_through_layer",
+      "excitation": {
+        "source": "5th harmonic of regeneratively amplified, diode-pumped active mode-locked Nd:YVO4, 20 kHz",
+        "photon_energy": {
+          "value": 5.84,
+          "unit": "eV",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          }
+        },
+        "wavelength": {
+          "value": 212.8,
+          "unit": "nm",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          }
+        },
+        "repetition_rate": {
+          "value": 20,
+          "unit": "kHz",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          }
+        },
+        "pulse_energy_on_sample": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "~5 µJ generated; 'only a very small fraction is used'"
+        },
+        "pulse_duration": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "fluence": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "incidence_angle": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "electrons extracted antiparallel to light incidence (Fig. 1B), angle not stated"
+        },
+        "polarizations_used": [
+          "cw_circular",
+          "ccw_circular",
+          "linear"
+        ],
+        "polarization_optics": "rotating quarter-wave plate",
+        "helicity_convention": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "ellipticity": {
+          "value": "<2% distortion relative to the change in ellipticity",
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          }
+        }
+      },
+      "detection": {
+        "detector": "Mott polarimeter, two symmetric detectors",
+        "scattering_energy": {
+          "value": 50,
+          "unit": "keV",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "accelerated by 50 kV onto a gold target"
+          }
+        },
+        "target": "gold",
+        "sherman_function": {
+          "value": 0.18,
+          "unit": null,
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "Seff has been calibrated to 18%"
+          },
+          "note": "magnitude only as given ('18%')"
+        },
+        "calibration": "reference method of ref. 4 SI (alternating with non-polarizing reference)",
+        "component_measured": "transverse",
+        "spin_rotation_optics": "90 deg electron bender",
+        "reference_sample": "as in ref. 4 SI (not described here)",
+        "scattering_angle": {
+          "value": 120,
+          "unit": "deg",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods"
+          }
+        }
+      },
+      "environment": {
+        "medium": "UHV",
+        "temperature": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "pressure": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        },
+        "residual_magnetic_field": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "Earth field compensated by three-axis Helmholtz coils + µ-metal shield; value not given"
+        }
+      },
+      "apparatus_id": "muenster_mott",
+      "apparatus_changes": "plastic insulator of the Mott polarimeter replaced by a metal-sealed ceramic (improved vacuum)"
+    },
+    {
+      "setup_id": "SU_EC_Ni_magnet",
+      "technique": "electrochemistry_magnetic_electrode",
+      "observable_definition": {
+        "symbol": "ΔI/I (UP vs DOWN)",
+        "formula": "relative difference of CV currents for magnet UP vs DOWN at fixed potential (normalization not specified)",
+        "spin_component": {
+          "value": "out_of_plane_magnetization",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14875 Fig. 4 caption",
+            "evidence": "orthogonal to the surface of the working electrode"
+          }
+        },
+        "spin_reference_axis": "Ni magnetization normal to electrode surface",
+        "sign_convention": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported",
+          "note": "which direction is 'UP' and which current is larger as a sign is not defined"
+        },
+        "energy_reference": "bias_voltage"
+      },
+      "transport_regime": "electrochemical_ET",
+      "electrical": {
+        "bias_range": {
+          "value": -0.05,
+          "unit": "V vs SCE",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14875 Fig. 4 caption"
+          },
+          "note": "scan rate 50 mV/s; 1 mM K4[Fe(CN)6]/K3[Fe(CN)6], Tris pH 7, 50 mM NaCl + 50 mM MgCl2 (no schema fields)",
+          "value_max": 0.35
+        },
+        "magnet_field": {
+          "value": 0.35,
+          "unit": "T",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14876 Methods",
+            "evidence": "found to be 0.35T on the surface of Ni"
+          },
+          "note": "1.5 T permanent magnet below electrode"
+        },
+        "magnetization_direction": {
+          "value": "normal_to_surface",
+          "status": "reported",
+          "source": {
+            "doc": "main",
+            "loc": "p.14875 Fig. 4 caption"
+          }
+        },
+        "tip_or_electrode": "Ni working electrode (on Si), Pt wire counter, SCE reference; 0.8 cm O-ring area"
+      },
+      "environment": {
+        "medium": "electrolyte",
+        "temperature": {
+          "value": null,
+          "unit": null,
+          "status": "not_reported"
+        }
+      },
+      "apparatus_id": null,
+      "apparatus_changes": null
+    }
+  ],
+  "measurements": [
+    {
+      "measurement_id": "M_bR_Au_partial_avg",
+      "sample_id": "S_bR_Au_partial",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 5,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.14873 text; Fig. 2 caption ('on average, about P = 5%')"
+        },
+        "note": "light polarization not stated; caption calls it an average; per-polarization values only in Fig. 2 left",
+        "uncertainty": 3,
+        "uncertainty_type": "unspecified",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "not_specified"
+    },
+    {
+      "measurement_id": "M_bR_Au_partial_cw",
+      "sample_id": "S_bR_Au_partial",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.14874 Fig. 2 left"
+        },
+        "uncertainty": null,
+        "uncertainty_type": "not_reported"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_bR_Au_partial_lin",
+      "sample_id": "S_bR_Au_partial",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.14874 Fig. 2 left"
+        },
+        "uncertainty": null,
+        "uncertainty_type": "not_reported"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_bR_Au_partial_ccw",
+      "sample_id": "S_bR_Au_partial",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.14874 Fig. 2 left"
+        },
+        "uncertainty": null,
+        "uncertainty_type": "not_reported"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_bR_Au_full_cw",
+      "sample_id": "S_bR_Au_full",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 17,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.14873 text; Fig. 2 right"
+        },
+        "uncertainty": 5,
+        "uncertainty_type": "unspecified",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_bR_Au_full_lin",
+      "sample_id": "S_bR_Au_full",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 14,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.14873 text; Fig. 2 right"
+        },
+        "uncertainty": 5,
+        "uncertainty_type": "unspecified",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_bR_Au_full_ccw",
+      "sample_id": "S_bR_Au_full",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 8,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.14873 text; Fig. 2 right"
+        },
+        "uncertainty": 5,
+        "uncertainty_type": "unspecified",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_bR_Al_full_avg",
+      "sample_id": "S_bR_Al_full",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 15,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.14873 text; Fig. 3 caption"
+        },
+        "note": "'no effect of the laser polarization can be detected'; light polarization of the quoted value not stated",
+        "uncertainty": 4,
+        "uncertainty_type": "unspecified",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "not_specified"
+    },
+    {
+      "measurement_id": "M_bR_Al_full_cw",
+      "sample_id": "S_bR_Al_full",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.14875 Fig. 3"
+        },
+        "uncertainty": null,
+        "uncertainty_type": "not_reported"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_bR_Al_full_lin",
+      "sample_id": "S_bR_Al_full",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.14875 Fig. 3"
+        },
+        "uncertainty": null,
+        "uncertainty_type": "not_reported"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_bR_Al_full_ccw",
+      "sample_id": "S_bR_Al_full",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "main",
+          "loc": "p.14875 Fig. 3"
+        },
+        "uncertainty": null,
+        "uncertainty_type": "not_reported"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_bR_Au_sandwich_top_lin",
+      "sample_id": "S_bR_Au_sandwich_top",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 7,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.5 Fig. S5 left"
+        },
+        "uncertainty": 4,
+        "uncertainty_type": "unspecified",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_bR_Au_sandwich_top_cw",
+      "sample_id": "S_bR_Au_sandwich_top",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.5 Fig. S5 left"
+        },
+        "uncertainty": null,
+        "uncertainty_type": "not_reported"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_bR_Au_sandwich_top_ccw",
+      "sample_id": "S_bR_Au_sandwich_top",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.5 Fig. S5 left"
+        },
+        "uncertainty": null,
+        "uncertainty_type": "not_reported"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_bR_Au_sandwich_bottom_lin",
+      "sample_id": "S_bR_Au_sandwich_bottom",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 17,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.5 Fig. S5 right"
+        },
+        "uncertainty": 3,
+        "uncertainty_type": "unspecified",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_bR_Au_sandwich_bottom_cw",
+      "sample_id": "S_bR_Au_sandwich_bottom",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.5 Fig. S5 right"
+        },
+        "uncertainty": null,
+        "uncertainty_type": "not_reported"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_bR_Au_sandwich_bottom_ccw",
+      "sample_id": "S_bR_Au_sandwich_bottom",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.5 Fig. S5 right"
+        },
+        "uncertainty": null,
+        "uncertainty_type": "not_reported"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_bR_Au_washed_reimmersed_lin",
+      "sample_id": "S_bR_Au_washed_reimmersed",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 13,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.5 Fig. S6 left"
+        },
+        "uncertainty": 5,
+        "uncertainty_type": "unspecified",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_bR_Au_washed_reimmersed_cw",
+      "sample_id": "S_bR_Au_washed_reimmersed",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.5 Fig. S6 left"
+        },
+        "uncertainty": null,
+        "uncertainty_type": "not_reported"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_bR_Au_washed_reimmersed_ccw",
+      "sample_id": "S_bR_Au_washed_reimmersed",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.5 Fig. S6 left"
+        },
+        "uncertainty": null,
+        "uncertainty_type": "not_reported"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_bR_Au_solution_lin",
+      "sample_id": "S_bR_Au_solution",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": 10,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.5 Fig. S6 right"
+        },
+        "uncertainty": 6,
+        "uncertainty_type": "unspecified",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "linear"
+    },
+    {
+      "measurement_id": "M_bR_Au_solution_cw",
+      "sample_id": "S_bR_Au_solution",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.5 Fig. S6 right"
+        },
+        "uncertainty": null,
+        "uncertainty_type": "not_reported"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "cw_circular"
+    },
+    {
+      "measurement_id": "M_bR_Au_solution_ccw",
+      "sample_id": "S_bR_Au_solution",
+      "setup_id": "SU_mott_213nm",
+      "result": {
+        "value": null,
+        "unit": "%",
+        "status": "to_digitize",
+        "source": {
+          "doc": "SI",
+          "loc": "SI p.5 Fig. S6 right"
+        },
+        "uncertainty": null,
+        "uncertainty_type": "not_reported"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null,
+      "light_polarization": "ccw_circular"
+    },
+    {
+      "measurement_id": "M_bR_Ni_EC_avg",
+      "sample_id": "S_bR_Ni_EC",
+      "setup_id": "SU_EC_Ni_magnet",
+      "light_polarization": "none",
+      "result": {
+        "value": 18,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.14875",
+          "evidence": "an average difference of 18 ± 3% was observed"
+        },
+        "note": "average UP vs DOWN current difference at initial (-0.10 V as written) and final (+0.35 V) potentials",
+        "uncertainty": 3,
+        "uncertainty_type": "unspecified",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null
+    },
+    {
+      "measurement_id": "M_bR_Ni_EC_m005V",
+      "sample_id": "S_bR_Ni_EC",
+      "setup_id": "SU_EC_Ni_magnet",
+      "light_polarization": "none",
+      "result": {
+        "value": 21,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.14875",
+          "evidence": "ΔΙ = 1.3 μA at -0.05 V"
+        },
+        "note": "at -0.05 V vs SCE; ΔI = 1.3 µA; 'about 21%'",
+        "uncertainty_type": "not_reported",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null
+    },
+    {
+      "measurement_id": "M_bR_Ni_EC_p035V",
+      "sample_id": "S_bR_Ni_EC",
+      "setup_id": "SU_EC_Ni_magnet",
+      "light_polarization": "none",
+      "result": {
+        "value": 18.8,
+        "unit": "%",
+        "status": "reported",
+        "source": {
+          "doc": "main",
+          "loc": "p.14875",
+          "evidence": "ΔΙ = 1.5 μA at +0.35 V"
+        },
+        "note": "at +0.35 V vs SCE; ΔI = 1.5 µA",
+        "uncertainty_type": "not_reported",
+        "sign": "positive"
+      },
+      "dataset_scope": "single_preparation",
+      "duplicate_of": null
+    }
+  ],
+  "derived_quantities": [],
+  "theory_results": [],
+  "qualitative_findings": [
+    {
+      "claim": "bR in purple membrane transmits predominantly positively polarized electrons (spin parallel to velocity) on Au and Al, opposite in sign to dsDNA.",
+      "variable": "molecule (cross-paper comparison)",
+      "trend": "other",
+      "related_ids": [
+        "S_bR_Au_full",
+        "S_bR_Al_full"
+      ],
+      "source": {
+        "doc": "main",
+        "loc": "p.14873-14874"
+      }
+    },
+    {
+      "claim": "On Au the light helicity changes the magnitude (cw > lin > ccw) but not the sign of P.",
+      "variable": "initial electron polarization (light helicity)",
+      "trend": "additive",
+      "related_ids": [
+        "S_bR_Au_full"
+      ],
+      "source": {
+        "doc": "main",
+        "loc": "p.14873"
+      }
+    },
+    {
+      "claim": "On Al (weak SOC) no effect of light polarization; P ~15%, comparable to Au.",
+      "variable": "substrate spin-orbit coupling",
+      "trend": "independent",
+      "related_ids": [
+        "S_bR_Al_full",
+        "S_bR_Au_full"
+      ],
+      "source": {
+        "doc": "main",
+        "loc": "p.14873; p.14875"
+      }
+    },
+    {
+      "claim": "Full coverage gives larger P than partial coverage on Au (14% vs 5%).",
+      "variable": "surface coverage",
+      "trend": "increases",
+      "related_ids": [
+        "S_bR_Au_partial",
+        "S_bR_Au_full"
+      ],
+      "source": {
+        "doc": "main",
+        "loc": "p.14873"
+      }
+    },
+    {
+      "claim": "Effect present for physisorbed membranes (no covalent molecule-substrate bond needed).",
+      "variable": "anchoring",
+      "trend": "other",
+      "source": {
+        "doc": "main",
+        "loc": "p.14875"
+      }
+    },
+    {
+      "claim": "CV current through bR on magnetized Ni depends on magnet direction (~18%); after denaturation current drops to near zero.",
+      "variable": "Ni magnetization direction / protein integrity",
+      "trend": "other",
+      "related_ids": [
+        "S_bR_Ni_EC",
+        "S_bR_Ni_EC_denatured"
+      ],
+      "source": {
+        "doc": "main",
+        "loc": "p.14875 Fig. 4"
+      }
+    },
+    {
+      "claim": "Bare Ni shows reversible CV (peak separation 90 mV at 50 mV/s); bR-covered Ni is quasi-reversible with ~1 order lower current.",
+      "variable": "membrane coverage (EC)",
+      "trend": "decreases",
+      "related_ids": [
+        "S_Ni_bare_EC",
+        "S_bR_Ni_EC"
+      ],
+      "source": {
+        "doc": "main",
+        "loc": "p.14874-14875"
+      }
+    }
+  ],
+  "discrepancies": [
+    {
+      "field": "uploaded files",
+      "description": "File '3_suppl.pdf' is the main PNAS article and '3.pdf' is the SI Appendix (names swapped).",
+      "severity": "low",
+      "sources": [
+        {
+          "doc": "main",
+          "loc": "p.14872"
+        },
+        {
+          "doc": "SI",
+          "loc": "SI p.1"
+        }
+      ]
+    },
+    {
+      "field": "measurements[M_bR_Ni_EC_avg]",
+      "description": "Average stated as determined at the initial (-0.10 V) potential, but the CV initial potential is -0.05 V elsewhere (Fig. 4 caption, text).",
+      "severity": "low",
+      "sources": [
+        {
+          "doc": "main",
+          "loc": "p.14875"
+        }
+      ]
+    },
+    {
+      "field": "samples[*].substrate.deposition.base_pressure",
+      "description": "1e-6 Torr (main Methods) vs ~1e-6 mbar (SI).",
+      "severity": "low",
+      "sources": [
+        {
+          "doc": "main",
+          "loc": "p.14876"
+        },
+        {
+          "doc": "SI",
+          "loc": "SI p.1"
+        }
+      ]
+    },
+    {
+      "field": "samples[*].assembly.coverage_regime",
+      "description": "Methods describe monolayer (15 min) and multilayer (48 h) protocols; which one each spin-polarization sample used is not stated. Fig. 2/3 samples are not linked to the SI preparation variants ('more than 10 samples').",
+      "severity": "medium",
+      "sources": [
+        {
+          "doc": "main",
+          "loc": "p.14873; p.14876"
+        }
+      ]
+    },
+    {
+      "field": "measurements[M_bR_*_avg]",
+      "description": "P = 5 ± 3% (partial Au) and 15 ± 4% (Al) are given without stating the light polarization or how they were averaged; ± type undefined throughout.",
+      "severity": "medium",
+      "sources": [
+        {
+          "doc": "main",
+          "loc": "p.14873"
+        }
+      ]
+    },
+    {
+      "field": "setups[SU_mott_213nm].detection.sherman_function",
+      "description": "S_eff given as '18%' (no sign); paper_1 used -0.229 with the same apparatus family.",
+      "severity": "low",
+      "sources": [
+        {
+          "doc": "main",
+          "loc": "p.14876"
+        }
+      ]
+    }
+  ],
+  "extraction_meta": {
+    "extractor": "Claude (claude-opus-5-5)",
+    "extraction_date": "2026-10-21",
+    "verified_by": null,
+    "verification_date": null,
+    "notes": "Main = PNAS pp. 14872-14876 (uploaded as 3_suppl.pdf); SI Appendix pages 1-6 (uploaded as 3.pdf). chirality_origin omitted (not stated; enum has no 'not reported'). Source organism not stated in text (only in reference titles). Electrochemistry details (redox couple, electrolyte, scan rate) have no schema fields; kept in notes."
+  }
+}
