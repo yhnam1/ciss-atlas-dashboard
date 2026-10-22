@@ -46,3 +46,30 @@ when reusing data. Source paper PDFs are not included.
 This dataset is a curated snapshot. The dashboard publisher updates HTML only;
 it does not automatically refresh these standalone JSON files. The CuO file in
 `pipeline/examples/` is also retained as a standalone pipeline example.
+
+## Rebuild the tabular exports
+
+From the repository root:
+
+```sh
+python dataset/build_dataset.py
+```
+
+This script uses the Python standard library only and reads `dataset/records/`.
+It writes or replaces the following files inside `dataset/`:
+
+| Output | Contents |
+|---|---|
+| `measurements_demo.csv` | 85 eligible numeric photoelectron-spin rows |
+| `all_entries.csv` | All 131 entries, including nested context encoded as JSON columns |
+| `papers.csv` | Summary of the six papers |
+| `dataset.jsonl` | One flattened entry per line, with nested context |
+| `summary.json` | Counts, inclusion checks and per-paper summaries |
+
+The inclusion policy is visible in `build_dataset.py`: non-spin observables,
+calibration criteria, nonnumeric values, explicit duplicates, values not marked
+reported and results missing source information are excluded from the numeric demo.
+40 entries are graph placeholders and 6 further entries are excluded.
+Generated exports retain the historical `unreviewed_draft` label. The separate
+`review_status.json` records human review of the exact source files; the exporter
+does not merge that status or change source JSON. It does not rebuild the website.

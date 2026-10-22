@@ -17,7 +17,7 @@ credentials and raw API responses are not distributed.
 
 ## Setup and offline validation
 
-From this directory, with Python 3.10 or newer:
+From the repository root, first run `cd pipeline`. Then, with Python 3.10 or newer:
 
 ```sh
 python -m venv .venv
@@ -64,3 +64,16 @@ The CuO example is a selected-value source-reading pilot, not a new Gemini run.
 The v0.5.0 schema is a project compatibility extension. Structural validation cannot
 prove evidence accuracy, completeness, uncertainty interpretation or scientific
 comparability. Review the paper, signs, units, sample links and omissions manually.
+
+## Export the published six-paper dataset
+
+The separate export step does not require live extraction or an API key.
+From this `pipeline/` directory:
+
+```sh
+python ../dataset/build_dataset.py
+```
+
+Outputs appear in `../dataset/`. See the [dataset README](../dataset/README.md)
+for generated files, inclusion rules and the distinction between export labels
+and human review. For a complete starting sequence, see the [root README](../README.md#run-the-pipeline).
