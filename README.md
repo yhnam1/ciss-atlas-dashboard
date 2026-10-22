@@ -107,3 +107,22 @@ canonical standard. Historical v0.4.0 records retain their original schema.
 
 Only the generated dashboard HTML is refreshed by the existing dashboard publisher.
 The public pipeline and standalone dataset are curated snapshots and must be updated separately.
+
+## References
+
+The six source papers used in this dataset are listed below. Please cite the
+relevant original papers when reusing their experimental results. Each entry links
+to the publisher through its DOI and to the corresponding structured JSON record.
+Supporting information was also consulted, as recorded in each JSON file.
+
+1. **DNA.** B. Göhler; V. Hamelbeck; T. Z. Markus; M. Kettner; G. F. Hanne; Z. Vager; R. Naaman; H. Zacharias (2011). Spin Selectivity in Electron Transmission Through Self-Assembled Monolayers of Double-Stranded DNA. *Science*, **331**(6019), 894–897. [DOI: 10.1126/science.1199339](https://doi.org/10.1126/science.1199339). [Dataset JSON](dataset/records/paper_1_v0.4.json).
+
+2. **Helicenes.** Matthias Kettner; Volodymyr V. Maslyuk; Daniel Nürenberg; Johannes Seibel; Rafael Gutierrez; Gianaurelio Cuniberti; Karl-Heinz Ernst; Helmut Zacharias (2018). Chirality-Dependent Electron Spin Filtering by Molecular Monolayers of Helicenes. *The Journal of Physical Chemistry Letters*, **9**(8), 2025–2030. [DOI: 10.1021/acs.jpclett.8b00208](https://doi.org/10.1021/acs.jpclett.8b00208). [Dataset JSON](dataset/records/paper_2_v0.4.json).
+
+3. **Bacteriorhodopsin.** Debabrata Mishra; Tal Z. Markus; Ron Naaman; Matthias Kettner; Benjamin Göhler; Helmut Zacharias; Noga Friedman; Mordechai Sheves; Claudio Fontanesi (2013). Spin-dependent electron transmission through bacteriorhodopsin embedded in purple membrane. *Proceedings of the National Academy of Sciences*, **110**(37), 14872–14876. [DOI: 10.1073/pnas.1311493110](https://doi.org/10.1073/pnas.1311493110). [Dataset JSON](dataset/records/paper_3_v0.4.json).
+
+4. **Double-stranded PNA.** Paul Valerian Möllers; Selma Ulku; Dilhara Jayarathna; Francesco Tassinari; Daniel Nürenberg; Ron Naaman; Catalina Achim; Helmut Zacharias (2021). Spin-selective electron transmission through self-assembled monolayers of double-stranded peptide nucleic acid. *Chirality*, **33**(2), 93–102. [DOI: 10.1002/chir.23290](https://doi.org/10.1002/chir.23290). [Dataset JSON](dataset/records/paper_4_v0.4.json).
+
+5. **Chiral CuO.** Paul V. Möllers; Jimeng Wei; Soma Salamon; Manfred Bartsch; Heiko Wende; David H. Waldeck; Helmut Zacharias (2022). Spin-Polarized Photoemission from Chiral CuO Catalyst Thin Films. *ACS Nano*, **16**(8), 12145–12155. [DOI: 10.1021/acsnano.2c02709](https://doi.org/10.1021/acsnano.2c02709). [Dataset JSON](dataset/records/cuo_pilot.json).
+
+6. **Helical tetrapyrroles.** Paul V. Möllers; Adrian J. Urban; Steven De Feyter; Hiroshi M. Yamamoto; Helmut Zacharias (2024). Probing the Roles of Temperature and Cooperative Effects in Chirality-Induced Spin Selectivity: Photoelectron Spin Polarization in Helical Tetrapyrroles. *The Journal of Physical Chemistry Letters*, **15**(38), 9620–9629. [DOI: 10.1021/acs.jpclett.4c02209](https://doi.org/10.1021/acs.jpclett.4c02209). [Dataset JSON](dataset/records/tetrapyrrole_pilot.json).

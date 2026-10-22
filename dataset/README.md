@@ -73,3 +73,8 @@ reported and results missing source information are excluded from the numeric de
 Generated exports retain the historical `unreviewed_draft` label. The separate
 `review_status.json` records human review of the exact source files; the exporter
 does not merge that status or change source JSON. It does not rebuild the website.
+
+## References
+
+Full citations for all six source papers, with DOI links and matching JSON files,
+are listed in the [main README references](../README.md#references).
