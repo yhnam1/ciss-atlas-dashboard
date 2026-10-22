@@ -2,7 +2,7 @@
 
 [Open the dashboard](https://yhnam1.github.io/ciss-atlas-dashboard/)
 
-A standalone CISS literature dashboard covering four seed papers, a shared schema,
+A standalone CISS literature dashboard covering six seed papers, a shared schema,
 structured measurements, source evidence and supervised API pilot results.
 
 No installation or API key is needed. For offline use, download `index.html`
